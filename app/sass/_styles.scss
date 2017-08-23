@@ -24,4 +24,33 @@
   line-height: 1.714;
 }
 
+.text-page a {
+  color: $accent-hover;
+  &:hover {
+    text-decoration: underline;
+  }
+  &:focus {
+    text-decoration: underline;
+  }
+}
+
+.text-page ol > li {
+  counter-increment: myCount;
+  position: relative;
+  padding: 0 0 0 27px;
+  margin-bottom: 10px;
+  &:before {
+    content: counter(myCount) ".";
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-family: $font-black;
+    color: $accent;
+    font-size: 20px;
+    line-height: 1;
+  }
+  i {
+    color: #4c4945;
+  }
+}
 

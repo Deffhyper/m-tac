@@ -40,9 +40,9 @@ gulp.task('sprite', function () {
 gulp.task('scripts', function() {
 	return gulp.src([ // Берем все необходимые библиотеки
 		'app/libs/jquery/dist/jquery.min.js', // connect jQuery
-		'app/libs/slick-carousel/slick/slick.min.js', // Slick carousel
+		//'app/libs/slick-carousel/slick/slick.min.js', // Slick carousel
 		'app/libs/uikit/js/uikit.min.js', // Ui Kit
-		'app/libs/uikit/js/components/accordion.js', // Ui accordion
+		//'app/libs/uikit/js/components/accordion.js', // Ui accordion
 		'app/libs/uikit/js/components/grid.js', // Ui grid
 		'app/libs/uikit/js/components/lightbox.js', // Ui lightbox
 		'app/libs/uikit/js/components/nestable.js', // Ui nestable

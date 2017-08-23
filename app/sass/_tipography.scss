@@ -25,12 +25,26 @@ body {
 
 p {
   padding: 0;
-  margin: 0;
+  margin-top: 0;
+  line-height: 1.714;
+  margin-bottom: 15px;
 }
 
 a {
   color: inherit;
   outline: none;
+  &:hover {
+    color: $accent-hover;
+    text-decoration: none;
+  }
+  &:focus {
+    color: $accent-hover;
+    text-decoration: none;
+  }
+}
+
+i {
+  font-family: $font-italic;
 }
 
 div, ul, li, button, input, textarea {
@@ -50,10 +64,12 @@ button {
 
 h1, h2 ,h3, h4, h5, h6 {
   font-family: $font-black;
+  color: $text-color;
+  text-transform: uppercase;
   margin-top: 0;
   margin-bottom: 10px;
   padding: 0;
-  line-height: 1.3;
+  line-height: inherit;
 }
 
 h1, .title-h1 {
