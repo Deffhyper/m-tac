@@ -1,0 +1,27 @@
+.container {
+  width: 1240px;
+  margin: 0 auto;
+  position: relative;
+  &:before {
+    content: " ";
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+.text-page img[align="left"] {
+  margin-right: 30px;
+  margin-bottom: 10px;
+}
+.text-page img[align="right"] {
+  margin-left: 30px;
+  margin-bottom: 10px;
+}
+
+.text-page p {
+  line-height: 1.714;
+}
+
+
