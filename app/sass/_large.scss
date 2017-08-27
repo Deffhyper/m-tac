@@ -1,9 +1,42 @@
 @media ($desktop) {
+
+  a, button {
+    transition: none !important;
+  }
+
   .container {
     width: 980px;
+    padding: 0 15px;
   }
 
   .to-animate {
     opacity: 1;
   }
+
+  .text-page img[align="left"] {
+    margin-right: 25px;
+    margin-bottom: 15px;
+  }
+  .text-page img[align="right"] {
+    margin-left: 25px;
+    margin-bottom: 15px;
+  }
+
+  h1, .title-h1 {
+    font-size: 42px;
+  }
+  h2, .title-h2 {
+    font-size: 36px;
+  }
+  h3, .title-h3 {
+    font-size: 28px;
+  }
+  h4, .title-h4 {
+    font-size: 22px;
+  }
+
+  .responsive-table td {
+    padding: 10px 6px 7px;
+  }
+
 }

@@ -13,11 +13,11 @@ var gulp         = require('gulp'), // Подключаем Gulp
     spritesmith  = require('gulp.spritesmith');
 
 gulp.task('sass', function(){ // Создаем таск Sass
-	return gulp.src('app/sass/*.+(scss|sass)') // Берем источник
+	return gulp.src('app/sass/**/*.+(scss|sass)') // Берем источник
 		.pipe(sass().on('error', sass.logError)) // Преобразуем Sass в CSS посредством gulp-sass
 		.pipe(autoprefixer(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true })) // Создаем префиксы
 		.pipe(gulp.dest('app/css')) // Выгружаем результата в папку app/css
-		.pipe(browserSync.reload({stream: true})) // Обновляем CSS на странице при изменении
+		.pipe(browserSync.reload({stream: true})); // Обновляем CSS на странице при изменении
 });
 
 gulp.task('browser-sync', function() { // Создаем таск browser-sync
@@ -41,6 +41,7 @@ gulp.task('scripts', function() {
 	return gulp.src([ // Берем все необходимые библиотеки
 		'app/libs/jquery/dist/jquery.min.js', // connect jQuery
 		//'app/libs/slick-carousel/slick/slick.min.js', // Slick carousel
+		'app/libs/stacktable/stacktable.js', // stack table
 		'app/libs/uikit/js/uikit.min.js', // Ui Kit
 		//'app/libs/uikit/js/components/accordion.js', // Ui accordion
 		'app/libs/uikit/js/components/grid.js', // Ui grid
@@ -67,7 +68,7 @@ gulp.task('css-libs', ['sass'], function() {
 });
 
 gulp.task('watch', ['browser-sync', 'css-libs', 'scripts', 'sprite'], function() {
-	gulp.watch('app/sass/*.+(scss|sass)', ['sass']); // Наблюдение за sass файлами в папке sass
+	gulp.watch('app/sass/**/*.+(scss|sass)', ['sass']); // Наблюдение за sass файлами в папке sass
 	gulp.watch('app/*.html', browserSync.reload); // Наблюдение за HTML файлами в корне проекта
 	gulp.watch('app/**/*.php', browserSync.reload); // Наблюдение за php файлами в корне проекта
 	gulp.watch('app/js/**/*.js', browserSync.reload);   // Наблюдение за JS файлами в папке js

@@ -1,7 +1,33 @@
 @media ($mobile) {
+  body {
+    font-size: 13px;
+  }
   .container {
     width: auto;
-    padding: 0 15px;
+    padding: 0 10px;
+  }
+
+  .resp-table {
+    display: block;
+  }
+  .responsive-table.large-only {
+    display: none;
+  }
+  .blockquote {
+    font-size: 14px;
+  }
+
+  .text-page img[align="left"],
+  .text-page img[align="right"] {
+    margin-right: auto;
+    margin-bottom: 20px;
+    margin-left: auto;
+    float: none;
+    display: table;
+  }
+
+  .responsive-table td {
+    padding: 9px 5px 6px;
   }
 
 }
