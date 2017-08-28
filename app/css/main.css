@@ -323,6 +323,63 @@ img {
   height: 15px;
   background-color: #ffcc00; }
 
+.uk-modal {
+  background-color: rgba(22, 22, 38, 0.9); }
+  .uk-modal .uk-close {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    opacity: 1;
+    width: 40px;
+    height: 40px; }
+
+.uk-close:hover:after {
+  background-color: #ffcc00; }
+
+.uk-close:hover:before {
+  background-color: #ffcc00; }
+
+.uk-close:after {
+  display: block;
+  content: "";
+  font-family: inherit;
+  width: 30px;
+  height: 1px;
+  background-color: #fff;
+  -webkit-transform: rotateZ(135deg);
+      -ms-transform: rotate(135deg);
+          transform: rotateZ(135deg);
+  position: absolute;
+  top: 20px;
+  left: 5px;
+  -webkit-transition: .3s ease;
+  transition: .3s ease; }
+
+.uk-close:before {
+  display: block;
+  content: "";
+  font-family: inherit;
+  width: 30px;
+  height: 1px;
+  background-color: #fff;
+  -webkit-transform: rotateZ(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotateZ(45deg);
+  position: absolute;
+  top: 20px;
+  left: 5px;
+  -webkit-transition: .3s ease;
+  transition: .3s ease; }
+
+.uk-modal-dialog {
+  background-color: transparent;
+  color: #fff; }
+
+.uk-modal-dialog.big {
+  width: 100%;
+  max-width: 1240px;
+  padding: 20px 0; }
+
 .top-slider {
   position: relative;
   height: 830px;
@@ -382,34 +439,95 @@ img {
       left: 0;
       bottom: 180px; }
 
-.inform-list__item {
-  position: relative;
-  z-index: 1; }
-  .inform-list__item.first {
-    margin-top: 120px;
-    height: 430px; }
-    .inform-list__item.first .inform-list__item--title {
-      line-height: .9;
-      text-transform: uppercase;
-      margin-top: 110px;
-      margin-bottom: 15px; }
-  .inform-list__item.to-right {
-    float: right; }
-  .inform-list__item.inverse {
-    color: #fff; }
-  .inform-list__item--title {
-    font-size: 72px;
-    font-family: "FiraSans-Black", sans-serif; }
-  .inform-list__item--subtitle {
-    font-size: 15px; }
-  .inform-list__item .decor-border {
-    width: 85%;
-    height: 100%;
-    position: absolute;
-    top: 7px;
-    right: 0;
-    border: 7px solid #ffcc00;
-    z-index: -1; }
+.inform-list {
+  padding-top: 70px; }
+  .inform-list__item {
+    position: relative;
+    z-index: 1; }
+    .inform-list__item--link {
+      display: block;
+      position: relative; }
+    .inform-list__item.item-1 {
+      margin-top: 120px;
+      height: 430px;
+      float: right; }
+      .inform-list__item.item-1 .subtitle {
+        font-size: 15px; }
+      .inform-list__item.item-1 .title {
+        line-height: .9;
+        text-transform: uppercase;
+        margin-top: 110px;
+        margin-bottom: 15px;
+        font-size: 72px;
+        font-family: "FiraSans-Black", sans-serif; }
+    .inform-list__item.item-2 .title-light {
+      bottom: 80px;
+      left: 73px; }
+    .inform-list__item.item-3 {
+      margin-top: 50px; }
+      .inform-list__item.item-3 .title-light {
+        bottom: 80px;
+        left: 73px; }
+    .inform-list__item.item-4 .title-light {
+      bottom: 80px;
+      left: 73px; }
+    .inform-list__item.item-5 .title-light {
+      bottom: 80px;
+      left: 73px; }
+    .inform-list__item.item-6 .title-light {
+      bottom: 80px;
+      left: 73px; }
+    .inform-list__item.item-7 .inform-list__item--link {
+      float: right; }
+    .inform-list__item.item-7 .title-light {
+      bottom: 80px;
+      left: 73px; }
+    .inform-list__item.item-8 .title-light {
+      bottom: 80px;
+      left: 73px; }
+    .inform-list__item.item-9 .title-light {
+      bottom: 80px;
+      left: 73px; }
+    .inform-list__item.inverse {
+      color: #fff; }
+    .inform-list__item .title-light {
+      display: inline-block;
+      position: absolute;
+      font-family: "FiraSans-Black", sans-serif;
+      font-size: 46px;
+      line-height: 1; }
+    .inform-list__item .link-decor:after {
+      content: '';
+      display: block;
+      width: 75px;
+      height: 4px;
+      background-color: #ffcc00;
+      position: absolute;
+      top: -22px;
+      right: -9px;
+      -webkit-transform: rotateZ(-45deg);
+          -ms-transform: rotate(-45deg);
+              transform: rotateZ(-45deg); }
+    .inform-list__item .link-decor:before {
+      content: '';
+      display: block;
+      width: 75px;
+      height: 4px;
+      background-color: #ffcc00;
+      position: absolute;
+      bottom: -23px;
+      left: -69px;
+      -webkit-transform: rotateZ(-45deg);
+          -ms-transform: rotate(-45deg);
+              transform: rotateZ(-45deg); }
+    .inform-list__item .decor-border {
+      width: 85%;
+      height: 100%;
+      position: absolute;
+      top: 7px;
+      right: 0;
+      border: 7px solid #ffcc00;
+      z-index: -1; }
 
 .page-header-back {
   background-color: #181613;

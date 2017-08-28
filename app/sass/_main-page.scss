@@ -85,38 +85,128 @@
 }
 
 .inform-list {
-
+  padding-top: 70px;
 
 
   &__item {
     position: relative;
     z-index: 1;
 
-    &.first {
+    &--link {
+      display: block;
+      position: relative;
+    }
+
+    &.item-1 {
       margin-top: 120px;
       height: 430px;
+      float: right;
 
-      .inform-list__item--title {
+      .subtitle {
+        font-size: 15px;
+      }
+      .title {
         line-height: .9;
         text-transform: uppercase;
         margin-top: 110px;
         margin-bottom: 15px;
+        font-size: 72px;
+        font-family: $font-black;
       }
     }
 
-    &.to-right {
-      float: right;
+    &.item-2 {
+      .title-light {
+        bottom: 80px;
+        left: 73px;
+      }
     }
+
+    &.item-3 {
+      margin-top: 50px;
+      .title-light {
+        bottom: 80px;
+        left: 73px;
+      }
+    }
+
+    &.item-4 {
+      .title-light {
+        bottom: 80px;
+        left: 73px;
+      }
+    }
+    &.item-5 {
+      .title-light {
+        bottom: 80px;
+        left: 73px;
+      }
+    }
+    &.item-6 {
+      .title-light {
+        bottom: 80px;
+        left: 73px;
+      }
+    }
+    &.item-7 {
+      .inform-list__item--link {
+        float: right;
+      }
+      .title-light {
+        bottom: 80px;
+        left: 73px;
+      }
+    }
+    &.item-8 {
+      .title-light {
+        bottom: 80px;
+        left: 73px;
+      }
+    }
+
+    &.item-9 {
+      .title-light {
+        bottom: 80px;
+        left: 73px;
+      }
+    }
+
     &.inverse {
       color: #fff;
     }
-    &--title {
-      font-size: 72px;
-      font-family: $font-black;
 
+    .title-light {
+      display: inline-block;
+      position: absolute;
+      font-family: $font-black;
+      font-size: 46px;
+      line-height: 1;
     }
-    &--subtitle {
-      font-size: 15px;
+
+    .link-decor {
+
+      &:after {
+        content: '';
+        display: block;
+        width: 75px;
+        height: 4px;
+        background-color: $accent;
+        position: absolute;
+        top: -22px;
+        right: -9px;
+        transform: rotateZ(-45deg);
+      }
+      &:before {
+        content: '';
+        display: block;
+        width: 75px;
+        height: 4px;
+        background-color: $accent;
+        position: absolute;
+        bottom: -23px;
+        left: -69px;
+        transform: rotateZ(-45deg);
+      }
     }
 
     .decor-border {

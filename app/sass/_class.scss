@@ -88,3 +88,66 @@
     }
   }
 }
+
+.uk-modal {
+  background-color: rgba(22,22,38, .9);
+  .uk-close {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    opacity: 1;
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.uk-close:hover {
+  &:after {
+    background-color: $accent;
+  }
+  &:before {
+    background-color: $accent;
+  }
+}
+
+.uk-close:after {
+  display: block;
+  content: "";
+  font-family: inherit;
+  width: 30px;
+  height: 1px;
+  background-color: #fff;
+  transform: rotateZ(135deg);
+  position: absolute;
+  top: 20px;
+  left: 5px;
+  transition: .3s ease;
+}
+
+.uk-close:before {
+  display: block;
+  content: "";
+  font-family: inherit;
+  width: 30px;
+  height: 1px;
+  background-color: #fff;
+  transform: rotateZ(45deg);
+  position: absolute;
+  top: 20px;
+  left: 5px;
+  transition: .3s ease;
+}
+
+.uk-modal-dialog {
+  background-color: transparent;
+  color: #fff;
+}
+
+.uk-modal-dialog.big {
+  width: 100%;
+  max-width:  1240px;
+  padding: 20px 0;
+}
+
+
+

@@ -56,7 +56,7 @@
                         <a href="#" role="button" class="btn btn-big btn-accent btn-hover-light">Связаться с нами</a>
                     </div>
                     <div class="page-header-desktop-menu">
-                        <a href="#" role="button" id="desktop-menu-trigger" class="desktop-menu-trigger">
+                        <a href="#desktop-modal-menu" role="button" class="desktop-menu-trigger" data-uk-modal>
                             <span></span><span></span><span></span>
                         </a>
                     </div>
@@ -201,6 +201,21 @@
                     </ul>
                 </li>
             </ul>
+        </div>
+    </div>
+
+    <div id="desktop-modal-menu" class="uk-modal">
+        <a href="#" role="button" class="uk-modal-close uk-close"></a>
+        <div class="uk-modal-dialog big">
+            
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+                anim id est laborum.</p>
+            <p class="uk-text-right">
+                <a href="#" class="uk-button uk-button-default uk-modal-close" type="button">Cancel</a>
+            </p>
         </div>
     </div>
 
