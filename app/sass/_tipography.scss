@@ -34,12 +34,12 @@ a {
   color: inherit;
   outline: none;
   &:hover {
-    color: $accent-hover;
     text-decoration: none;
+    color: inherit;
   }
   &:focus {
-    color: $accent-hover;
     text-decoration: none;
+    color: inherit;
   }
 }
 
@@ -60,6 +60,10 @@ fieldset {
 button {
   padding: 0;
   margin: 0;
+}
+
+input, button {
+  border-radius: 0;
 }
 
 h1, h2 ,h3, h4, h5, h6 {
@@ -97,11 +101,14 @@ ul, ol {
 
 input, textarea {
   padding: 0 10px;
+  border-radius: 0;
+
   @include placeholder {
     font-size: 13px;
-    color: #63636d;
+    color: #777777;
     text-indent: 0;
     transition: 0.3s ease;
+    font-family: $font;
   }
 }
 

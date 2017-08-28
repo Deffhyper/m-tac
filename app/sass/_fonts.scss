@@ -56,6 +56,15 @@
 }
 
 @font-face{
+  font-family: 'FiraSans-Condensed-Regular';
+  src: url("../fonts/firasans-condenced/Firasanscondensedregular.ttf")format("truetype");
+  src: url('../fonts/firasans-condenced/Firasanscondensedregular.woff') format('woff'),
+  url('../fonts/firasans-condenced/Firasanscondensedregular.woff2') format('woff2');
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face{
   font-family: 'FiraSans-Condensed-Bold';
   src: url("../fonts/firasans-condenced/firasanscondensed-bold-webfont.eot");
   src: url('../fonts/firasans-condenced/firasanscondensed-bold-webfont.ttf')format("truetype");
@@ -100,3 +109,13 @@
 //  font-weight: normal;
 //}
 
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/iconmoon/icomoon.eot?7ekg57');
+  src:  url('../fonts/iconmoon/icomoon.eot?7ekg57#iefix') format('embedded-opentype'),
+  url('../fonts/iconmoon/icomoon.ttf?7ekgicomoon57') format('truetype'),
+  url('../fonts/iconmoon/icomoon.woff?7ekg57') format('woff'),
+  url('../fonts/iconmoon/icomoon.svg?7ekg57#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}

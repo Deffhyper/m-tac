@@ -40,5 +40,23 @@ $(function() {
     });
 
 
+    ///////////////////////////////// top slider //////////////////////////////////////////
+
+    $('.top-slider__for').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        dots: false,
+        fade: true,
+        asNavFor: '.top-slider__nav'
+    });
+    $('.top-slider__nav').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        asNavFor: '.top-slider__for',
+        dots: true,
+        arrows: true
+    });
+
 
 });

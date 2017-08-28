@@ -25,12 +25,15 @@
 }
 
 .text-page a {
-  color: $accent-hover;
+  color: $accent;
+  text-decoration: underline;
   &:hover {
-    text-decoration: underline;
+    color: $accent-hover;
+    text-decoration: none;
   }
   &:focus {
-    text-decoration: underline;
+    color: $accent-hover;
+    text-decoration: none;
   }
 }
 

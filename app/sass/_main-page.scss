@@ -1,0 +1,137 @@
+.top-slider {
+  position: relative;
+  height: 830px;
+  color: #fff;
+
+
+
+  &__content {
+
+    &--title {
+      font-size: 120px;
+      font-family: $font-black;
+      text-transform: uppercase;
+      margin-top: 160px;
+      letter-spacing: 12px;
+      line-height: 1;
+      max-height: 240px;
+      width: 630px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    &--subtitle {
+      text-transform: uppercase;
+      font-size: 26px;
+      letter-spacing: 2.4px;
+      height: 44px;
+      max-width: 510px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      margin-bottom: 40px;
+    }
+
+    .btn {
+      width: 220px;
+    }
+  }
+
+  &__for {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    &--item {
+      height: 830px;
+    }
+
+  }
+
+  &__nav {
+    height: 830px;
+
+    .slick-arrow {
+      width: 30px;
+      height: 30px;
+      position: absolute;
+      bottom: 148px;
+
+      &.slick-prev {
+        left: 0;
+      }
+      &.slick-next {
+        left: 26px;
+      }
+    }
+
+    .slick-arrow:after {
+      content: '';
+      border-top: 2px solid #fff;
+      border-right: 2px solid #fff;
+      height: 15px;
+      width: 15px;
+      -webkit-transition: .3s ease;
+      transition: .3s ease;
+      display: block;
+    }
+
+    .slick-dots {
+      position: absolute;
+      left: 0;
+      bottom: 180px;
+    }
+  }
+}
+
+.inform-list {
+
+
+
+  &__item {
+    position: relative;
+    z-index: 1;
+
+    &.first {
+      margin-top: 120px;
+      height: 430px;
+
+      .inform-list__item--title {
+        line-height: .9;
+        text-transform: uppercase;
+        margin-top: 110px;
+        margin-bottom: 15px;
+      }
+    }
+
+    &.to-right {
+      float: right;
+    }
+    &.inverse {
+      color: #fff;
+    }
+    &--title {
+      font-size: 72px;
+      font-family: $font-black;
+
+    }
+    &--subtitle {
+      font-size: 15px;
+    }
+
+    .decor-border {
+      width: 85%;
+      height: 100%;
+      position: absolute;
+      top: 7px;
+      right: 0;
+      border: 7px solid $accent;
+      z-index: -1;
+    }
+
+  }
+}
+
+
+
+

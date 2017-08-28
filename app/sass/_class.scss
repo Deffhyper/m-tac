@@ -1,0 +1,90 @@
+.btn {
+  font-family: $font-cond-semi;
+  text-transform: uppercase;
+  font-size: 16px;
+  display: inline-block;
+  vertical-align: middle;
+  transition: .3s ease;
+  line-height: 1;
+  text-align: center;
+}
+
+.btn-accent {
+  background-color: $accent;
+  color: $text-color;
+}
+
+.btn-inverse {
+  color: #fff;
+  border: 2px solid #fff;
+}
+
+.btn-big {
+  padding: 18px 10px 16px;
+}
+
+.btn-hover-light {
+  &:hover {
+    background-color: $accent-hover;
+    color: $text-color;
+  }
+}
+
+.btn-hover-normal {
+  &:hover {
+    background-color: $accent;
+    color: $text-color;
+    border-color: $accent;
+  }
+}
+
+
+.slick-arrow {
+  z-index: 1;
+  color: transparent;
+  background: none;
+  border: none;
+  transition: .3s ease;
+  &:hover {
+    &:after {
+      border-color: $accent;
+    }
+  }
+  &.slick-prev:after {
+    transform: rotateZ(225deg);
+  }
+  &.slick-next:after {
+    transform: rotateZ(45deg);
+  }
+}
+
+.slick-dots {
+  button {
+    z-index: 1;
+    color: transparent;
+    background-color: #fff;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    border: none;
+    line-height: 0;
+    transition: .3s ease;
+
+    &:hover {
+      background-color: $accent;
+    }
+
+  }
+  li {
+    display: inline-block;
+    margin-right: 10px;
+
+  }
+  .slick-active {
+    button {
+      width: 15px;
+      height: 15px;
+      background-color: $accent;
+    }
+  }
+}
