@@ -72,8 +72,8 @@
 }
 
 .inform-list {
-  padding-top: 70px;
-
+  padding-top: 80px;
+  padding-bottom: 80px;
 
   &__item {
     position: relative;
@@ -85,7 +85,7 @@
     }
 
     &.item-1 {
-      margin-top: 120px;
+      margin-top: 40px;
       height: 430px;
       float: right;
 
@@ -104,35 +104,30 @@
 
     &.item-2 {
       .title-light {
-        bottom: 80px;
-        left: 73px;
+        bottom: 105px;
       }
     }
 
     &.item-3 {
       margin-top: 50px;
       .title-light {
-        bottom: 80px;
-        left: 73px;
+        bottom: 92px;
       }
     }
 
     &.item-4 {
       .title-light {
-        bottom: 80px;
-        left: 73px;
+        bottom: 52px;
       }
     }
     &.item-5 {
       .title-light {
-        bottom: 80px;
-        left: 73px;
+        bottom: 92px;
       }
     }
     &.item-6 {
       .title-light {
-        bottom: 80px;
-        left: 73px;
+        bottom: 61px;
       }
     }
     &.item-7 {
@@ -140,21 +135,18 @@
         float: right;
       }
       .title-light {
-        bottom: 80px;
-        left: 73px;
+        bottom: 153px;
       }
     }
     &.item-8 {
       .title-light {
-        bottom: 80px;
-        left: 73px;
+        bottom: 192px;
       }
     }
 
     &.item-9 {
       .title-light {
-        bottom: 80px;
-        left: 73px;
+        bottom: 166px;
       }
     }
 
@@ -168,6 +160,8 @@
       font-family: $font-black;
       font-size: 46px;
       line-height: 1;
+      text-transform: uppercase;
+      left: 53px;
     }
 
     .link-decor {
@@ -200,7 +194,7 @@
       width: 85%;
       height: 100%;
       position: absolute;
-      top: 7px;
+      top: 0;
       right: 0;
       border: 7px solid $accent;
       z-index: -1;
@@ -210,7 +204,7 @@
 }
 
 .section-padding {
-  padding: 80px 0;
+  padding: 60px 0 75px;
 }
 
 .section-with-bg {
@@ -413,8 +407,9 @@
       color: #fff;
       position: relative;
       display: inline-block;
-      line-height: 1.6;
-      margin-bottom: 30px;
+      line-height: 1.4;
+      margin-bottom: 40px;
+      letter-spacing: 14px;
 
       &:after {
         content: '';
@@ -432,7 +427,7 @@
         height: 5px;
         width: 100%;
         position: absolute;
-        bottom: 5px;
+        bottom: 11px;
         left: 0;
         background-color: $accent;
       }
@@ -450,9 +445,10 @@
   &__date {
     font-family: $font-black;
     border-bottom: 2px solid $text-color;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     span {
       font-size: 36px;
+      line-height: 1.4;
     }
     small {
       font-size: 18px;
@@ -482,10 +478,11 @@
     font-family: $font-cond-semi;
     font-size: 18px;
     text-transform: uppercase;
-    height: 60px;
+    height: 45px;
+    margin-bottom: 15px;
     overflow: hidden;
     text-overflow: ellipsis;
-    line-height: 1.5;
+    line-height: 1.3;
 
     &:hover {
       text-decoration: underline;
@@ -495,6 +492,7 @@
   &__text {
     height: 90px;
     overflow: hidden;
+    margin-bottom: 15px;
   }
 
 }
@@ -518,6 +516,9 @@
 }
 
 .description-main {
+  p {
+    line-height: 1.6;
+  }
 
   &.accent-bg {
     padding-left: 40px;
@@ -540,9 +541,23 @@
   }
 
   .decor-map {
-    width: 52%;
+    width: 40%;
     display: block;
+    margin-top: 30px;
   }
+  .btn {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+.section-title-h3 {
+  margin-bottom: 27px;
+}
+
+.description-main__content {
+  height: 265px;
+  overflow: hidden;
 }
 
 
