@@ -19,8 +19,23 @@
   border: 2px solid #fff;
 }
 
+.btn-black {
+  border: 2px solid $text-color;
+}
+
 .btn-big {
   padding: 18px 10px 16px;
+}
+
+.btn-normal {
+  padding: 18px 10px 14px;
+}
+
+.btn-border-bottom {
+  border-bottom: 2px solid $accent;
+  &:hover {
+    color: $accent;
+  }
 }
 
 .btn-hover-light {
@@ -39,7 +54,17 @@
 }
 
 
+.btn-hover-black {
+  &:hover {
+    background-color: $text-color;
+    color: #fff;
+    border-color: $text-color;
+  }
+}
+
 .slick-arrow {
+  width: 30px;
+  height: 30px;
   z-index: 1;
   color: transparent;
   background: none;
@@ -56,6 +81,17 @@
   &.slick-next:after {
     transform: rotateZ(45deg);
   }
+}
+
+.slick-arrow:after {
+  content: '';
+  border-top: 2px solid #fff;
+  border-right: 2px solid #fff;
+  height: 15px;
+  width: 15px;
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+  display: block;
 }
 
 .slick-dots {
@@ -149,5 +185,33 @@
   padding: 20px 0;
 }
 
+.custom-input {
+  position: relative;
+  &--gray {
+    label {
+
+    }
+  }
+  label {
+    font-size: 11px;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  input {
+    background-color: transparent;
+    border-width: 0 0 2px 0;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    color: #fff;
+    width: 100%;
+    height: 35px;
+    padding: 0;
+    @include placeholder {
+      font-size: 15px;
+      color: #929292;
+    }
+  }
+}
 
 
