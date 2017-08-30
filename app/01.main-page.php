@@ -20,21 +20,115 @@
     <div class="container">
         <div class="top-slider__nav">
             <div class="top-slider__nav--item">
-                <div class="top-slider__content uk-cover-background">
+                <div class="top-slider__content">
+                    <p class="top-slider__content--title">Military<br>Tactical</p>
+                    <p class="top-slider__content--subtitle">Одежда для настоящих мужчин!</p>
+                    <a href="#" role="button" class="btn btn-big btn-inverse btn-hover-normal">Смотреть каталог</a>
+                </div>
+                <div class="interactive-block">
+                    <div class="interactive-block__image">
+                        <img src="img/jpeg_files/man.png" alt="man" width="253" height="779">
+                        <a href="#modal-1" class="image-dot" style="top: 23%; left: 49%"></a>
+                        <a href="#modal-2" class="image-dot" style="top: 59%; left: 37%"></a>
+                        <a href="#modal-3" class="image-dot" style="top: 93%; left: 38%"></a>
+                    </div>
+                    <div class="interactive-block__modals">
+                        <div id="modal-1" class="goods">
+                            <a href="#" role="button" class="goods-close"></a>
+                            <div class="goods-top-block">
+                                <div class="goods-image">
+                                    <a href="#">
+                                        <img src="img/jpeg_files/goods-1.jpg" alt="goods" width="263" height="263">
+                                    </a>
+                                </div>
+                                <div class="goods-link">
+                                    <a href="#">БОТИНКИ ПОЛЕВЫЕ MK.4 MULTICAM</a>
+                                </div>
+                            </div>
+                            <div class="goods-bottom-block">
+                                <div class="goods-price">
+                            <span class="goods-price__old">
+                                <span>1500</span>
+                                <span>грн</span>
+                            </span>
+                                    <span class="goods-price__current">
+                                <span>945</span>
+                                <span>грн</span>
+                            </span>
+                                </div>
+                                <div class="goods-read-more">
+                                    <a href="#" class="btn btn-normal btn-black btn-hover-normal">Подробнее</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="modal-2" class="goods">
+                            <a href="#" role="button" class="goods-close"></a>
+                            <div class="goods-top-block">
+                                <div class="goods-image">
+                                    <a href="#">
+                                        <img src="img/jpeg_files/goods-2.jpg" alt="goods" width="263" height="263">
+                                    </a>
+                                </div>
+                                <div class="goods-link">
+                                    <a href="#">БОТИНКИ ПОЛЕВЫЕ MK.4 MULTICAM</a>
+                                </div>
+                            </div>
+                            <div class="goods-bottom-block">
+                                <div class="goods-price">
+                            <span class="goods-price__old">
+                                <span>1500</span>
+                                <span>грн</span>
+                            </span>
+                                    <span class="goods-price__current">
+                                <span>945</span>
+                                <span>грн</span>
+                            </span>
+                                </div>
+                                <div class="goods-read-more">
+                                    <a href="#" class="btn btn-normal btn-black btn-hover-normal">Подробнее</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="modal-3" class="goods">
+                            <a href="#" role="button" class="goods-close"></a>
+                            <div class="goods-top-block">
+                                <div class="goods-image">
+                                    <a href="#">
+                                        <img src="img/jpeg_files/goods-3.jpg" alt="goods" width="263" height="263">
+                                    </a>
+                                </div>
+                                <div class="goods-link">
+                                    <a href="#">БОТИНКИ ПОЛЕВЫЕ MK.4 MULTICAM</a>
+                                </div>
+                            </div>
+                            <div class="goods-bottom-block">
+                                <div class="goods-price">
+                            <span class="goods-price__old">
+                                <span>1500</span>
+                                <span>грн</span>
+                            </span>
+                                    <span class="goods-price__current">
+                                <span>945</span>
+                                <span>грн</span>
+                            </span>
+                                </div>
+                                <div class="goods-read-more">
+                                    <a href="#" class="btn btn-normal btn-black btn-hover-normal">Подробнее</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="top-slider__nav--item">
+                <div class="top-slider__content">
                     <p class="top-slider__content--title">Military<br>Tactical</p>
                     <p class="top-slider__content--subtitle">Одежда для настоящих мужчин!</p>
                     <a href="#" role="button" class="btn btn-big btn-inverse btn-hover-normal">Смотреть каталог</a>
                 </div>
             </div>
             <div class="top-slider__nav--item">
-                <div class="top-slider__content uk-cover-background">
-                    <p class="top-slider__content--title">Military<br>Tactical</p>
-                    <p class="top-slider__content--subtitle">Одежда для настоящих мужчин!</p>
-                    <a href="#" role="button" class="btn btn-big btn-inverse btn-hover-normal">Смотреть каталог</a>
-                </div>
-            </div>
-            <div class="top-slider__nav--item">
-                <div class="top-slider__content uk-cover-background">
+                <div class="top-slider__content">
                     <p class="top-slider__content--title">Military<br>Tactical</p>
                     <p class="top-slider__content--subtitle">Одежда для настоящих мужчин!</p>
                     <a href="#" role="button" class="btn btn-big btn-inverse btn-hover-normal">Смотреть каталог</a>
@@ -308,7 +402,7 @@
 
 <div class="section-padding section-with-bg--skew">
     <div class="container">
-        <div class="uk-grid uk-grid-small uk-grid-width-small-1-1 uk-grid-width-medium-1-2 uk-grid-width-large-1-2">
+        <div class="uk-grid uk-grid-small uk-grid-width-1-1 uk-grid-width-large-1-2">
             <section class="news-main">
                 <h3 class="title-h2 section-title-h2">Новости</h3>
                 <div class="uk-grid uk-grid-small uk-grid-width-small-1-1 uk-grid-width-medium-1-2 uk-grid-width-large-1-2">
@@ -405,7 +499,7 @@
 
 <div class="section-with-bg--black">
     <div class="container">
-        <div class="uk-grid uk-grid-small uk-grid-width-small-1-1 uk-grid-width-large-1-3">
+        <div class="uk-grid uk-grid-small uk-grid-width-1-1 uk-grid-width-medium-1-3 uk-grid-width-large-1-3">
             <section class="description-main white-text right-padding section-padding">
                 <h4 class="title-h3 section-title-h3">О бренде</h4>
                 <div class="description-main__content">

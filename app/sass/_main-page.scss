@@ -49,7 +49,13 @@
   }
 
   &__nav {
-    height: 830px;
+
+
+    &--item {
+      position: relative;
+      z-index: 1;
+      height: 830px;
+    }
 
     .slick-arrow {
       position: absolute;
@@ -67,6 +73,71 @@
       position: absolute;
       left: 0;
       bottom: 180px;
+    }
+  }
+}
+
+.interactive-block {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  height: 779px;
+  width: 253px;
+  &__image {
+    &>img {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+  &__modals {
+    .goods {
+      position: absolute;
+      right: 100%;
+      top: 43px;
+      width: 100%;
+      transition: .3s ease;
+      opacity: 0;
+      z-index: -1;
+      &.active {
+        z-index: 2;
+        opacity: 1;
+      }
+    }
+  }
+}
+
+.image-dot {
+  display: block;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background-color: $accent;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: .3s ease;
+  &:after {
+    content: '';
+    display: block;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 2px solid $accent;
+    transition: .3s ease;
+  }
+  &:hover {
+    background-color: #fff;
+    &:after {
+      border-color: #fff;
+      width: 29px;
+      height: 29px;
     }
   }
 }
@@ -233,119 +304,6 @@
     color: #fff;
   }
 }
-
-
-.goods {
-  background-color: #fff;
-  max-width: 302px;
-  position: relative;
-  z-index: 1;
-  margin: 0 auto;
-  &:after {
-    content: '';
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    transition: .3s ease;
-    z-index: -1;
-  }
-  &:hover {
-    &:after {
-      box-shadow: 0 0 12px 0 rgba(0,0,0, .2);
-    }
-  }
-
-  .btn {
-    width: 210px;
-  }
-}
-
-.goods-image {
-  height: 300px;
-  overflow: hidden;
-  position: relative;
-  padding: 10px;
-  a {
-    display: block;
-    height: 100%;
-  }
-  img {
-    position: absolute;
-    top: 0;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    margin: auto;
-  }
-}
-
-.goods-link {
-  padding: 0 30px;
-  text-align: center;
-  height: 46px;
-  overflow: hidden;
-  text-overflow: ellipsis;
-
-  a {
-    font-family: $font-cond-semi;
-    text-transform: uppercase;
-    font-size: 18px;
-    line-height: normal;
-    &:hover {
-      text-decoration: underline;
-    }
-  }
-}
-
-.goods-top-block {
-  border-bottom: 1px solid #dcdcea;
-  padding-bottom: 15px;
-}
-
-.goods-bottom-block {
-  text-align: center;
-  padding: 10px 20px 25px;
-}
-
-.goods-price {
-  font-family: $font-cond-extra;
-  margin-bottom: 10px;
-  height: 51px;
-
-  &__old {
-    color: #73737b;
-    font-size: 24px;
-    margin-right: 10px;
-    position: relative;
-    &:after {
-      content: '';
-      display: block;
-      width: 100%;
-      height: 1px;
-      background-color: $text-color;
-      position: absolute;
-      top: 14px;
-      left: -1px;
-    }
-    &>span:last-child {
-      font-size: 14px;
-    }
-  }
-  &__current {
-    font-size: 30px;
-    &>span:last-child {
-      font-size: 16px;
-    }
-  }
-}
-
-.goods-read-more {
-  height: 52px;
-}
-
 
 .four-item-slider {
   .goods {
@@ -560,9 +518,183 @@
   overflow: hidden;
 }
 
+.grid{
+  .grid-item {
+    width: 33.333%;
+  }
+}
+
+@media ($desktop) {
+  .top-slider__content--title {
+    font-size: 90px;
+    margin-top: 90px;
+    letter-spacing: 9px;
+    line-height: .9;
+    margin-bottom: 15px;
+  }
+
+  .top-slider__content--subtitle {
+    font-size: 20px;
+    letter-spacing: 2px;
+    margin-bottom: 33px;
+  }
+
+  .top-slider__nav--item,
+  .top-slider__for--item,
+  .top-slider {
+    height: 600px;
+  }
+
+  .interactive-block {
+    height: 520px;
+    width: 170px;
+    top: 40px;
+  }
+
+  .interactive-block__image > img {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+  }
+
+  .interactive-block__modals .goods {
+    top: 0;
+    width: 240px;
+  }
+
+  .top-slider__nav .slick-arrow {
+    bottom: 60px;
+  }
+
+  .top-slider__nav .slick-dots {
+    bottom: 100px;
+  }
+
+  .page-header-callback .btn {
+    width: 210px;
+  }
+
+  .page-header-middle {
+    padding: 8px 0;
+  }
+  .page-header-logo img {
+    max-width: 90px;
+  }
+
+  .inform-list {
+    padding-top: 35px;
+    padding-bottom: 60px;
+  }
+
+  .inform-list__item.item-1 {
+    margin-top: 52px;
+    height: 330px;
+  }
+
+  .inform-list__item.item-1 .title {
+    margin-top: 60px;
+    margin-bottom: 30px;
+    font-size: 50px;
+  }
+
+  .inform-list__item.inverse.item-2 {
+    //height: 297px;
+    //overflow: hidden;
+    //img {
+    //  position: absolute;
+    //  top: 50%;
+    //  left: 50%;
+    //  height: 100%;
+    //  max-width: inherit;
+    //  transform: translate(-50%, -50%);
+    //}
+  }
+
+  .inform-list__item.item-3 {
+    margin-top: 0;
+  }
+
+  .inform-list__item--link {
+    height: 100%;
+  }
+
+  .four-item-slider .goods {
+    margin: auto;
+  }
+
+  .four-item-slider .goods {
+    max-width: 240px;
+  }
+
+  .section-padding {
+    padding: 35px 0 40px;
+  }
+
+  .lookbook-main__content--title {
+    font-size: 100px;
+    line-height: 1.7;
+    letter-spacing: 12px;
+    margin-top: 45px;
+  }
+  .lookbook-main {
+    height: 500px;
+  }
+
+  .section-with-bg--skew:after {
+    content: none;
+  }
+
+  .section-title-h2 {
+    margin-bottom: 15px;
+    margin-top: 5px;
+  }
+
+  .news-main {
+    margin-bottom: 45px;
+  }
+
+  .news-main-item__image {
+    height: 220px;
+  }
+
+  .news-main-item__image img {
+    width: 100%;
+  }
+
+  .description-main.right-padding {
+    padding-right: 15px;
+  }
+
+  .description-main.left-padding {
+    padding-left: 15px;
+  }
+  .description-main.accent-bg {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .news-main-item__date span {
+    font-size: 30px;
+  }
+
+  .news-main-item__date small {
+    font-size: 16px;
+  }
+
+  .news-main-item__text {
+    height: 65px;
+  }
+
+  .description-main__content {
+    height: 270px;
+    margin-bottom: 30px;
+  }
 
 
 
+
+
+}
 
 
 

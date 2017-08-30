@@ -40,6 +40,7 @@ gulp.task('sprite', function () {
 gulp.task('scripts', function() {
 	return gulp.src([ // Берем все необходимые библиотеки
 		'app/libs/jquery/dist/jquery.min.js', // connect jQuery
+		'app/libs/masked-input/masked-input.js', // masked-input
 		'app/libs/slick-carousel/slick/slick.min.js', // Slick carousel
 		'app/libs/stacktable/stacktable.js', // stack table
 		'app/libs/uikit/js/uikit.min.js', // Ui Kit

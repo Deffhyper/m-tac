@@ -9,6 +9,7 @@
   text-align: center;
   background: transparent;
   letter-spacing: 2px;
+  border: 0;
 }
 
 .btn-accent {
@@ -23,6 +24,7 @@
 
 .btn-black {
   border: 2px solid $text-color;
+  color: $text-color;
 }
 
 .btn-big {
@@ -63,6 +65,8 @@
     border-color: $text-color;
   }
 }
+
+/////////////////////////////////////////// slick slider ////////////////////////////////////////
 
 .slick-arrow {
   width: 30px;
@@ -127,6 +131,8 @@
   }
 }
 
+
+/////////////////////////////////////////////////// modals ////////////////////////////////////////
 .uk-modal {
   background-color: rgba(22,22,38, .9);
   .uk-close {
@@ -187,6 +193,24 @@
   padding: 20px 0;
 }
 
+.uk-modal-dialog.small {
+  width: 100%;
+  max-width: 405px;
+  padding: 20px 0;
+}
+
+.connect-to-us {
+  .btn {
+    width: 220px;
+    margin: 10px auto 0;
+    display: table;
+  }
+}
+
+
+////////////////////////////////////////////// custom input ////////////////////////////////////
+
+
 .custom-input {
   position: relative;
   padding: 15px 0 0;
@@ -222,4 +246,186 @@
   }
 }
 
+.uk-modal-title {
+  font-family: $font-black;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 25px;
+}
+/////////////////////////////////////////////// goods ////////////////////////////////////////////////
 
+.goods {
+  background-color: #fff;
+  max-width: 302px;
+  position: relative;
+  z-index: 1;
+  margin: 0 auto;
+  border: 1px solid #dcdcea;
+  &:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: .3s ease;
+    z-index: -1;
+  }
+  &:hover {
+    &:after {
+      box-shadow: 0 0 12px 0 rgba(0,0,0, .2);
+    }
+  }
+
+  .btn {
+    width: 210px;
+  }
+}
+
+.goods-image {
+  height: 300px;
+  overflow: hidden;
+  position: relative;
+  padding: 10px;
+  a {
+    display: block;
+    height: 100%;
+  }
+  img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+  }
+}
+
+.goods-link {
+  padding: 0 30px;
+  text-align: center;
+  height: 46px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: $text-color;
+
+  a {
+    font-family: $font-cond-semi;
+    text-transform: uppercase;
+    font-size: 18px;
+    line-height: normal;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.goods-top-block {
+  border-bottom: 1px solid #dcdcea;
+  padding-bottom: 15px;
+}
+
+.goods-bottom-block {
+  text-align: center;
+  padding: 10px 20px 25px;
+}
+
+.goods-price {
+  font-family: $font-cond-extra;
+  margin-bottom: 10px;
+  height: 51px;
+
+  &__old {
+    color: #73737b;
+    font-size: 24px;
+    margin-right: 10px;
+    position: relative;
+    &:after {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 1px;
+      background-color: $text-color;
+      position: absolute;
+      top: 14px;
+      left: -1px;
+    }
+    &>span:last-child {
+      font-size: 14px;
+    }
+  }
+  &__current {
+    font-size: 30px;
+    color: $text-color;
+    &>span:last-child {
+      font-size: 16px;
+    }
+  }
+}
+
+.goods-read-more {
+  height: 52px;
+}
+
+.goods-close {
+  display: block;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+
+  &:after {
+    content: '';
+    width: 15px;
+    height: 1px;
+    background-color: $text-color;
+    transform: rotateZ(45deg);
+    position: absolute;
+    top: 14px;
+    left: 7px;
+    transition: .3s ease;
+  }
+  &:before {
+    content: '';
+    width: 15px;
+    height: 1px;
+    background-color: $text-color;
+    transform: rotateZ(135deg);
+    position: absolute;
+    top: 14px;
+    left: 7px;
+    transition: .3s ease;
+  }
+}
+
+@media ($desktop) {
+  .goods-image {
+    height: 240px;
+  }
+  .goods-link a {
+    font-size: 16px;
+  }
+  .goods-price__old {
+    font-size: 20px;
+  }
+  .goods-price__current {
+    font-size: 26px;
+  }
+  .goods-price__old:after {
+    top: 11px;
+  }
+  .goods-link {
+    padding: 0 10px;
+  }
+  .goods-price {
+    margin-bottom: 0;
+  }
+  .goods .btn {
+    width: 190px;
+  }
+
+
+}

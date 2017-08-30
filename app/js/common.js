@@ -75,13 +75,6 @@ $(function() {
                 }
             },
             {
-                breakpoint: 980,
-                settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 2
-                }
-            },
-            {
                 breakpoint: 768,
                 settings: {
                     slidesToShow: 1,
@@ -91,6 +84,24 @@ $(function() {
         ]
 
     });
+
+    /////////////////////////////////// interactive modals init ////////////////////////////
+
+    $('.interactive-block').on('click', '.image-dot', function (e) {
+        e.preventDefault();
+        $('.interactive-block__modals').find($(this).attr('href')).addClass('active').siblings().removeClass('active');
+    });
+
+    ////////////////////////////// close interactive modals ////////////////////////////////
+    $('.goods-close').on('click', function (e) {
+        e.preventDefault();
+        $(this).closest('.goods').removeClass('active');
+    })
+
+
+    ///////////////////////////// masked input ////////////////////////////////////
+
+    $(".tel-input").mask("(999)999-99-99",{placeholder:"(___) ___-__-__"});
 
 
 

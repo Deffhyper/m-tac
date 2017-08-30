@@ -114,6 +114,14 @@ body:after {
     line-height: 0;
     transform: translate(-50%, -50%);
   }
+  &.social-list--inverse {
+    a {
+      background-color: #f2f2f7;
+      i {
+        color: $text-color;
+      }
+    }
+  }
 }
 
 .footer-padding-left {

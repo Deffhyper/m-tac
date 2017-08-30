@@ -1026,7 +1026,7 @@ iframe {
  * Large gutter
  */
 /* Large screen and bigger */
-@media (min-width: 960px) {
+@media (min-width: 991px) {
   /* Horizontal */
   .uk-grid-large {
     margin-left: -35px; }
@@ -1083,7 +1083,7 @@ iframe {
     border-left: 1px solid #ddd; } }
 
 /* Desktop and bigger */
-@media (min-width: 960px) {
+@media (min-width: 991px) {
   .uk-grid-divider > [class*='uk-width-large-']:not(.uk-width-large-1-1):nth-child(n+2) {
     border-left: 1px solid #ddd; } }
 
@@ -1198,7 +1198,7 @@ iframe {
     width: 10%; } }
 
 /* Desktop and bigger */
-@media (min-width: 960px) {
+@media (min-width: 991px) {
   .uk-grid-width-large-1-1 > * {
     width: 100%; }
   .uk-grid-width-large-1-2 > * {
@@ -1408,7 +1408,7 @@ iframe {
     width: 90%; } }
 
 /* Desktop and bigger */
-@media (min-width: 960px) {
+@media (min-width: 991px) {
   /* Whole */
   .uk-width-large-1-1 {
     width: 100%; }
@@ -1842,7 +1842,7 @@ iframe {
     padding-bottom: 50px; } }
 
 /* Desktop and bigger */
-@media (min-width: 960px) {
+@media (min-width: 991px) {
   .uk-block-large {
     padding-top: 100px;
     padding-bottom: 100px; } }
@@ -3689,7 +3689,7 @@ select.uk-form-width-mini {
     font-weight: bold; } }
 
 /* Desktop and bigger */
-@media (min-width: 960px) {
+@media (min-width: 991px) {
   .uk-form-horizontal .uk-form-label {
     width: 200px;
     margin-top: 5px;
@@ -4598,7 +4598,7 @@ a.uk-thumbnail:focus {
     column-count: 6; } }
 
 /* Desktop and bigger */
-@media (min-width: 960px) {
+@media (min-width: 991px) {
   .uk-column-large-1-2 {
     -webkit-column-count: 2;
     -moz-column-count: 2;
@@ -6292,7 +6292,7 @@ a.uk-thumbnail:focus {
  * Avoids setting display to `block` so it works also with `inline-block` and `table`
  */
 /* Desktop and bigger */
-@media (min-width: 960px) {
+@media (min-width: 991px) {
   .uk-visible-small {
     display: none !important; }
   .uk-visible-medium {
@@ -6529,7 +6529,7 @@ a.uk-thumbnail:focus {
             order: 99; } }
 
 /* Desktop and bigger */
-@media (min-width: 960px) {
+@media (min-width: 991px) {
   .uk-flex-order-first-large {
     -ms-flex-order: -1;
     -webkit-order: -1;
