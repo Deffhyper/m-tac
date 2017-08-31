@@ -3,14 +3,12 @@
 @import "mixins";
 @import "tipography";
 @import "../fonts/iconmoon/style";
-@import "class";
-
-@import "main-page";
-
-@import "header";
-@import "footer";
+@import "class/class";
+@import "parts/header";
+@import "parts/footer";
+@import "parts/main-page";
 
 @import "styles";
-@import "large";
-@import "medium";
-@import "small";
+@import "media/large";
+@import "media/medium";
+@import "media/small";

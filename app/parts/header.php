@@ -35,7 +35,7 @@
             <div class="container">
                 <div class="page-header-middle__wrapper">
                     <div class="page-header-mobile-menu">
-                        <a href="#" role="button" class="desktop-menu-trigger">
+                        <a href="#" role="button" class="mobile-menu-trigger">
                             <span></span><span></span><span></span>
                         </a>
                     </div>
@@ -75,9 +75,11 @@
     <div class="page-header-bottom">
         <div class="container">
             <ul class="page-header-bottom__menu">
+                <li class="back-link"><a href="#" role="button">Назад</a></li>
                 <li class="level-one">
                     <a href="#">Новинки</a>
                     <ul class="level-two">
+                        <li class="back-link"><a href="#" role="button">Назад</a></li>
                         <li><a href="#">Вьетнамки, Сандали</a></li>
                         <li><a href="#">Кроссовки</a></li>
                         <li><a href="#">Летние ботинки</a></li>
@@ -90,6 +92,7 @@
                 <li class="level-one">
                     <a href="#">LookBook</a>
                     <ul class="level-two">
+                        <li class="back-link"><a href="#" role="button">Назад</a></li>
                         <li><a href="#">Вьетнамки, Сандали</a></li>
                         <li><a href="#">Кроссовки</a></li>
                         <li><a href="#">Летние ботинки</a></li>
@@ -102,6 +105,7 @@
                 <li class="level-one">
                     <a href="#">Подсумки</a>
                     <ul class="level-two">
+                        <li class="back-link"><a href="#" role="button">Назад</a></li>
                         <li><a href="#">Вьетнамки, Сандали</a></li>
                         <li><a href="#">Кроссовки</a></li>
                         <li><a href="#">Летние ботинки</a></li>
@@ -114,6 +118,7 @@
                 <li class="level-one">
                     <a href="#">брюки</a>
                     <ul class="level-two">
+                        <li class="back-link"><a href="#" role="button">Назад</a></li>
                         <li><a href="#">Вьетнамки, Сандали</a></li>
                         <li><a href="#">Кроссовки</a></li>
                         <li><a href="#">Летние ботинки</a></li>
@@ -126,6 +131,7 @@
                 <li class="level-one">
                     <a href="#">термобелье</a>
                     <ul class="level-two">
+                        <li class="back-link"><a href="#" role="button">Назад</a></li>
                         <li><a href="#">Вьетнамки, Сандали</a></li>
                         <li><a href="#">Кроссовки</a></li>
                         <li><a href="#">Летние ботинки</a></li>
@@ -138,6 +144,7 @@
                 <li class="level-one">
                     <a href="#">рюкзаки</a>
                     <ul class="level-two">
+                        <li class="back-link"><a href="#" role="button">Назад</a></li>
                         <li><a href="#">Вьетнамки, Сандали</a></li>
                         <li><a href="#">Кроссовки</a></li>
                         <li><a href="#">Летние ботинки</a></li>
@@ -150,6 +157,7 @@
                 <li class="level-one">
                     <a href="#">обувь</a>
                     <ul class="level-two">
+                        <li class="back-link"><a href="#" role="button">Назад</a></li>
                         <li><a href="#">Вьетнамки, Сандали</a></li>
                         <li><a href="#">Кроссовки</a></li>
                         <li><a href="#">Летние ботинки</a></li>
@@ -162,6 +170,7 @@
                 <li class="level-one">
                     <a href="#">куртки</a>
                     <ul class="level-two">
+                        <li class="back-link"><a href="#" role="button">Назад</a></li>
                         <li><a href="#">Вьетнамки, Сандали</a></li>
                         <li><a href="#">Кроссовки</a></li>
                         <li><a href="#">Летние ботинки</a></li>
@@ -174,6 +183,7 @@
                 <li class="level-one">
                     <a href="#">футболки</a>
                     <ul class="level-two">
+                        <li class="back-link"><a href="#" role="button">Назад</a></li>
                         <li><a href="#">Вьетнамки, Сандали</a></li>
                         <li><a href="#">Кроссовки</a></li>
                         <li><a href="#">Летние ботинки</a></li>
@@ -186,6 +196,7 @@
                 <li class="level-one">
                     <a href="#">перчатки</a>
                     <ul class="level-two">
+                        <li class="back-link"><a href="#" role="button">Назад</a></li>
                         <li><a href="#">Вьетнамки, Сандали</a></li>
                         <li><a href="#">Кроссовки</a></li>
                         <li><a href="#">Летние ботинки</a></li>
@@ -198,6 +209,7 @@
                 <li class="level-one">
                     <a href="#">головные уборы</a>
                     <ul class="level-two">
+                        <li class="back-link"><a href="#" role="button">Назад</a></li>
                         <li><a href="#">Вьетнамки, Сандали</a></li>
                         <li><a href="#">Кроссовки</a></li>
                         <li><a href="#">Летние ботинки</a></li>
@@ -214,11 +226,11 @@
     <div id="desktop-modal-menu" class="uk-modal">
         <a href="#" role="button" class="uk-modal-close uk-close"></a>
         <div class="uk-modal-dialog big">
-            <div class="container">
+            <div class="main-top-menu">
                 <div class="uk-grid uk-grid-width-1-4">
-                    <div>
+                    <div class="main-top-menu__item">
                         <p class="modal-menu-title">Категории товаров</p>
-                        <ul class="modal-menu-link-list">
+                        <ul id="for-tablet-menu-clone" class="modal-menu-link-list">
                             <li><a href="#">Новинки</a></li>
                             <li><a href="#">LookBook</a></li>
                             <li><a href="#">Подсумки</a></li>
@@ -232,9 +244,10 @@
                             <li><a href="#">головные уборы</a></li>
                         </ul>
                     </div>
-                    <div>
+                    <div class="main-top-menu__item">
                         <p class="modal-menu-title">Линии одежды</p>
                         <ul class="modal-menu-link-list">
+                            <li class="back-link"><a href="#" role="button">Назад</a></li>
                             <li><a href="#">Для спорта</a></li>
                             <li><a href="#">Для туризма</a></li>
                             <li><a href="#">Для рыбалки</a></li>
@@ -245,7 +258,7 @@
                             <li><a href="#">Для города</a></li>
                         </ul>
                     </div>
-                    <div class="footer-padding-left">
+                    <div class="main-top-menu__for-user">
                         <p class="modal-menu-title">для покупателя</p>
                         <ul class="modal-menu-link-list">
                             <li><a href="#">Store Locator</a></li>
@@ -257,7 +270,7 @@
                             <li><a href="#">Контакты</a></li>
                         </ul>
                     </div>
-                    <div class="footer-padding-left">
+                    <div class="main-top-menu__contact">
                         <p class="modal-menu-title">Наши контакты</p>
                         <ul class="footer-tel-list">
                             <li><a href="tel:+380443467990">+38 (044) 346-79-90</a></li>
