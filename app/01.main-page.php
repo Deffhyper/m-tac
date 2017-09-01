@@ -32,106 +32,110 @@
                         <a href="#modal-2" class="image-dot" style="top: 59%; left: 37%"></a>
                         <a href="#modal-3" class="image-dot" style="top: 93%; left: 38%"></a>
                     </div>
-                    <div class="interactive-block__modals">
-                        <div id="modal-1" class="goods">
-                            <a href="#" role="button" class="goods-close"></a>
-                            <div class="goods-top-block">
-                                <div class="goods-image">
-                                    <a href="#">
-                                        <img src="img/jpeg_files/goods-1.jpg" alt="goods" width="263" height="263">
-                                    </a>
-                                </div>
-                                <div class="goods-link">
-                                    <a href="#">БОТИНКИ ПОЛЕВЫЕ MK.4 MULTICAM</a>
-                                </div>
-                            </div>
-                            <div class="goods-bottom-block">
-                                <div class="goods-price">
+
+                </div>
+            </div>
+            <div class="top-slider__nav--item">
+                <div class="top-slider__content">
+                    <p class="top-slider__content--title">Military<br>Tactical</p>
+                    <p class="top-slider__content--subtitle">Одежда для настоящих мужчин!</p>
+                    <a href="#" role="button" class="btn btn-big btn-inverse btn-hover-normal">Смотреть каталог</a>
+                </div>
+            </div>
+            <div class="top-slider__nav--item">
+                <div class="top-slider__content">
+                    <p class="top-slider__content--title">Military<br>Tactical</p>
+                    <p class="top-slider__content--subtitle">Одежда для настоящих мужчин!</p>
+                    <a href="#" role="button" class="btn btn-big btn-inverse btn-hover-normal">Смотреть каталог</a>
+                </div>
+            </div>
+        </div>
+    </div>
+<!--    ////////////////////////////////////////// goods modals is here /////////////////////////////////////////////////-->
+    <div class="container">
+        <div class="interactive-block__modals">
+            <div id="modal-1" class="goods">
+                <a href="#" role="button" class="goods-close"></a>
+                <div class="goods-top-block">
+                    <div class="goods-image">
+                        <a href="#">
+                            <img src="img/jpeg_files/goods-1.jpg" alt="goods" width="263" height="263">
+                        </a>
+                    </div>
+                    <div class="goods-link">
+                        <a href="#">БОТИНКИ ПОЛЕВЫЕ MK.4 MULTICAM</a>
+                    </div>
+                </div>
+                <div class="goods-bottom-block">
+                    <div class="goods-price">
                             <span class="goods-price__old">
                                 <span>1500</span>
                                 <span>грн</span>
                             </span>
-                                    <span class="goods-price__current">
+                        <span class="goods-price__current">
                                 <span>945</span>
                                 <span>грн</span>
                             </span>
-                                </div>
-                                <div class="goods-read-more">
-                                    <a href="#" class="btn btn-normal btn-black btn-hover-normal">Подробнее</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div id="modal-2" class="goods">
-                            <a href="#" role="button" class="goods-close"></a>
-                            <div class="goods-top-block">
-                                <div class="goods-image">
-                                    <a href="#">
-                                        <img src="img/jpeg_files/goods-2.jpg" alt="goods" width="263" height="263">
-                                    </a>
-                                </div>
-                                <div class="goods-link">
-                                    <a href="#">БОТИНКИ ПОЛЕВЫЕ MK.4 MULTICAM</a>
-                                </div>
-                            </div>
-                            <div class="goods-bottom-block">
-                                <div class="goods-price">
-                            <span class="goods-price__old">
-                                <span>1500</span>
-                                <span>грн</span>
-                            </span>
-                                    <span class="goods-price__current">
-                                <span>945</span>
-                                <span>грн</span>
-                            </span>
-                                </div>
-                                <div class="goods-read-more">
-                                    <a href="#" class="btn btn-normal btn-black btn-hover-normal">Подробнее</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div id="modal-3" class="goods">
-                            <a href="#" role="button" class="goods-close"></a>
-                            <div class="goods-top-block">
-                                <div class="goods-image">
-                                    <a href="#">
-                                        <img src="img/jpeg_files/goods-3.jpg" alt="goods" width="263" height="263">
-                                    </a>
-                                </div>
-                                <div class="goods-link">
-                                    <a href="#">БОТИНКИ ПОЛЕВЫЕ MK.4 MULTICAM</a>
-                                </div>
-                            </div>
-                            <div class="goods-bottom-block">
-                                <div class="goods-price">
-                            <span class="goods-price__old">
-                                <span>1500</span>
-                                <span>грн</span>
-                            </span>
-                                    <span class="goods-price__current">
-                                <span>945</span>
-                                <span>грн</span>
-                            </span>
-                                </div>
-                                <div class="goods-read-more">
-                                    <a href="#" class="btn btn-normal btn-black btn-hover-normal">Подробнее</a>
-                                </div>
-                            </div>
-                        </div>
+                    </div>
+                    <div class="goods-read-more">
+                        <a href="#" class="btn btn-normal btn-black btn-hover-normal">Подробнее</a>
                     </div>
                 </div>
             </div>
-            <div class="top-slider__nav--item">
-                <div class="top-slider__content">
-                    <p class="top-slider__content--title">Military<br>Tactical</p>
-                    <p class="top-slider__content--subtitle">Одежда для настоящих мужчин!</p>
-                    <a href="#" role="button" class="btn btn-big btn-inverse btn-hover-normal">Смотреть каталог</a>
+            <div id="modal-2" class="goods">
+                <a href="#" role="button" class="goods-close"></a>
+                <div class="goods-top-block">
+                    <div class="goods-image">
+                        <a href="#">
+                            <img src="img/jpeg_files/goods-2.jpg" alt="goods" width="263" height="263">
+                        </a>
+                    </div>
+                    <div class="goods-link">
+                        <a href="#">БОТИНКИ ПОЛЕВЫЕ MK.4 MULTICAM</a>
+                    </div>
+                </div>
+                <div class="goods-bottom-block">
+                    <div class="goods-price">
+                            <span class="goods-price__old">
+                                <span>1500</span>
+                                <span>грн</span>
+                            </span>
+                        <span class="goods-price__current">
+                                <span>945</span>
+                                <span>грн</span>
+                            </span>
+                    </div>
+                    <div class="goods-read-more">
+                        <a href="#" class="btn btn-normal btn-black btn-hover-normal">Подробнее</a>
+                    </div>
                 </div>
             </div>
-            <div class="top-slider__nav--item">
-                <div class="top-slider__content">
-                    <p class="top-slider__content--title">Military<br>Tactical</p>
-                    <p class="top-slider__content--subtitle">Одежда для настоящих мужчин!</p>
-                    <a href="#" role="button" class="btn btn-big btn-inverse btn-hover-normal">Смотреть каталог</a>
+            <div id="modal-3" class="goods">
+                <a href="#" role="button" class="goods-close"></a>
+                <div class="goods-top-block">
+                    <div class="goods-image">
+                        <a href="#">
+                            <img src="img/jpeg_files/goods-3.jpg" alt="goods" width="263" height="263">
+                        </a>
+                    </div>
+                    <div class="goods-link">
+                        <a href="#">БОТИНКИ ПОЛЕВЫЕ MK.4 MULTICAM</a>
+                    </div>
+                </div>
+                <div class="goods-bottom-block">
+                    <div class="goods-price">
+                            <span class="goods-price__old">
+                                <span>1500</span>
+                                <span>грн</span>
+                            </span>
+                        <span class="goods-price__current">
+                                <span>945</span>
+                                <span>грн</span>
+                            </span>
+                    </div>
+                    <div class="goods-read-more">
+                        <a href="#" class="btn btn-normal btn-black btn-hover-normal">Подробнее</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -148,7 +152,7 @@
                     <p class="title">Линии<br>одежды</p>
                     <p class="subtitle">Мы постояно обновляем наши каталоги одежды, чтобы вы могли
                         подобрать себе то, что вам нужно</p>
-                    <a href="#" class="btn">Смотреть все</a>
+                    <a href="#" class="btn btn-link-arrow">Смотреть все</a>
                 </div>
 
             </div>
@@ -158,6 +162,7 @@
                     <a href="#" class="inform-list__item--link">
                         <img src="img/jpeg_files/i-1.jpg" alt="some description">
                         <span class="title-light link-decor">Для <br>спорта</span>
+                        <span class="btn btn-normal btn-black">Смотреть линию</span>
                     </a>
                 </div>
 
@@ -167,6 +172,7 @@
                     <a href="#" class="inform-list__item--link">
                         <img src="img/jpeg_files/i-2.jpg" alt="some description">
                         <span class="title-light">Для <br>Туризма</span>
+                        <span class="btn btn-normal btn-black">Смотреть линию</span>
                     </a>
                 </div>
             </div>
@@ -175,6 +181,7 @@
                     <a href="#" class="inform-list__item--link">
                         <img src="img/jpeg_files/i-3.jpg" alt="some description">
                         <span class="title-light link-decor">Для <br>Охоты</span>
+                        <span class="btn btn-normal btn-black">Смотреть линию</span>
                     </a>
                 </div>
             </div>
@@ -183,6 +190,7 @@
                     <a href="#" class="inform-list__item--link">
                         <img src="img/jpeg_files/i-4.jpg" alt="some description">
                         <span class="title-light">Для <br>Рыбалки</span>
+                        <span class="btn btn-normal btn-black">Смотреть линию</span>
                     </a>
                 </div>
             </div>
@@ -191,6 +199,7 @@
                     <a href="#" class="inform-list__item--link">
                         <img src="img/jpeg_files/i-5.jpg" alt="some description">
                         <span class="title-light link-decor">Для <br>Охраны</span>
+                        <span class="btn btn-normal btn-black">Смотреть линию</span>
                     </a>
                 </div>
             </div>
@@ -200,6 +209,7 @@
                     <a href="#" class="inform-list__item--link">
                         <img src="img/jpeg_files/i-6.jpg" alt="some description">
                         <span class="title-light">Для <br>спецназа</span>
+                        <span class="btn btn-normal btn-black">Смотреть линию</span>
                     </a>
                 </div>
             </div>
@@ -209,6 +219,7 @@
                     <a href="#" class="inform-list__item--link">
                         <img src="img/jpeg_files/i-7.jpg" alt="some description">
                         <span class="title-light link-decor">Для <br>веломана</span>
+                        <span class="btn btn-normal btn-black">Смотреть линию</span>
                     </a>
                 </div>
             </div>
@@ -218,6 +229,7 @@
                     <a href="#" class="inform-list__item--link">
                         <img src="img/jpeg_files/i-8.jpg" alt="some description">
                         <span class="title-light link-decor">Для <br>Города</span>
+                        <span class="btn btn-normal btn-black">Смотреть линию</span>
                     </a>
                 </div>
             </div>
@@ -225,7 +237,7 @@
     </div>
 </div>
 
-<section class="section-padding section-with-bg">
+<section class="section-padding section-with-bg four-item-slider-block">
     <div class="container">
         <h2 class="title-h2 section-title-h2">Лидеры продаж</h2>
         <div class="four-item-slider">

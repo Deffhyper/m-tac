@@ -89,6 +89,11 @@ $(function () {
 
     $('.interactive-block').on('click', '.image-dot', function (e) {
         e.preventDefault();
+
+        if(!$('.interactive-block__modals').hasClass('active')) {
+            $('.interactive-block__modals').addClass('active');
+            $('html').addClass('uk-modal-page');
+        }
         $('.interactive-block__modals').find($(this).attr('href')).addClass('active').siblings().removeClass('active');
     });
 
@@ -96,7 +101,17 @@ $(function () {
     $('.goods-close').on('click', function (e) {
         e.preventDefault();
         $(this).closest('.goods').removeClass('active');
-    })
+        $('.interactive-block__modals').removeClass('active');
+        $('html').removeClass('uk-modal-page');
+    });
+
+    $(document).on('click', '.interactive-block__modals.active', function (e) {
+
+        $('.interactive-block__modals').removeClass('active');
+        $('.interactive-block__modals').find('.goods.active').removeClass('active');
+        $('html').removeClass('uk-modal-page');
+
+    });
 
 
     ///////////////////////////// masked input ////////////////////////////////////
@@ -191,6 +206,52 @@ $(function () {
             $('#tablet-menu').addClass('active');
 
         }
+    });
+
+    //////////////////////////////////// mobile search //////////////////////////////////////
+
+    $('.mobile-search-trigger').on('click', function (e) {
+       e.preventDefault();
+
+       var searchBlur = $('<div>', {
+           class: 'search-blur'
+       });
+
+       if($('body').hasClass('main-menu-open')) {
+           $('.mobile-menu-trigger').trigger('click');
+       }
+       if(!$('.page-header-search__form').hasClass('active')) {
+           $('.page-header-search__form').addClass('active');
+           $('.page-header-search__form').find('input').focus();
+           $('body').append(searchBlur);
+       } else {
+           $('.page-header-search__form').removeClass('active');
+           $('body').find('.search-blur').remove();
+       }
+    });
+
+    // close
+
+    $(document).on('click', '.search-blur', function () {
+        $('.mobile-search-trigger').trigger('click');
+    });
+
+
+    /////////////////////////////////////////////////// scroll to top ///////////////////////
+
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 0) {
+            $('#scroll-up').fadeIn();
+        } else {
+            $('#scroll-up').fadeOut();
+        }
+    });
+
+    $('#scroll-up').click(function () {
+        $('body,html').animate({
+            scrollTop: 0
+        }, 400);
+        return false;
     });
 
 

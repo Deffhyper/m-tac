@@ -4,4 +4,8 @@
     padding: 0;
   }
 
+  *:after, *:before {
+    transition: none;
+  }
+
 }

@@ -121,3 +121,4 @@ gulp.task('clear', function (callback) {
 })
 
 gulp.task('default', ['watch']);
+

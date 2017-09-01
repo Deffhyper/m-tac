@@ -93,10 +93,15 @@
     }
   }
   &__modals {
+    position: absolute;
+    right: 25%;
+    bottom: 263px;
+    width: 305px;
+    height: 515px;
     .goods {
       position: absolute;
-      right: 100%;
-      top: 43px;
+      right: 0;
+      top: 0;
       width: 100%;
       transition: .3s ease;
       opacity: 0;
@@ -153,7 +158,76 @@
     &--link {
       display: block;
       position: relative;
+      z-index: 2;
+      &:after {
+        content: '';
+        display: block;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: transparent;
+        transition: .3s ease;
+        z-index: 1;
+      }
+      &:before {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        right: 10px;
+        bottom: 10px;
+        border: 1px solid transparent;
+      }
+      &:hover {
+        background-color: $accent;
+
+        &:after {
+          background-color: $accent;
+          opacity: .8;
+        }
+        &:before {
+          border-color: #bd9c19;
+          z-index: 3;
+        }
+        .title-light {
+          color: $text-color;
+          bottom: 50% !important;
+        }
+
+        .btn {
+          z-index: 3;
+          opacity: 1;
+          transform: translate(-50%, -90%);
+        }
+
+        .link-decor {
+          &:after {
+            opacity: 0;
+          }
+          &:before {
+            opacity: 0;
+          }
+        }
+
+      }
+
+      .btn {
+        width: 220px;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 0;
+        opacity: 0;
+        transition: .3s ease;
+
+      }
     }
+
+
 
     &.item-1 {
       margin-top: 40px;
@@ -233,9 +307,15 @@
       line-height: 1;
       text-transform: uppercase;
       left: 53px;
+      z-index: 3;
+      transition: .3s ease;
     }
 
     .link-decor {
+      display: block;
+      width: 164px;
+      height: 87px;
+      overflow: visible;
 
       &:after {
         content: '';
@@ -247,6 +327,7 @@
         top: -22px;
         right: -9px;
         transform: rotateZ(-45deg);
+        transition: .3s ease;
       }
       &:before {
         content: '';
@@ -258,6 +339,7 @@
         bottom: -23px;
         left: -69px;
         transform: rotateZ(-45deg);
+        transition: .3s ease;
       }
     }
 
@@ -545,6 +627,11 @@
     height: 600px;
   }
 
+  .interactive-block__modals {
+    right: 20%;
+    bottom: 28px;
+  }
+
   .interactive-block {
     height: 520px;
     width: 170px;
@@ -586,6 +673,20 @@
     padding-bottom: 60px;
   }
 
+  .inform-list__item .link-decor:after {
+    width: 45px;
+    height: 4px;
+    top: -16px;
+    right: 32px;
+  }
+
+  .inform-list__item .link-decor:before {
+    width: 45px;
+    height: 4px;
+    bottom: -18px;
+    left: -44px;
+  }
+
   .inform-list__item.item-1 {
     margin-top: 52px;
     height: 330px;
@@ -616,6 +717,18 @@
 
   .inform-list__item--link {
     height: 100%;
+  }
+
+  .inform-list__item.item-2 .title-light {
+    bottom: 75px;
+  }
+
+  .inform-list__item.item-8 .title-light {
+    bottom: 125px;
+  }
+
+  .inform-list__item.item-9 .title-light {
+    bottom: 125px;
   }
 
   .four-item-slider .goods {
@@ -659,6 +772,7 @@
 
   .news-main-item__image img {
     width: 100%;
+    height: auto;
   }
 
   .description-main.right-padding {
@@ -696,7 +810,182 @@
 
 }
 
+@media ($mobile) {
 
+  .top-slider__nav--item, .top-slider__for--item, .top-slider {
+    height: 360px;
+  }
+
+  .top-slider__content--title {
+    font-size: 36px;
+    margin-top: 55px;
+    letter-spacing: 5px;
+    margin-bottom: 10px;
+  }
+
+  .top-slider__content--subtitle {
+    font-size: 14px;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    max-width: 180px;
+  }
+
+  .top-slider__content .btn {
+    width: 175px;
+  }
+
+  .top-slider__nav .slick-arrow {
+    bottom: 30px;
+  }
+
+  .top-slider__nav .slick-dots {
+    bottom: 60px;
+  }
+
+  .interactive-block {
+    height: 294px;
+    width: 120px;
+  }
+
+  .image-dot:after {
+    width: 18px;
+    height: 18px;
+  }
+
+  .image-dot {
+    width: 10px;
+    height: 10px;
+  }
+
+  .image-dot:hover:after {
+    border-color: #fff;
+    width: 23px;
+    height: 23px;
+  }
+
+  .interactive-block__modals.active {
+    right: 0;
+    bottom: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0, .7);
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    overflow-y: scroll;
+  }
+
+  .interactive-block__modals .goods {
+    top: 30px;
+    width: 250px;
+    left: 0;
+  }
+
+  .interactive-block__modals {
+    width: auto;
+    height: auto;
+    overflow: hidden;
+  }
+
+  .inform-list__item--link img {
+    width: 100%;
+    height: auto;
+  }
+
+  .inform-list__item.item-7 .inform-list__item--link {
+    float: none;
+  }
+
+  .inform-list__item.item-1 {
+    margin-top: 0;
+    height: 290px;
+  }
+
+  .inform-list__item.item-1 .title {
+    font-size: 32px;
+  }
+
+  .inform-list__item.item-1 .subtitle {
+    font-size: 14px;
+  }
+
+  .inform-list__item .decor-border {
+    width: 80%;
+  }
+
+  .title-h2.section-title-h2 {
+    font-size: 22px;
+  }
+
+  .four-item-slider-block .section-title-h2 {
+    max-width: 225px;
+  }
+
+  .section-padding {
+    padding: 20px 0 25px;
+  }
+
+  .four-item-slider .goods {
+    max-width: 290px;
+  }
+
+  .four-item-slider .slick-arrow {
+    top: -58px;
+  }
+
+  .lookbook-main__content--title {
+    font-size: 50px;
+    line-height: 1.7;
+    letter-spacing: 4px;
+    margin-top: 45px;
+  }
+
+  .lookbook-main {
+    height: 330px;
+  }
+
+  .news-main-item__image {
+    height: auto;
+    img {
+      position: relative;
+    }
+  }
+
+  .news-main {
+    margin-bottom: 25px;
+  }
+
+  .description-main {
+    padding: 25px;
+  }
+
+  .section-with-bg--black {
+    overflow: hidden;
+  }
+  .description-main.accent-bg{
+    position: relative;
+
+    &:after {
+      content: '';
+      display: block;
+      width: 999px;
+      background-color: $accent;
+      position: absolute;
+      top: 0;
+      left: 100%;
+      height: 100%;
+    }
+  }
+
+
+
+
+
+
+
+
+}
 
 
 

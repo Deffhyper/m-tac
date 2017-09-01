@@ -15,6 +15,9 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-phone-call:before {
+  content: "\e903";
+}
 .icon-fb:before {
   content: "\e900";
 }

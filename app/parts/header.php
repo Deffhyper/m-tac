@@ -48,6 +48,7 @@
                         <span>Military<br>Тactical</span>
                     </div>
                     <div class="page-header-search">
+                        <a href="#" class="mobile-search-trigger" role="button"><span class="iconmoon icon-magnifying-glass"></a>
                         <div class="page-header-search__form">
                             <form action="#">
                                 <input type="text" placeholder="Что вы ищите?" autocomplete="off">
@@ -55,9 +56,12 @@
                             </form>
                         </div>
                     </div>
-                    <ul class="page-header-tel">
-                        <li><a href="tel:+380443467990">+38 (044) 346-79-90</a></li>
-                    </ul>
+                    <div class="page-header-tel">
+                        <a href="#" class="mobile-phone-trigger"><span class="iconmoon icon-phone-call"></span></a>
+                        <ul>
+                            <li><a href="tel:+380443467990">+38 (044) 346-79-90</a></li>
+                        </ul>
+                    </div>
                     <div class="page-header-callback">
                         <a href="#connect-to-us" role="button" class="btn btn-big btn-accent btn-hover-light"
                            data-uk-modal>Связаться с нами</a>

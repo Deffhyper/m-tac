@@ -1,7 +1,7 @@
 <!-- This is the modal -->
 <div id="connect-to-us" class="uk-modal connect-to-us">
     <a class="uk-modal-close uk-close"></a>
-    <div class="uk-modal-dialog small uk-animation-scale-up">
+    <div class="uk-modal-dialog small">
         <p class="title-h3 uk-modal-title">Связаться с нами</p>
         <form action="#">
             <fieldset class="custom-input">
@@ -68,8 +68,11 @@
         <div class="footer-copyright-block">
             <span>&copy; 2017, M-Tac, Military Tactical</span>
         </div>
-
     </div>
 </footer>
+
+<div id="scroll-up">
+    <span></span>
+</div>
 
 
