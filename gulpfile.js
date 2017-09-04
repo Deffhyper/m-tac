@@ -44,6 +44,7 @@ gulp.task('scripts', function() {
 		'app/libs/slick-carousel/slick/slick.min.js', // Slick carousel
 		'app/libs/stacktable/stacktable.js', // stack table
 		'app/libs/uikit/js/uikit.min.js', // Ui Kit
+		'app/libs/jquery-ui-1.11.4.custom/jquery-ui.min.js', // range slider
 		//'app/libs/uikit/js/components/accordion.js', // Ui accordion
 		'app/libs/uikit/js/components/grid.js', // Ui grid
 		'app/libs/uikit/js/components/lightbox.js', // Ui lightbox
