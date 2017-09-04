@@ -2,6 +2,8 @@
 <body>
 <?php include_once "parts/header.php" ?>
 
+<?php include_once "parts/breadcrumbs-interactive.php"?>
+
 
 <div class="container">
     <div class="text-page">

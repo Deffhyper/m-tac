@@ -84,7 +84,7 @@
                     <a href="#">Новинки</a>
                     <ul class="level-two">
                         <li class="back-link"><a href="#" role="button">Назад</a></li>
-                        <li><a href="#">Вьетнамки, Сандали</a></li>
+                        <li><a href="#">Новинка 1</a></li>
                         <li><a href="#">Кроссовки</a></li>
                         <li><a href="#">Летние ботинки</a></li>
                         <li><a href="#">Полуботинки</a></li>
@@ -97,7 +97,7 @@
                     <a href="#">LookBook</a>
                     <ul class="level-two">
                         <li class="back-link"><a href="#" role="button">Назад</a></li>
-                        <li><a href="#">Вьетнамки, Сандали</a></li>
+                        <li><a href="#">LookBook 1</a></li>
                         <li><a href="#">Кроссовки</a></li>
                         <li><a href="#">Летние ботинки</a></li>
                         <li><a href="#">Полуботинки</a></li>
@@ -110,7 +110,7 @@
                     <a href="#">Подсумки</a>
                     <ul class="level-two">
                         <li class="back-link"><a href="#" role="button">Назад</a></li>
-                        <li><a href="#">Вьетнамки, Сандали</a></li>
+                        <li><a href="#">Подсумки 1</a></li>
                         <li><a href="#">Кроссовки</a></li>
                         <li><a href="#">Летние ботинки</a></li>
                         <li><a href="#">Полуботинки</a></li>
@@ -123,7 +123,7 @@
                     <a href="#">брюки</a>
                     <ul class="level-two">
                         <li class="back-link"><a href="#" role="button">Назад</a></li>
-                        <li><a href="#">Вьетнамки, Сандали</a></li>
+                        <li><a href="#">брюки 1</a></li>
                         <li><a href="#">Кроссовки</a></li>
                         <li><a href="#">Летние ботинки</a></li>
                         <li><a href="#">Полуботинки</a></li>
@@ -136,7 +136,7 @@
                     <a href="#">термобелье</a>
                     <ul class="level-two">
                         <li class="back-link"><a href="#" role="button">Назад</a></li>
-                        <li><a href="#">Вьетнамки, Сандали</a></li>
+                        <li><a href="#">термобелье 1</a></li>
                         <li><a href="#">Кроссовки</a></li>
                         <li><a href="#">Летние ботинки</a></li>
                         <li><a href="#">Полуботинки</a></li>
@@ -149,7 +149,7 @@
                     <a href="#">рюкзаки</a>
                     <ul class="level-two">
                         <li class="back-link"><a href="#" role="button">Назад</a></li>
-                        <li><a href="#">Вьетнамки, Сандали</a></li>
+                        <li><a href="#">рюкзаки 1</a></li>
                         <li><a href="#">Кроссовки</a></li>
                         <li><a href="#">Летние ботинки</a></li>
                         <li><a href="#">Полуботинки</a></li>
@@ -162,7 +162,7 @@
                     <a href="#">обувь</a>
                     <ul class="level-two">
                         <li class="back-link"><a href="#" role="button">Назад</a></li>
-                        <li><a href="#">Вьетнамки, Сандали</a></li>
+                        <li><a href="#">обувь 1</a></li>
                         <li><a href="#">Кроссовки</a></li>
                         <li><a href="#">Летние ботинки</a></li>
                         <li><a href="#">Полуботинки</a></li>
@@ -175,7 +175,7 @@
                     <a href="#">куртки</a>
                     <ul class="level-two">
                         <li class="back-link"><a href="#" role="button">Назад</a></li>
-                        <li><a href="#">Вьетнамки, Сандали</a></li>
+                        <li><a href="#">куртки 1</a></li>
                         <li><a href="#">Кроссовки</a></li>
                         <li><a href="#">Летние ботинки</a></li>
                         <li><a href="#">Полуботинки</a></li>
@@ -188,7 +188,7 @@
                     <a href="#">футболки</a>
                     <ul class="level-two">
                         <li class="back-link"><a href="#" role="button">Назад</a></li>
-                        <li><a href="#">Вьетнамки, Сандали</a></li>
+                        <li><a href="#">футболки 1</a></li>
                         <li><a href="#">Кроссовки</a></li>
                         <li><a href="#">Летние ботинки</a></li>
                         <li><a href="#">Полуботинки</a></li>
@@ -201,7 +201,7 @@
                     <a href="#">перчатки</a>
                     <ul class="level-two">
                         <li class="back-link"><a href="#" role="button">Назад</a></li>
-                        <li><a href="#">Вьетнамки, Сандали</a></li>
+                        <li><a href="#">перчатки 1</a></li>
                         <li><a href="#">Кроссовки</a></li>
                         <li><a href="#">Летние ботинки</a></li>
                         <li><a href="#">Полуботинки</a></li>
@@ -214,7 +214,7 @@
                     <a href="#">головные уборы</a>
                     <ul class="level-two">
                         <li class="back-link"><a href="#" role="button">Назад</a></li>
-                        <li><a href="#">Вьетнамки, Сандали</a></li>
+                        <li><a href="#">головные уборы 1</a></li>
                         <li><a href="#">Кроссовки</a></li>
                         <li><a href="#">Летние ботинки</a></li>
                         <li><a href="#">Полуботинки</a></li>
@@ -293,8 +293,8 @@
                         </ul>
                         <br>
                         <div class="page-header-callback">
-                            <a href="#" role="button" class="btn btn-big btn-accent btn-hover-light">Связаться с
-                                нами</a>
+                            <a href="#connect-to-us" role="button" class="btn btn-big btn-accent btn-hover-light"
+                               data-uk-modal>Связаться с нами</a>
                         </div>
                     </div>
                 </div>

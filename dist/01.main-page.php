@@ -32,7 +32,6 @@
                         <a href="#modal-2" class="image-dot" style="top: 59%; left: 37%"></a>
                         <a href="#modal-3" class="image-dot" style="top: 93%; left: 38%"></a>
                     </div>
-
                 </div>
             </div>
             <div class="top-slider__nav--item">

@@ -1,0 +1,154 @@
+.breadcrumbs {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  margin-bottom: 50px;
+  .breadcrumbs-wrapper {
+    padding: 80px 0;
+  }
+}
+
+.breadcrumbs__interactive {
+  padding: 10px 0;
+  color: #fff;
+  margin-bottom: 50px;
+
+
+  .breadcrumbs-wrapper {
+    display: table;
+    width: 100%;
+    min-height: 250px;
+  }
+
+  .breadcrumbs-left, .breadcrumbs-right {
+    display: table-cell;
+    vertical-align: middle;
+  }
+
+  .breadcrumbs-left {
+    width: 70%;
+  }
+
+  .breadcrumbs-right {
+    width: 30%;
+  }
+
+  .breadcrumbs-title {
+    max-width: 70%;
+  }
+  .breadcrumbs-list {
+    max-width: 70%;
+  }
+
+  .interactive-block {
+    &__image > img {
+      position: relative;
+      top: 0;
+      left: 0;
+      transform: none;
+      max-height: 480px;
+      width: auto;
+    }
+    &__image{
+      text-align: center;
+
+    }
+    position: relative;
+    height: auto;
+    width: auto;
+  }
+
+  .interactive-block__modals {
+    bottom: 60%;
+    width: 267px;
+    height: 410px;
+    right: 30%;
+  }
+
+  .goods-image img {
+    max-height: 100%;
+    width: auto;
+  }
+
+  .goods-image {
+    height: 200px;
+  }
+
+  .goods-link a {
+    font-size: 16px;
+  }
+
+  .goods-price__old {
+    font-size: 22px;
+  }
+
+  .goods-price__current {
+    font-size: 28px;
+  }
+}
+
+.breadcrumbs-title {
+  color: #fff;
+  line-height: 1;
+}
+
+.breadcrumbs-list {
+  li {
+    a {
+      position: relative;
+      display: inline-block;
+      padding-right: 30px;
+
+      &:after, &:before {
+        content: '';
+        display: inline-block;
+        width: 5px;
+        height: 5px;
+        border-right: 1px solid #fff;
+        border-top: 1px solid #fff;
+        transform: rotateZ(45deg);
+        position: absolute;
+        top: 8px;
+      }
+      &:after {
+        right: 9px;
+      }
+      &:before {
+        right: 12px;
+      }
+    }
+  }
+}
+
+@media ($desktop) {
+  .breadcrumbs {
+    margin-bottom: 40px;
+  }
+  .breadcrumbs .breadcrumbs-wrapper {
+    padding: 35px 0;
+  }
+  .breadcrumbs__interactive {
+    margin-bottom: 40px;
+
+    .interactive-block__modals {
+      bottom: -35px;
+      right: 30%;
+    }
+    .interactive-block {
+      top: 0;
+    }
+  }
+}
+
+@media ($tablet) {
+
+}
+
+@media ($mobile) {
+  .breadcrumbs {
+    display: none;
+  }
+  .breadcrumbs__interactive {
+    display: none;
+  }
+}

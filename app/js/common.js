@@ -92,7 +92,7 @@ $(function () {
 
         if(!$('.interactive-block__modals').hasClass('active')) {
             $('.interactive-block__modals').addClass('active');
-            $('html').addClass('uk-modal-page');
+
         }
         $('.interactive-block__modals').find($(this).attr('href')).addClass('active').siblings().removeClass('active');
     });
@@ -102,14 +102,14 @@ $(function () {
         e.preventDefault();
         $(this).closest('.goods').removeClass('active');
         $('.interactive-block__modals').removeClass('active');
-        $('html').removeClass('uk-modal-page');
+
     });
 
     $(document).on('click', '.interactive-block__modals.active', function (e) {
 
         $('.interactive-block__modals').removeClass('active');
         $('.interactive-block__modals').find('.goods.active').removeClass('active');
-        $('html').removeClass('uk-modal-page');
+
 
     });
 
@@ -166,6 +166,8 @@ $(function () {
 
             $('#tablet-menu').find('.modal-menu-link-list').removeClass('open');
             $('#tablet-menu').find('.tablet-menu-block').removeClass('open');
+            $('#tablet-menu').find('.level-two').removeClass('open');
+            $('#tablet-menu').find('.modal-menu-link-list').removeClass('close');
         }
     });
 
@@ -193,17 +195,24 @@ $(function () {
 
         if($target.closest('li').hasClass('back-link')) {
 
-            // if($target.closest('.modal-menu-link-list')){
-            //     alert('level-one');
-            // }
-            // if($target.closest('.level-one')){
-            //     alert('level-two');
-            // }
+            if($target.parent().parent().hasClass('level-two')){
 
-            $target.closest('.modal-menu-link-list').removeClass('open');
-            $target.closest('.level-two').removeClass('open');
-            $target.closest('.modal-menu-link-list').removeClass('close');
-            $('#tablet-menu').addClass('active');
+                $target.closest('.modal-menu-link-list').removeClass('close');
+                $target.closest('.modal-menu-link-list').addClass('open');
+                $target.closest('.level-two').removeClass('open');
+            }
+            if($target.parent().parent().hasClass('modal-menu-link-list')){
+                $target.closest('.modal-menu-link-list').removeClass('open');
+                $target.closest('.level-two').removeClass('open');
+                $target.closest('.modal-menu-link-list').removeClass('close');
+                $('#tablet-menu').addClass('active');
+            }
+
+
+            // $target.closest('.modal-menu-link-list').removeClass('open');
+            // $target.closest('.level-two').removeClass('open');
+            // $target.closest('.modal-menu-link-list').removeClass('close');
+            // $('#tablet-menu').addClass('active');
 
         }
     });
@@ -253,6 +262,21 @@ $(function () {
         }, 400);
         return false;
     });
+
+    /////////////////////////////////////////////// fix bug with uk-data-grid ///////////
+    var informListLastChild = $('.inform-list').find('.uk-flex').children().last().clone();
+
+    function replacerItemInInformList(){
+        if (windowWidth < 992) {
+            $('.inform-list').find('.uk-flex').children().last().remove();
+            informListLastChild.insertAfter($('.inform-list').find('.uk-flex > div:nth-child(2)'));
+        }
+    }
+
+    replacerItemInInformList();
+
+
+
 
 
 });
