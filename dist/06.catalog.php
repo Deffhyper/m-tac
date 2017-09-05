@@ -6,82 +6,9 @@
 
 <div class="container">
     <div class="sidebar">
-        <p class="sidebar-title">Категории товаров</p>
-        <ul class="sidebar-list">
-            <li class="sidebar-list__item"><a href="#">Новинки</a></li>
-            <li class="sidebar-list__item"><a href="#">Подсумки</a></li>
-            <li class="sidebar-list__item"><a href="#">Брюки</a></li>
-            <li class="sidebar-list__item"><a href="#">Термобелье</a></li>
-            <li class="sidebar-list__item"><a href="#">Рюкзаки</a></li>
-            <li class="sidebar-list__item active"><a href="#">Обувь</a></li>
-            <li class="sidebar-list__item"><a href="#">Куртки</a></li>
-            <li class="sidebar-list__item"><a href="#">Футболки</a></li>
-            <li class="sidebar-list__item"><a href="#">Перчатки</a></li>
-            <li class="sidebar-list__item"><a href="#">Головные уборы</a></li>
-        </ul>
         <?php include_once "parts/filter.php" ?>
     </div>
     <div class="right-block">
-        <p class="catalog-subcategory-title uk-text-uppercase">Подкатегории</p>
-        <ul class="catalog-subcategory">
-            <li>
-                <a href="#" class="catalog-subcategory__item">
-                    <span class="catalog-subcategory__item--image">
-                        <img src="img/jpeg_files/sub-1.jpg" alt="subcategory" width="40" height="41">
-                    </span>
-                    <span class="catalog-subcategory__item--title">Вьетнамки, Сандали</span>
-                </a>
-            </li>
-            <li>
-                <a href="#" class="catalog-subcategory__item">
-                    <span class="catalog-subcategory__item--image">
-                        <img src="img/jpeg_files/sub-2.jpg" alt="subcategory" width="42" height="44">
-                    </span>
-                    <span class="catalog-subcategory__item--title">Кроссовки</span>
-                </a>
-            </li>
-            <li>
-                <a href="#" class="catalog-subcategory__item">
-                    <span class="catalog-subcategory__item--image">
-                        <img src="img/jpeg_files/sub-3.jpg" alt="subcategory" width="39" height="42">
-                    </span>
-                    <span class="catalog-subcategory__item--title">Летние ботинки</span>
-                </a>
-            </li>
-            <li>
-                <a href="#" class="catalog-subcategory__item">
-                    <span class="catalog-subcategory__item--image">
-                        <img src="img/jpeg_files/sub-4.jpg" alt="subcategory" height="42" width="37">
-                    </span>
-                    <span class="catalog-subcategory__item--title">Полуботинки</span>
-                </a>
-            </li>
-            <li>
-                <a href="#" class="catalog-subcategory__item">
-                    <span class="catalog-subcategory__item--image">
-                        <img src="img/jpeg_files/sub-2.jpg" alt="subcategory" width="42" height="44">
-                    </span>
-                    <span class="catalog-subcategory__item--title">Демисезонные ботинки</span>
-                </a>
-            </li>
-            <li>
-                <a href="#" class="catalog-subcategory__item">
-                    <span class="catalog-subcategory__item--image">
-                        <img src="img/jpeg_files/sub-5.jpg" alt="subcategory" height="41" width="36">
-                    </span>
-                    <span class="catalog-subcategory__item--title">Ботинки зимние</span>
-                </a>
-            </li>
-            <li>
-                <a href="#" class="catalog-subcategory__item">
-                    <span class="catalog-subcategory__item--image">
-                        <img src="img/jpeg_files/sub-3.jpg" alt="subcategory" height="42" width="39">
-                    </span>
-                    <span class="catalog-subcategory__item--title">Кеды</span>
-                </a>
-            </li>
-        </ul>
-        <h3 class="catalog-title title-h3">Все товары “Обувь”</h3>
         <div class="catalog-sort">
             <span class="catalog-sort__label text-bold uk-text-uppercase">Сортировать: </span>
             <ul class="catalog-sort__list">

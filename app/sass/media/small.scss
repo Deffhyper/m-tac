@@ -3,7 +3,7 @@
     font-size: 13px;
   }
   .container {
-    width: auto;
+    width: 100%;
     padding: 0 10px;
   }
 
@@ -39,10 +39,145 @@
     font-size: 14px;
   }
 
+  /////////////////////// catalog /////////////////////////////////
 
+  .sidebar, .right-block {
+    width: 100%;
+    padding-left: 0;
+    margin-bottom: 0;
+  }
+  .sidebar-title {
+    font-size: 16px;
+    position: relative;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    transition: margin-bottom .3s ease;
 
+    &.open {
+      margin-bottom: 0;
 
+      &:after {
+        transform: rotateZ(-45deg);
+        bottom: 17px;
+      }
+    }
 
+    &:after {
+      content: '';
+      display: inline-block;
+      width: 9px;
+      height: 9px;
+      margin-left: 0;
+      vertical-align: middle;
+      border-top: 2px solid #181613;
+      border-right: 2px solid #181613;
+      border-left: 0;
+      transform: rotateZ(135deg);
+      transition: .3s ease;
+      position: absolute;
+      right: 2px;
+      bottom: 19px;
+    }
+  }
+
+  .sidebar-list {
+    display: none;
+  }
+
+  .sidebar-filter {
+    display: none;
+    margin-bottom: 20px;
+  }
+
+  .sidebar-one-line > li:nth-child(7n+7) {
+    margin-right: 13px;
+  }
+
+  .catalog-subcategory-title {
+    display: block;
+    font-size: 16px;
+    position: relative;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+    font-family: $font-black;
+    border-bottom: 2px solid $text-color;
+    cursor: pointer;
+
+    &.open {
+      margin-bottom: 0;
+
+      &:after {
+        transform: rotateZ(-45deg);
+        bottom: 17px;
+      }
+    }
+
+    &:after {
+      content: '';
+      display: inline-block;
+      width: 9px;
+      height: 9px;
+      margin-left: 0;
+      vertical-align: middle;
+      border-top: 2px solid #181613;
+      border-right: 2px solid #181613;
+      border-left: 0;
+      transform: rotateZ(135deg);
+      transition: .3s ease;
+      position: absolute;
+      right: 2px;
+      bottom: 19px;
+    }
+  }
+
+  .catalog-subcategory {
+    border-top: 0;
+    border-bottom: 0;
+    padding: 10px 0 0;
+    margin-bottom: 0;
+    display: none;
+  }
+
+  .catalog-subcategory__item--title {
+    font-size: 13px;
+  }
+
+  .catalog-title {
+    margin-bottom: 10px;
+    margin-top: 15px;
+    font-size: 19px;
+  }
+
+  .catalog-sort {
+    padding: 0;
+  }
+
+  .catalog-sort__list {
+    position: relative;
+    left: 0;
+    z-index: inherit;
+  }
+
+  .catalog-sort__list > li {
+    width: 100%;
+    text-align: center;
+  }
+
+  .catalog-sort__label {
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  .catalog-list__item {
+    display: block;
+    width: 100%;
+    margin-right: 0 !important;
+  }
+
+  .catalog-list__item .goods {
+    max-width: 300px;
+  }
 
 
 

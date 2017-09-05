@@ -39,8 +39,75 @@
     padding: 10px 6px 7px;
   }
 
+  //////////////////////////////////////////// catalog //////////////////////////////////////
 
+  .catalog-subcategory > li {
+    width: 50%;
+  }
 
+  .sidebar-title {
+    font-size: 22px;
+  }
+
+  .sidebar {
+    width: 30%;
+  }
+
+  .right-block {
+    width: 70%;
+    padding-left: 30px;
+  }
+
+  .catalog-subcategory {
+    padding: 35px 0 15px;
+    margin-top: 5px;
+  }
+
+  .sidebar-one-line > li:nth-child(9n+9) {
+    margin-right: 13px;
+  }
+
+  .sidebar-one-line > li {
+    margin-right: 13px;
+  }
+
+  .sidebar-one-line > li:nth-child(7n+7) {
+    margin-right: 0;
+  }
+
+  .catalog-title {
+    margin-bottom: 15px;
+  }
+
+  .catalog-sort__list {
+    display: block;
+    margin-left: 0;
+  }
+
+  .catalog-sort__label {
+    top: 0;
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  .catalog-list__item {
+    display: inline-block;
+    width: 49%;
+    margin-right: 2%;
+    margin-bottom: 10px;
+  }
+
+  .catalog-list__item:nth-child(3n+3) {
+    margin-right: 2%;
+  }
+
+  .catalog-list__item:nth-child(2n+2) {
+    margin-right: 0;
+  }
+
+  .catalog-list__item .goods {
+    max-width: none;
+  }
 
 
 

@@ -122,7 +122,7 @@
 
 @media ($desktop) {
   .breadcrumbs {
-    margin-bottom: 40px;
+    margin-bottom: 35px;
   }
   .breadcrumbs .breadcrumbs-wrapper {
     padding: 35px 0;
@@ -146,9 +146,45 @@
 
 @media ($mobile) {
   .breadcrumbs {
+    background: none !important;
+    margin-bottom: 0;
+  }
+  .breadcrumbs-title {
+    color: $text-color;
+    margin: 0;
+    font-size: 22px;
+  }
+
+  .breadcrumbs .breadcrumbs-wrapper {
+    padding: 25px 0;
+  }
+
+  .breadcrumbs-list {
     display: none;
   }
+
   .breadcrumbs__interactive {
+    background: none !important;
+    margin-bottom: 0;
+    padding: 0;
+
+  }
+
+  .breadcrumbs__interactive .breadcrumbs-right {
+    display: none;
+  }
+
+  .breadcrumbs__interactive .breadcrumbs-left {
+    width: 100%;
+  }
+
+  .breadcrumbs__interactive .breadcrumbs-wrapper {
+    display: block;
+    min-height: inherit;
+    padding: 25px 0;
+  }
+
+  .breadcrumbs__interactive .interactive-block__modals {
     display: none;
   }
 }

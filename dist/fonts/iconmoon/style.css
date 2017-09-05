@@ -15,6 +15,18 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-gp:before {
+  content: "\e904";
+}
+.icon-resize:before {
+  content: "\e905";
+}
+.icon-tw:before {
+  content: "\e906";
+}
+.icon-zoom-in:before {
+  content: "\e907";
+}
 .icon-phone-call:before {
   content: "\e903";
 }
@@ -27,3 +39,4 @@
 .icon-picker:before {
   content: "\e902";
 }
+

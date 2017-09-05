@@ -361,6 +361,39 @@ $(function () {
         bindJsOnFilterSelectTablet(window.innerWidth);
     });
 
+    /////////////////////////////////////// sidebar mobile ////////////////////////////////
+
+    function bindJsOnFilterSidebar(windowWidth) {
+        var $sidebarTitle = $('.sidebar-title');
+        var $catalogSubcategoryTitle = $('.catalog-subcategory-title');
+
+        if (windowWidth < 768) {
+            $sidebarTitle.unbind('click').on('click', function () {
+                $(this).toggleClass('open');
+                $(this).next().slideToggle();
+            });
+
+            $catalogSubcategoryTitle.unbind('click').on('click', function () {
+                $(this).toggleClass('open');
+                $(this).next().slideToggle();
+            });
+
+        } else {
+            $sidebarTitle.unbind('click');
+            $sidebarTitle.removeClass('open');
+            $sidebarTitle.next().removeAttr('style');
+
+            $catalogSubcategoryTitle.unbind('click');
+            $catalogSubcategoryTitle.removeClass('open');
+            $catalogSubcategoryTitle.next().removeAttr('style');
+        }
+    }
+
+    $(window).ready(bindJsOnFilterSidebar(windowWidth)).resize(function () {
+        bindJsOnFilterSidebar(window.innerWidth);
+    });
+
+
 
 
 
