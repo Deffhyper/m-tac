@@ -393,6 +393,26 @@ $(function () {
         bindJsOnFilterSidebar(window.innerWidth);
     });
 
+    /////////////////////////////////////////// product slider /////////////////////////////////
+
+    $('.product-slider__top').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        dots: false,
+        fade: true,
+        infinite: false,
+        asNavFor: '.product-slider__bottom'
+    });
+    $('.product-slider__bottom').slick({
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        asNavFor: '.product-slider__top',
+        dots: false,
+        arrows: true,
+        infinite: false,
+        focusOnSelect: true
+    });
 
 
 
