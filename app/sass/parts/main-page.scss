@@ -388,6 +388,12 @@
 }
 
 .four-item-slider {
+
+  &.no-dots {
+    .slick-dots {
+      display: none !important;
+    }
+  }
   .goods {
     margin: 7px;
   }

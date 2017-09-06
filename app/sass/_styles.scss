@@ -609,6 +609,12 @@
 
 //////////////////////////////////////////////// catalog detail //////////////////////////////////////
 .product {
+  margin-bottom: 90px;
+
+  .four-item-slider .slick-arrow {
+    top: -70px;
+  }
+
 }
 
 .product-slider, .product-ctrl {
@@ -622,8 +628,18 @@
   margin-bottom: 40px;
 }
 
-.product-slider {
+.product-sticker {
+  position: absolute;
+  top: 20px;
+  right: 1px;
+  z-index: 5;
+  &>* {
+    display: inline-block;
+  }
+}
 
+.product-slider {
+  position: relative;
 
   &__top {
     width: 100%;
@@ -637,10 +653,6 @@
       height: 615px;
       border: 1px solid #dcdcea;
 
-      a {
-        display: block;
-        height: 100%;
-      }
       img {
         max-height: 100%;
         position: absolute;
@@ -726,8 +738,8 @@
         &:before {
           content: '';
           display: block;
-          width: 8px;
-          height: 8px;
+          width: 7px;
+          height: 7px;
           border-top: 1px solid $accent;
           border-right: 1px solid $accent;
           position: absolute;
@@ -941,9 +953,12 @@
   margin-bottom: 25px;
   .btn {
     width: 260px;
-    padding: 25px 0 16px;
+    padding: 22px 0 16px;
     font-size: 18px;
     margin-right: 25px;
+    &:hover {
+      background-color: $accent-hover;
+    }
   }
 }
 
@@ -1002,7 +1017,7 @@
 }
 
 .product-section {
-  margin-bottom: 40px;
+  margin-bottom: 45px;
 }
 
 .product-technologies {
@@ -1013,6 +1028,8 @@
       height: 200px;
       display: block;
       position: relative;
+      overflow: hidden;
+
       &>img {
         position: absolute;
         top: 0;
@@ -1034,8 +1051,22 @@
       overflow: hidden;
     }
   }
-
 }
+
+.product-news-slider {
+  margin-top: -10px;
+  .news-main-item {
+    margin: 0 6px;
+  }
+}
+
+.six-item-slider {
+  .goods {
+    margin: 4px;
+  }
+}
+
+
 
 
 

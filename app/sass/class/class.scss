@@ -323,6 +323,33 @@
   }
 }
 
+.goods.goods-small {
+  text-align: center;
+
+  .goods-image {
+    height: 190px;
+  }
+  .goods-link a {
+    font-size: 14px;
+  }
+  .goods-price {
+    margin-bottom: 10px;
+    height: 45px;
+    margin-top: 10px;
+  }
+  .goods-price__old {
+    font-size: 16px;
+    &:after {
+      top: 8px;
+    }
+  }
+
+  .goods-price__current {
+    font-size: 22px;
+  }
+
+}
+
 .goods-image {
   height: 300px;
   overflow: hidden;
@@ -339,6 +366,8 @@
     left: 0;
     bottom: 0;
     margin: auto;
+    max-height: 100%;
+    width: auto;
   }
 }
 
