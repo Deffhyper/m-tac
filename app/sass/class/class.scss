@@ -582,6 +582,38 @@
     padding: 0 35px;
   }
 
+  .goods.goods-small .goods-link  {
+    line-height: 1.5;
+    height: 40px;
+    padding: 0 10px;
+  }
+
+  .goods.goods-small .goods-link a {
+    font-size: 13px;
+  }
+
+  .goods.goods-small .goods-price__old {
+    font-size: 14px;
+  }
+
+  .goods-price__old > span:last-child {
+    font-size: 9px;
+  }
+
+  .goods.goods-small .goods-price__current {
+    font-size: 20px;
+  }
+
+  .goods-price__current > span:last-child {
+    font-size: 10px;
+  }
+
+  .goods.goods-small .goods-image {
+    height: 160px;
+  }
+
+
+
 }
 ////////////////////////////////////////////// scroll up button ////////////////////////
 
@@ -800,6 +832,75 @@
   }
 }
 
+////////////////////////////////////// four item slider ///////////////////////////
+
+.four-item-slider {
+
+  &.no-dots {
+    .slick-dots {
+      display: none !important;
+    }
+  }
+  .goods {
+    margin: 7px;
+  }
+  .slick-arrow {
+    position: absolute;
+    top: -80px;
+
+    &.slick-next {
+      right: 0;
+    }
+
+    &.slick-prev {
+      right: 30px;
+    }
+
+    &:after {
+      border-color: $text-color;
+    }
+    &:hover {
+      &:after {
+        border-color: $accent;
+      }
+    }
+  }
+  .slick-dots {
+    text-align: center;
+    margin-top: 20px;
+    button {
+      background-color: $text-color;
+      &:hover {
+        background-color: $accent;
+      }
+    }
+    .slick-active button {
+      background-color: $accent;
+    }
+  }
+}
+
+.product-fourItem-slider {
+  @extend .four-item-slider;
+  .slick-slide {
+    &>* {
+      margin: 4px;
+    }
+  }
+}
+
+.six-item-slider {
+  @extend .four-item-slider;
+}
+
+@media ($desktop) {
+
+  .four-item-slider .slick-arrow, .product-fourItem-slider .slick-arrow,
+  .six-item-slider .slick-arrow {
+    top: -60px;
+  }
+
+}
 
 
 

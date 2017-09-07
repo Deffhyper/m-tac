@@ -425,10 +425,10 @@ $(function () {
 
     /////////////////////////////////////// product news slider /////////////////////////////////
 
-    $('.product-news-slider').slick({
+    $('.product-fourItem-slider').slick({
         slidesToShow: 4,
         slidesToScroll: 1,
-        arrows: false,
+        arrows: true,
         dots: false,
         responsive: [
             {
@@ -455,7 +455,7 @@ $(function () {
     $('.six-item-slider').slick({
         slidesToShow: 6,
         slidesToScroll: 1,
-        arrows: false,
+        arrows: true,
         dots: false,
         responsive: [
             {

@@ -611,9 +611,6 @@
 .product {
   margin-bottom: 90px;
 
-  .four-item-slider .slick-arrow {
-    top: -70px;
-  }
 
 }
 
@@ -1053,17 +1050,28 @@
   }
 }
 
-.product-news-slider {
+
+.six-item-slider {
+  .goods {
+    margin: 4px;
+  }
+}
+
+.product-news-main {
   margin-top: -10px;
   .news-main-item {
     margin: 0 6px;
   }
 }
 
-.six-item-slider {
-  .goods {
-    margin: 4px;
+.product-slider-section {
+  .product-property-title {
+    max-width: 93%;
   }
+}
+
+.product-fourItem-slider.product-news-main .slick-arrow {
+  top: -70px;
 }
 
 

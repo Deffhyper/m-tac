@@ -278,14 +278,60 @@
     top: -55px;
   }
 
-  .product-technologies__item--image {
-    height: 16vh;
-  }
+  //.product-technologies__item--image {
+  //  height: 16vh;
+  //}
 
   .product-technologies__item--text {
     height: 78px;
     padding: 10px 10px;
   }
+
+  .product-technologies {
+    margin-bottom: 0;
+  }
+
+  //.product .six-item-slider .goods {
+  //  margin: 4px auto;
+  //}
+
+  .product-slider-section .product-property-title {
+    max-width: 76%;
+  }
+
+  .product-technologies__item {
+    max-width: 300px;
+    margin: auto !important;
+  }
+
+  .product-news-main .news-main-item {
+    margin: -10px auto 0;
+    max-width: 300px;
+  }
+
+  .product-property-table tbody tr:first-child {
+    display: none;
+  }
+
+  .product-property-table tbody tr td:first-child {
+    width: 100%;
+    display: block;
+    padding-bottom: 0;
+  }
+
+  .product-property-table tbody tr td {
+    padding: 10px;
+    display: block;
+  }
+
+  .product-property-table {
+    border-top: 1px solid #dcdcdc;
+  }
+
+  .product-section iframe {
+    height: 70vw;
+  }
+
 
 
 

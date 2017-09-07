@@ -258,139 +258,226 @@
                 <iframe width="100%" height="660px" src="https://www.youtube.com/embed/ia4q0-8UJBg" frameborder="0"
                         allowfullscreen></iframe>
             </section>
-            <section class="product-section">
+            <section class="product-section product-slider-section">
                 <h3 class="product-property-title uk-text-uppercase">Технологии</h3>
-                <ul class="product-technologies uk-grid uk-grid-small uk-grid-width-1-2 uk-grid-width-medium-1-2 uk-grid-width-large-1-4">
-                    <li class="product-technologies__item">
-                        <a href="#">
+                <div class="product-technologies">
+                    <div class="product-fourItem-slider">
+                        <div>
+                            <div class="product-technologies__item">
+                                <a href="#">
                        <span class="product-technologies__item--image">
                            <img src="img/jpeg_files/tech-1.jpg" alt="tech" width="303" height="200">
                        </span>
-                        <span class="product-technologies__item--text text-bold">
+                                    <span class="product-technologies__item--text text-bold">
                           Данная модель ботинок оснащена надежной защитой для ног - усиленный носок
                        </span>
-                        </a>
-                    </li>
-                    <li class="product-technologies__item">
-                        <a href="#">
+                                </a>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="product-technologies__item">
+                                <a href="#">
                        <span class="product-technologies__item--image">
                            <img src="img/jpeg_files/tech-2.jpg" alt="tech" width="303" height="200">
                        </span>
-                        <span class="product-technologies__item--text text-bold">
+                                    <span class="product-technologies__item--text text-bold">
                             Водоотталкивающая поверхность
                        </span>
-                        </a>
-                    </li>
-                    <li class="product-technologies__item">
-                        <a href="#">
+                                </a>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="product-technologies__item">
+                                <a href="#">
                        <span class="product-technologies__item--image">
                            <img src="img/jpeg_files/tech-3.jpg" alt="tech" width="303" height="200">
                        </span>
-                        <span class="product-technologies__item--text text-bold">
+                                    <span class="product-technologies__item--text text-bold">
                             Натуральная кожа
                        </span>
-                        </a>
-                    </li>
-                    <li class="product-technologies__item">
-                        <a href="#">
+                                </a>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="product-technologies__item">
+                                <a href="#">
                        <span class="product-technologies__item--image">
                            <img src="img/jpeg_files/tech-4.jpg" alt="tech" width="303" height="200">
                        </span>
-                        <span class="product-technologies__item--text text-bold">
+                                    <span class="product-technologies__item--text text-bold">
                             Бензомаслостойкая подошва
                        </span>
-                        </a>
-                    </li>
-                </ul>
-            </section>
-            <section class="product-section">
-                <h3 class="product-property-title uk-text-uppercase">Обзоры</h3>
-                <div class="product-news-slider">
-                    <div class="news-main-item">
-                        <div class="news-main-item__date">
-                            <time datetime="25/06" class="uk-hidden">25/06</time>
-                            <span>25</span>
-                            <small>/06</small>
+                                </a>
+                            </div>
                         </div>
-                        <div class="news-main-item__image">
-                            <a href="#">
-                                <img src="img/jpeg_files/n-1.jpg" alt="news" width="303" height="180">
-                            </a>
+                        <div>
+                            <div class="product-technologies__item">
+                                <a href="#">
+                       <span class="product-technologies__item--image">
+                           <img src="img/jpeg_files/tech-1.jpg" alt="tech" width="303" height="200">
+                       </span>
+                                    <span class="product-technologies__item--text text-bold">
+                          Данная модель ботинок оснащена надежной защитой для ног - усиленный носок
+                       </span>
+                                </a>
+                            </div>
                         </div>
-                        <div class="news-main-item__link">
-                            <a href="#">Новые поступления футболок и кепок</a>
+                        <div>
+                            <div class="product-technologies__item">
+                                <a href="#">
+                       <span class="product-technologies__item--image">
+                           <img src="img/jpeg_files/tech-2.jpg" alt="tech" width="303" height="200">
+                       </span>
+                                    <span class="product-technologies__item--text text-bold">
+                            Водоотталкивающая поверхность
+                       </span>
+                                </a>
+                            </div>
                         </div>
-                        <div class="news-main-item__text">
-                            <p>При разработке новых образцов специалисты отечественной компании M-Tac внимательно и
-                                подробно анализируют образцы военной...</p>
-                        </div>
-                        <a href="#" class="news-main-item__detail btn btn-border-bottom">детальнее</a>
-                    </div>
-                    <div class="news-main-item">
-                        <div class="news-main-item__date">
-                            <time datetime="25/06" class="uk-hidden">25/06</time>
-                            <span>17</span>
-                            <small>/05</small>
-                        </div>
-                        <div class="news-main-item__image">
-                            <a href="#">
-                                <img src="img/jpeg_files/n-2.jpg" alt="news" width="303" height="180">
-                            </a>
-                        </div>
-                        <div class="news-main-item__link">
-                            <a href="#">Курточки с новой технологией утеплителя</a>
-                        </div>
-                        <div class="news-main-item__text">
-                            <p>При разработке новых образцов специалисты отечественной компании M-Tac внимательно и
-                                подробно анализируют образцы военной...</p>
-                        </div>
-                        <a href="#" class="news-main-item__detail btn btn-border-bottom">детальнее</a>
-                    </div>
-                    <div class="news-main-item">
-                        <div class="news-main-item__date">
-                            <time datetime="25/06" class="uk-hidden">25/06</time>
-                            <span>03</span>
-                            <small>/06</small>
-                        </div>
-                        <div class="news-main-item__image">
-                            <a href="#">
-                                <img src="img/jpeg_files/n-3.jpg" alt="news" width="303" height="180">
-                            </a>
-                        </div>
-                        <div class="news-main-item__link">
-                            <a href="#">ОБЗОР M-TAC сумки POLICE </a>
-                        </div>
-                        <div class="news-main-item__text">
-                            <p>При разработке новых образцов специалисты отечественной компании M-Tac внимательно и
-                                подробно анализируют образцы военной...</p>
-                        </div>
-                        <a href="#" class="news-main-item__detail btn btn-border-bottom">детальнее</a>
-                    </div>
-                    <div class="news-main-item">
-                        <div class="news-main-item__date">
-                            <time datetime="25/06" class="uk-hidden">25/06</time>
-                            <span>12</span>
-                            <small>/05</small>
-                        </div>
-                        <div class="news-main-item__image">
-                            <a href="#">
-                                <img src="img/jpeg_files/n-4.jpg" alt="news" width="303" height="180">
-                            </a>
-                        </div>
-                        <div class="news-main-item__link">
-                            <a href="#">ОБЗОР M-TAC ШОРТЫ AGGRESSOR GEN.II FLEX COYOTE BROWN</a>
-                        </div>
-                        <div class="news-main-item__text">
-                            <p>Основной задачей дизайнеров брюк было сохранить комфорт движений, и с этой задачей они
-                                справились на все сто процентов – брюки создают ощущение...</p>
-                        </div>
-                        <a href="#" class="news-main-item__detail btn btn-border-bottom">детальнее</a>
                     </div>
                 </div>
             </section>
-            <section class="product-section">
+            <section class="product-section product-slider-section">
+                <h3 class="product-property-title uk-text-uppercase">Обзоры</h3>
+                <div class="product-fourItem-slider product-news-main">
+                    <div>
+                        <div class="news-main-item">
+                            <div class="news-main-item__date">
+                                <time datetime="25/06" class="uk-hidden">25/06</time>
+                                <span>25</span>
+                                <small>/06</small>
+                            </div>
+                            <div class="news-main-item__image">
+                                <a href="#">
+                                    <img src="img/jpeg_files/n-1.jpg" alt="news" width="303" height="180">
+                                </a>
+                            </div>
+                            <div class="news-main-item__link">
+                                <a href="#">Новые поступления футболок и кепок</a>
+                            </div>
+                            <div class="news-main-item__text">
+                                <p>При разработке новых образцов специалисты отечественной компании M-Tac внимательно и
+                                    подробно анализируют образцы военной...</p>
+                            </div>
+                            <a href="#" class="news-main-item__detail btn btn-border-bottom">детальнее</a>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="news-main-item">
+                            <div class="news-main-item__date">
+                                <time datetime="25/06" class="uk-hidden">25/06</time>
+                                <span>17</span>
+                                <small>/05</small>
+                            </div>
+                            <div class="news-main-item__image">
+                                <a href="#">
+                                    <img src="img/jpeg_files/n-2.jpg" alt="news" width="303" height="180">
+                                </a>
+                            </div>
+                            <div class="news-main-item__link">
+                                <a href="#">Курточки с новой технологией утеплителя</a>
+                            </div>
+                            <div class="news-main-item__text">
+                                <p>При разработке новых образцов специалисты отечественной компании M-Tac внимательно и
+                                    подробно анализируют образцы военной...</p>
+                            </div>
+                            <a href="#" class="news-main-item__detail btn btn-border-bottom">детальнее</a>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="news-main-item">
+                            <div class="news-main-item__date">
+                                <time datetime="25/06" class="uk-hidden">25/06</time>
+                                <span>03</span>
+                                <small>/06</small>
+                            </div>
+                            <div class="news-main-item__image">
+                                <a href="#">
+                                    <img src="img/jpeg_files/n-3.jpg" alt="news" width="303" height="180">
+                                </a>
+                            </div>
+                            <div class="news-main-item__link">
+                                <a href="#">ОБЗОР M-TAC сумки POLICE </a>
+                            </div>
+                            <div class="news-main-item__text">
+                                <p>При разработке новых образцов специалисты отечественной компании M-Tac внимательно и
+                                    подробно анализируют образцы военной...</p>
+                            </div>
+                            <a href="#" class="news-main-item__detail btn btn-border-bottom">детальнее</a>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="news-main-item">
+
+                            <div class="news-main-item__date">
+                                <time datetime="25/06" class="uk-hidden">25/06</time>
+                                <span>12</span>
+                                <small>/05</small>
+                            </div>
+                            <div class="news-main-item__image">
+                                <a href="#">
+                                    <img src="img/jpeg_files/n-4.jpg" alt="news" width="303" height="180">
+                                </a>
+                            </div>
+                            <div class="news-main-item__link">
+                                <a href="#">ОБЗОР M-TAC ШОРТЫ AGGRESSOR GEN.II FLEX COYOTE BROWN</a>
+                            </div>
+                            <div class="news-main-item__text">
+                                <p>Основной задачей дизайнеров брюк было сохранить комфорт движений, и с этой задачей они
+                                    справились на все сто процентов – брюки создают ощущение...</p>
+                            </div>
+                            <a href="#" class="news-main-item__detail btn btn-border-bottom">детальнее</a>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="news-main-item">
+                            <div class="news-main-item__date">
+                                <time datetime="25/06" class="uk-hidden">25/06</time>
+                                <span>25</span>
+                                <small>/06</small>
+                            </div>
+                            <div class="news-main-item__image">
+                                <a href="#">
+                                    <img src="img/jpeg_files/n-1.jpg" alt="news" width="303" height="180">
+                                </a>
+                            </div>
+                            <div class="news-main-item__link">
+                                <a href="#">Новые поступления футболок и кепок</a>
+                            </div>
+                            <div class="news-main-item__text">
+                                <p>При разработке новых образцов специалисты отечественной компании M-Tac внимательно и
+                                    подробно анализируют образцы военной...</p>
+                            </div>
+                            <a href="#" class="news-main-item__detail btn btn-border-bottom">детальнее</a>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="news-main-item">
+                            <div class="news-main-item__date">
+                                <time datetime="25/06" class="uk-hidden">25/06</time>
+                                <span>17</span>
+                                <small>/05</small>
+                            </div>
+                            <div class="news-main-item__image">
+                                <a href="#">
+                                    <img src="img/jpeg_files/n-2.jpg" alt="news" width="303" height="180">
+                                </a>
+                            </div>
+                            <div class="news-main-item__link">
+                                <a href="#">Курточки с новой технологией утеплителя</a>
+                            </div>
+                            <div class="news-main-item__text">
+                                <p>При разработке новых образцов специалисты отечественной компании M-Tac внимательно и
+                                    подробно анализируют образцы военной...</p>
+                            </div>
+                            <a href="#" class="news-main-item__detail btn btn-border-bottom">детальнее</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="product-section product-slider-section">
                 <h4 class="product-property-title uk-text-uppercase">С этим товаром покупают</h4>
-                <div class="four-item-slider no-dots">
+                <div class="product-fourItem-slider">
                     <div>
                         <div class="goods">
                             <div class="goods-top-block">
@@ -551,7 +638,7 @@
                     </div>
                 </div>
             </section>
-            <section class="product-section">
+            <section class="product-section product-slider-section">
                 <h4 class="product-property-title uk-text-uppercase">Последние просмотренные</h4>
                 <div class="six-item-slider">
                     <div>

@@ -179,7 +179,7 @@
   }
 
   .product-technologies {
-    margin-bottom: -15px;
+    margin-bottom: 15px;
 
     &__item {
       margin-bottom: 10px;
@@ -189,6 +189,11 @@
   .product-technologies__item--image > img {
     max-height: none;
   }
+
+  .product-fourItem-slider.product-news-main .slick-arrow {
+    top: -50px;
+  }
+
 
 
 
