@@ -42,17 +42,18 @@ gulp.task('scripts', function() {
 		'app/libs/jquery/dist/jquery.min.js', // connect jQuery
 		'app/libs/masked-input/masked-input.js', // masked-input
 		'app/libs/slick-carousel/slick/slick.min.js', // Slick carousel
+		'app/libs/magnific-popup/dist/jquery.magnific-popup.js', // magnific popup
 		'app/libs/stacktable/stacktable.js', // stack table
 		'app/libs/uikit/js/uikit.min.js', // Ui Kit
 		'app/libs/jquery-ui-1.11.4.custom/jquery-ui.min.js', // range slider
 		//'app/libs/uikit/js/components/accordion.js', // Ui accordion
 		'app/libs/uikit/js/components/grid.js', // Ui grid
-		'app/libs/uikit/js/components/lightbox.js', // Ui lightbox
-		'app/libs/uikit/js/components/nestable.js', // Ui nestable
+		// 'app/libs/uikit/js/components/lightbox.js', // Ui lightbox
+		'app/libs/uikit/js/components/nestable.js' // Ui nestable
 		//'app/libs/uikit/js/components/parallax.js', // Ui parallax
-		'app/libs/uikit/js/components/slider.js', // Ui slider
-		'app/libs/uikit/js/components/slideset.js', // Ui slideset
-		'app/libs/uikit/js/components/slideshow.js', // Ui slideshow
+		// 'app/libs/uikit/js/components/slider.js', // Ui slider
+		// 'app/libs/uikit/js/components/slideset.js', // Ui slideset
+		// 'app/libs/uikit/js/components/slideshow.js', // Ui slideshow
 		//'app/libs/uikit/js/components/slideshow-fx.js' // Ui slideshow-fx
 
 
