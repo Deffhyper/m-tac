@@ -2,6 +2,12 @@
   font-family: $font-bold;
 }
 
+.margin-bottom {
+  &__big {
+    margin-bottom: 70px;
+  }
+}
+
 .btn {
   font-family: $font-cond-semi;
   text-transform: uppercase;

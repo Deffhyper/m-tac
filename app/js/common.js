@@ -368,7 +368,8 @@ $(function () {
         var $catalogSubcategoryTitle = $('.catalog-subcategory-title');
 
         if (windowWidth < 768) {
-            $sidebarTitle.unbind('click').on('click', function () {
+            $sidebarTitle.unbind('click').on('click', function (e) {
+                e.preventDefault();
                 $(this).toggleClass('open');
                 $(this).next().slideToggle();
             });

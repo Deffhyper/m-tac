@@ -1024,11 +1024,29 @@
   margin-bottom: 40px;
 
   &__item {
+    &>a {
+      display: block;
+      height: 100%;
+      &:hover {
+        .product-technologies__item--image {
+          border-color: $accent;
+        }
+        .product-technologies__item--text {
+          background-color: $accent;
+        }
+      }
+
+    }
     &--image {
-      height: 200px;
+      height: 196px;
       display: block;
       position: relative;
       overflow: hidden;
+      border-width: 2px 2px 0 2px;
+      border-style: solid;
+      border-color: #f4f3f8;
+      background-color: #f4f3f8;
+      transition: .3s ease;
 
       &>img {
         position: absolute;
@@ -1038,7 +1056,7 @@
         bottom: 0;
         margin: auto;
         max-height: 100%;
-        width: 100%;
+        //width: 100%;
       }
     }
 
@@ -1049,6 +1067,12 @@
       padding: 36px 53px;
       text-align: center;
       overflow: hidden;
+      transition: .3s ease;
+      &>span {
+        height: 65px;
+        overflow: hidden;
+        display: block;
+      }
     }
   }
 }
@@ -1224,7 +1248,63 @@
   }
 }
 
+//////////////////////////////////////////// technologies //////////////////////////////////
 
+.technologies-list {
+  margin-bottom: 25px;
+
+  .product-technologies__item {
+    display: inline-block;
+    margin-left: -2px;
+    width: 24.5%;
+    margin-right: .5%;
+    margin-bottom: 8px;
+
+    &:nth-child(4n+4){
+      margin-right: 0;
+    }
+  }
+}
+
+////////////////////////////////////// technology detail ////////////////////////////////////////
+.technology {
+  margin-bottom: 70px;
+}
+
+.technology-detail {
+  display: flex;
+  align-items: stretch;
+  margin-bottom: 35px;
+
+  &__image {
+    display: inline-block;
+    width: 25%;
+    background-color: #f4f3f8;
+    margin: 0 -2px;
+    vertical-align: top;
+    &--wrapper {
+      height: 160px;
+      position: relative;
+      overflow: hidden;
+      &>img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+      }
+    }
+  }
+  &__text {
+    display: inline-block;
+    background-color: #eceaf3;
+    width: 75%;
+    margin: 0 -2px;
+    vertical-align: top;
+    padding: 35px 45px;
+
+  }
+}
 
 
 

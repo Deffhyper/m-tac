@@ -362,72 +362,72 @@
                         <div>
                             <div class="product-technologies__item">
                                 <a href="#">
-                       <span class="product-technologies__item--image">
-                           <img src="img/jpeg_files/tech-1.jpg" alt="tech" width="303" height="200">
-                       </span>
+                                   <span class="product-technologies__item--image">
+                                       <img src="img/jpeg_files/tech-1.jpg" alt="tech" width="303" height="200">
+                                   </span>
                                     <span class="product-technologies__item--text text-bold">
-                          Данная модель ботинок оснащена надежной защитой для ног - усиленный носок
-                       </span>
+                                        <span>Данная модель ботинок оснащена надежной защитой для ног - усиленный носок</span>
+                                   </span>
                                 </a>
                             </div>
                         </div>
                         <div>
                             <div class="product-technologies__item">
                                 <a href="#">
-                       <span class="product-technologies__item--image">
-                           <img src="img/jpeg_files/tech-2.jpg" alt="tech" width="303" height="200">
-                       </span>
+                                   <span class="product-technologies__item--image">
+                                       <img src="img/jpeg_files/tech-2.jpg" alt="tech" width="303" height="200">
+                                   </span>
                                     <span class="product-technologies__item--text text-bold">
-                            Водоотталкивающая поверхность
-                       </span>
+                                        <span>Водоотталкивающая поверхность</span>
+                                   </span>
                                 </a>
                             </div>
                         </div>
                         <div>
                             <div class="product-technologies__item">
                                 <a href="#">
-                       <span class="product-technologies__item--image">
-                           <img src="img/jpeg_files/tech-3.jpg" alt="tech" width="303" height="200">
-                       </span>
+                                   <span class="product-technologies__item--image">
+                                       <img src="img/jpeg_files/tech-3.jpg" alt="tech" width="303" height="200">
+                                   </span>
                                     <span class="product-technologies__item--text text-bold">
-                            Натуральная кожа
-                       </span>
+                                        <span>Натуральная кожа</span>
+                                   </span>
                                 </a>
                             </div>
                         </div>
                         <div>
                             <div class="product-technologies__item">
                                 <a href="#">
-                       <span class="product-technologies__item--image">
-                           <img src="img/jpeg_files/tech-4.jpg" alt="tech" width="303" height="200">
-                       </span>
+                                   <span class="product-technologies__item--image">
+                                       <img src="img/jpeg_files/tech-4.jpg" alt="tech" width="303" height="200">
+                                   </span>
                                     <span class="product-technologies__item--text text-bold">
-                            Бензомаслостойкая подошва
-                       </span>
+                                        <span>Бензомаслостойкая подошва</span>
+                                   </span>
                                 </a>
                             </div>
                         </div>
                         <div>
                             <div class="product-technologies__item">
                                 <a href="#">
-                       <span class="product-technologies__item--image">
-                           <img src="img/jpeg_files/tech-1.jpg" alt="tech" width="303" height="200">
-                       </span>
+                                   <span class="product-technologies__item--image">
+                                       <img src="img/jpeg_files/tech-1.jpg" alt="tech" width="303" height="200">
+                                   </span>
                                     <span class="product-technologies__item--text text-bold">
-                          Данная модель ботинок оснащена надежной защитой для ног - усиленный носок
-                       </span>
+                                      <span>Данная модель ботинок оснащена надежной защитой для ног - усиленный носок</span>
+                                   </span>
                                 </a>
                             </div>
                         </div>
                         <div>
                             <div class="product-technologies__item">
                                 <a href="#">
-                       <span class="product-technologies__item--image">
-                           <img src="img/jpeg_files/tech-2.jpg" alt="tech" width="303" height="200">
-                       </span>
+                                   <span class="product-technologies__item--image">
+                                       <img src="img/jpeg_files/tech-2.jpg" alt="tech" width="303" height="200">
+                                   </span>
                                     <span class="product-technologies__item--text text-bold">
-                            Водоотталкивающая поверхность
-                       </span>
+                                        <span>Водоотталкивающая поверхность</span>
+                                   </span>
                                 </a>
                             </div>
                         </div>
