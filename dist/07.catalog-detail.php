@@ -128,6 +128,101 @@
                         </div>
                     </div>
                 </div>
+                <!--                modal gallery -->
+                <div class="mfp-hide white-popup-block" id="product-gallery-window">
+                    <a href="#" role="button" class="mfp-close uk-close"></a>
+                    <div class="gallery">
+                        <div class="product-modal-gallery">
+                            <div class="product-modal-gallery__left">
+                                <div class="gallery-slider-view">
+                                    <div>
+                                        <div class="gallery-slider-view__item">
+                                            <img src="img/jpeg_files/prod-1.jpg" alt="" width="615" height="615">
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="gallery-slider-view__item">
+                                            <img src="img/jpeg_files/prod-2.jpg" alt="" width="790" height="657">
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="gallery-slider-view__item">
+                                            <img src="img/jpeg_files/prod-3.jpg" alt="" width="1200" height="1200">
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="gallery-slider-view__item">
+                                            <img src="img/jpeg_files/prod-1.jpg" alt="" width="615" height="615">
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="gallery-slider-view__item">
+                                            <img src="img/jpeg_files/prod-1.jpg" alt="" width="615" height="615">
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="gallery-slider-view__item">
+                                            <img src="img/jpeg_files/prod-1.jpg" alt="" width="615" height="615">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-modal-gallery__right">
+                                <p class="product-modal-gallery__right--title">БОТИНКИ ПОЛЕВЫЕ MK.4 MULTICAM</p>
+                                <div class="gallery-slider-nav">
+                                    <div>
+                                        <div class="gallery-slider-nav__item">
+                                            <a href="javascript:void(0);" role="button">
+                                                <img src="img/jpeg_files/prod-sm-1.jpg" alt="prod" width="124"
+                                                     height="123">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="gallery-slider-nav__item">
+                                            <a href="javascript:void(0);" role="button">
+                                                <img src="img/jpeg_files/prod-sm-2.jpg" alt="prod" width="124"
+                                                     height="103">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="gallery-slider-nav__item">
+                                            <a href="javascript:void(0);" role="button">
+                                                <img src="img/jpeg_files/prod-sm-3.jpg" alt="prod" width="123"
+                                                     height="123">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="gallery-slider-nav__item">
+                                            <a href="javascript:void(0);" role="button">
+                                                <img src="img/jpeg_files/prod-sm-1.jpg" alt="prod" width="124"
+                                                     height="123">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="gallery-slider-nav__item">
+                                            <a href="javascript:void(0);" role="button">
+                                                <img src="img/jpeg_files/prod-sm-1.jpg" alt="prod" width="124"
+                                                     height="123">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="gallery-slider-nav__item">
+                                            <a href="javascript:void(0);" role="button">
+                                                <img src="img/jpeg_files/prod-sm-1.jpg" alt="prod" width="124"
+                                                     height="123">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="product-ctrl">
                 <div class="product-art">Артикул: 30008001</div>
@@ -257,8 +352,8 @@
             </div>
             <section class="product-section">
                 <h3 class="product-property-title uk-text-uppercase">Видеообзор</h3>
-<!--                <iframe width="100%" height="660px" src="https://www.youtube.com/embed/ia4q0-8UJBg" frameborder="0"-->
-<!--                        allowfullscreen></iframe>-->
+                <!--                <iframe width="100%" height="660px" src="https://www.youtube.com/embed/ia4q0-8UJBg" frameborder="0"-->
+                <!--                        allowfullscreen></iframe>-->
             </section>
             <section class="product-section product-slider-section">
                 <h3 class="product-property-title uk-text-uppercase">Технологии</h3>
@@ -425,7 +520,8 @@
                                 <a href="#">ОБЗОР M-TAC ШОРТЫ AGGRESSOR GEN.II FLEX COYOTE BROWN</a>
                             </div>
                             <div class="news-main-item__text">
-                                <p>Основной задачей дизайнеров брюк было сохранить комфорт движений, и с этой задачей они
+                                <p>Основной задачей дизайнеров брюк было сохранить комфорт движений, и с этой задачей
+                                    они
                                     справились на все сто процентов – брюки создают ощущение...</p>
                             </div>
                             <a href="#" class="news-main-item__detail btn btn-border-bottom">детальнее</a>
@@ -803,33 +899,6 @@
     </div>
 </div>
 
-<div class="mfp-hide white-popup-block" id="product-gallery-window" >
-    <a href="#" role="button" class="mfp-close"></a>
-    <div class="gallery">
-        <div class="product-modal-gallery">
-            <div class="product-modal-gallery__left">
-                <div class="gallery-slider-view" data-uk-check-display>
-                    <div><img src="img/jpeg_files/prod-1.jpg" alt="" width="615" height="615"></div>
-                    <div><img src="img/jpeg_files/prod-1.jpg" alt="" width="615" height="615"></div>
-                    <div><img src="img/jpeg_files/prod-1.jpg" alt="" width="615" height="615"></div>
-                    <div><img src="img/jpeg_files/prod-1.jpg" alt="" width="615" height="615"></div>
-                    <div><img src="img/jpeg_files/prod-1.jpg" alt="" width="615" height="615"></div>
-                </div>
-            </div>
-            <div class="product-modal-gallery__right">
-                <p class="product-modal-gallery__right--title">БОТИНКИ ПОЛЕВЫЕ MK.4 MULTICAM</p>
-                <div class="gallery-slider-nav" data-uk-check-display>
-                        <div><img src="img/jpeg_files/prod-sm-1.jpg" alt="prod" width="124" height="123"></div>
-                        <div><img src="img/jpeg_files/prod-sm-1.jpg" alt="prod" width="124" height="123"></div>
-                        <div><img src="img/jpeg_files/prod-sm-1.jpg" alt="prod" width="124" height="123"></div>
-                        <div><img src="img/jpeg_files/prod-sm-1.jpg" alt="prod" width="124" height="123"></div>
-                        <div><img src="img/jpeg_files/prod-sm-1.jpg" alt="prod" width="124" height="123"></div>
-
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
 
 <div class="uk-modal" id="product-size-table">
     <a href="#" role="button" class="uk-modal-close uk-close"></a>

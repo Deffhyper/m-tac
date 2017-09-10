@@ -194,6 +194,54 @@
     top: -50px;
   }
 
+  .gallery-slider-view__item {
+    min-height: 380px;
+    height: 80vh;
+  }
+
+  .gallery-slider-nav {
+    width: 140px;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .product-modal-gallery__right--title {
+    font-family: "FiraSans-Black", sans-serif;
+    font-size: 16px;
+    text-align: center;
+    line-height: normal;
+    height: 50px;
+    overflow: hidden;
+    margin-bottom: 10px;
+  }
+
+  .gallery-slider-nav__item > a {
+    height: 90px;
+  }
+  .gallery-slider-nav {
+    width: 95px;
+  }
+
+  .gallery-slider-view__item > img {
+    max-height: 95%;
+    width: auto;
+  }
+
+  .gallery-slider-nav:after {
+    width: 90px;
+    height: 91px;
+    bottom: -86px;
+  }
+
+  .gallery-slider-nav .slick-arrow.slick-prev {
+    bottom: -35px;
+    left: 43px;
+  }
+  .gallery-slider-nav .slick-arrow.slick-next {
+    bottom: -65px;
+    left: 44px;
+  }
+
 
 
 

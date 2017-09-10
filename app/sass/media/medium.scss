@@ -110,6 +110,16 @@
     top: -65px;
   }
 
+  .gallery-slider-view__item {
+    min-height: inherit;
+    max-height: 380px;
+    height: 80vh;
+  }
+
+  .product-modal-gallery__right {
+    padding: 25px;
+  }
+
 
 
 
