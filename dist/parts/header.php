@@ -49,11 +49,96 @@
                     </div>
                     <div class="page-header-search">
                         <a href="#" class="mobile-search-trigger" role="button"><span class="iconmoon icon-magnifying-glass"></a>
-                        <div class="page-header-search__form">
-                            <form action="#">
-                                <input type="text" placeholder="Что вы ищите?" autocomplete="off">
-                                <button type="submit"><span class="iconmoon icon-magnifying-glass"></span></button>
-                            </form>
+                        <div class="page-header-search__wrapper">
+                            <div class="page-header-search__form">
+                                <form action="#">
+                                    <input type="text" placeholder="Что вы ищите?" autocomplete="off">
+                                    <button type="submit"><span class="iconmoon icon-magnifying-glass"></span></button>
+                                </form>
+                            </div>
+                            <ul class="page-header-search__result">
+                                <li class="page-header-search__result--item">
+                                    <div class="left">
+                                        <a href="#">
+                                            <img src="img/jpeg_files/search-1.jpg" alt="search icon">
+                                        </a>
+                                    </div>
+                                    <div class="right">
+                                        <div class="goods-link">
+                                            <a href="#" class="uk-text-uppercase">БОТИНКИ ПОЛЕВЫЕ MK.4 MULTICAM</a>
+                                        </div>
+                                        <div class="goods-price">
+                                        <span class="goods-price__old">
+                                            <span>1500</span>
+                                            <span>грн</span>
+                                        </span>
+                                            <span class="goods-price__current">
+                                            <span>945</span>
+                                            <span>грн</span>
+                                        </span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="page-header-search__result--item">
+                                    <div class="left">
+                                        <a href="#">
+                                            <img src="img/jpeg_files/search-2.jpg" alt="search icon">
+                                        </a>
+                                    </div>
+                                    <div class="right">
+                                        <div class="goods-link">
+                                            <a href="#" class="uk-text-uppercase">КРОССОВКИ ТАКТИЧЕСКИЕ LEOPARD ОЛИВА</a>
+                                        </div>
+                                        <div class="goods-price">
+                                        <span class="goods-price__current">
+                                            <span>945</span>
+                                            <span>грн</span>
+                                        </span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="page-header-search__result--item">
+                                    <div class="left">
+                                        <a href="#">
+                                            <img src="img/jpeg_files/search-1.jpg" alt="search icon">
+                                        </a>
+                                    </div>
+                                    <div class="right">
+                                        <div class="goods-link">
+                                            <a href="#" class="uk-text-uppercase">БОТИНКИ ПОЛЕВЫЕ MK.4 MULTICAM</a>
+                                        </div>
+                                        <div class="goods-price">
+                                        <span class="goods-price__current">
+                                            <span>945</span>
+                                            <span>грн</span>
+                                        </span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="page-header-search__result--item">
+                                    <div class="left">
+                                        <a href="#">
+                                            <img src="img/jpeg_files/search-2.jpg" alt="search icon">
+                                        </a>
+                                    </div>
+                                    <div class="right">
+                                        <div class="goods-link">
+                                            <a href="#" class="uk-text-uppercase">КРОССОВКИ ТАКТИЧЕСКИЕ LEOPARD ОЛИВА</a>
+                                        </div>
+                                        <div class="goods-price">
+                                        <span class="goods-price__current">
+                                            <span>945</span>
+                                            <span>грн</span>
+                                        </span>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li class="page-header-search__result--item">
+                                    <a href="#" class="all-search-result uk-text-uppercase">Все результаты</a>
+                                </li>
+
+                            </ul>
                         </div>
                     </div>
                     <div class="page-header-tel">

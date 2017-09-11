@@ -281,9 +281,6 @@
 }
 
 .sidebar-list {
-  font-family: $font-bold;
-  font-size: 16px;
-  text-transform: uppercase;
   margin-bottom: 40px;
   &__item {
     border-bottom: 1px solid #dcdcdc;
@@ -295,13 +292,46 @@
         }
       }
     }
-    a {
+    &>a {
       display: block;
       padding: 18px 21px 14px;
       transition: .3s ease;
+      text-transform: uppercase;
+      font-family: $font-bold;
+      font-size: 16px;
       &:hover {
         background-color: #f0f0f3;
       }
+    }
+    &.open {
+      .sidebar-sublist {
+        display: block;
+      }
+    }
+  }
+}
+
+.sidebar-sublist {
+  padding-left: 20px;
+  padding-top: 5px;
+  padding-bottom: 10px;
+  border-top: 1px solid #dcdcdc;
+  display: none;
+
+  &__item {
+    font-size: 15px;
+    transition: .3s ease;
+    padding: 6px 20px;
+
+    &:hover {
+      background-color: $accent;
+      &>a {
+        font-family: $font-bold;
+      }
+    }
+    &>a {
+      border-bottom: 1px dotted $text-color;
+      margin-right: 5px;
     }
   }
 }
@@ -1306,7 +1336,30 @@
   }
 }
 
+///////////////////////////////////// search ////////////////////////////////////////////////////
 
+.search-label {
+  font-family: $font-bold;
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.sidebar-category {
+
+  &__list {
+
+    &--item {
+      border-bottom: 1px solid #dcdcdc;
+      &>a {
+        font-family: $font-bold;
+        text-transform: uppercase;
+        font-size: 16px;
+        display: block;
+        padding: 10px 20px;
+      }
+    }
+  }
+}
 
 
 
