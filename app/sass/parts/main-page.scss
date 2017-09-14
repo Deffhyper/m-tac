@@ -727,7 +727,7 @@
   }
 
   .news-main-item__image {
-    height: 220px;
+    height: 130px;
   }
 
   .news-main-item__image img {
@@ -763,11 +763,13 @@
     height: 270px;
     margin-bottom: 30px;
   }
+}
 
+@media ($tablet) {
 
-
-
-
+  .news-main-item__image {
+    height: 220px;
+  }
 }
 
 @media ($mobile) {

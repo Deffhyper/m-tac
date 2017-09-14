@@ -352,8 +352,8 @@
             </div>
             <section class="product-section">
                 <h3 class="product-property-title uk-text-uppercase">Видеообзор</h3>
-                <!--                <iframe width="100%" height="660px" src="https://www.youtube.com/embed/ia4q0-8UJBg" frameborder="0"-->
-                <!--                        allowfullscreen></iframe>-->
+                                <iframe width="100%" height="660px" src="https://www.youtube.com/embed/ia4q0-8UJBg" frameborder="0"
+                                        allowfullscreen></iframe>
             </section>
             <section class="product-section product-slider-section">
                 <h3 class="product-property-title uk-text-uppercase">Технологии</h3>

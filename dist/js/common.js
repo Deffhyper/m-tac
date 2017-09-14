@@ -222,11 +222,11 @@ $(function () {
         class: 'search-blur'
     });
 
-    $('.page-header-search__wrapper').addClass('open');
-    $('.page-header-search__result').addClass('open');
-    $('.page-header-search__form').addClass('active');
-    $('body').append(searchBlur);
-    $('.page-header-search__form').find('input').focus();
+    // $('.page-header-search__wrapper').addClass('open');
+    // $('.page-header-search__result').addClass('open');
+    // $('.page-header-search__form').addClass('active');
+    // $('body').append(searchBlur);
+    // $('.page-header-search__form').find('input').focus();
 
     $('.page-header-search__form').find('input').on('focus', function () {
         $('.page-header-search__result').addClass('open');
