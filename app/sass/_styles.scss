@@ -205,7 +205,9 @@
   }
 }
 
-
+.text-page iframe {
+  margin-bottom: 40px;
+}
 
 
 ///////////////////////////////////// category /////////////////////////////////////////////
@@ -214,7 +216,7 @@
   margin-bottom: 50px;
 
   &__item {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     &>a {
       display: block;
       height: 100%;
@@ -228,8 +230,10 @@
     }
     &--image {
       height: 230px;
+      margin-bottom: 12px;
       position: relative;
       display: block;
+      overflow: hidden;
       img {
         margin-top: 0;
         position: absolute;
@@ -250,6 +254,20 @@
       padding: 0 15px;
       line-height: 2.5;
       transition: .3s ease;
+    }
+  }
+
+  &.category-lookbook {
+
+    .category__item--image {
+      height: 305px;
+    }
+
+    .category__item--link {
+      font-size: 16px;
+      text-transform: none;
+      line-height: 1.4;
+      padding: 16px 0 14px;
     }
   }
 }
@@ -1372,8 +1390,85 @@
 
 ////////////////////////////////////////////// news detail ////////////////////////////
 
-.news-detail {
 
+
+.news-detail {
+margin-bottom: 40px;
+
+  &__ctrl {
+    float: right;
+    width: 59%;
+    margin-bottom: 25px;
+
+    &:after {
+      display: block;
+      content: "";
+      clear: both;
+    }
+
+    .detail-data {
+      margin-top: 4px;
+    }
+
+    .detail-social {
+      float: right;
+      padding: 0;
+
+    }
+  }
+
+  &__image {
+    float: left;
+    width: 41%;
+    padding-right: 25px;
+    padding-bottom: 10px;
+
+    &:after {
+      display: block;
+      content: "";
+      clear: both;
+    }
+  }
+
+  &__back {
+    padding: 60px 0;
+    &--btn {
+      padding: 15px 24px 12px;
+    }
+  }
+}
+
+
+///////////////////////////////////////////// reviews detail ////////////////////////////////////
+
+.reviews-detail {
+  margin-bottom: 40px;
+
+  &__ctrl {
+    padding-top: 5px;
+    margin-bottom: 15px;
+
+    .detail-social {
+      float: right;
+      padding: 0;
+    }
+  }
+  .left-content.text-page iframe {
+    height: 520px;
+  }
+  .left-content.text-page img {
+    width: 45%;
+  }
+}
+
+.reviews-detail-video {
+  margin-bottom: 40px;
+}
+
+///////////////////////////// about //////////////////////////////////
+
+.about {
+  margin-bottom: 60px;
 }
 
 

@@ -1,4 +1,5 @@
 @media ($mobile) {
+
   body {
     font-size: 13px;
   }
@@ -30,13 +31,27 @@
     padding: 9px 5px 6px;
   }
 
+  .text-page iframe {
+    height: 220px;
+  }
+
   //////////////////////// category ///////////////////////////////
 
-  .category__item--image {
+  .category__item--image,
+  .category.category-lookbook .category__item--image {
     height: 37vw;
   }
   .category__item--link {
     font-size: 14px;
+  }
+
+  .category__item--image img {
+    max-width: 100%;
+  }
+
+  .category.category-lookbook .category__item--link {
+    font-size: 13px;
+    padding: 10px 0 7px;
   }
 
   /////////////////////// catalog /////////////////////////////////
@@ -409,7 +424,44 @@
     margin-bottom: 20px;
   }
 
+  ////////////////////////////////// news detail //////////////////////////////
 
+  .news-detail__image {
+    float: none;
+    width: 100%;
+    padding-right: 0;
+    padding-bottom: 15px;
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  .news-detail__ctrl .detail-social {
+    padding: 10px 0 0;
+    float: none;
+  }
+
+  ////////////////////////////////// reviews detail ////////////////////
+
+  .reviews-detail__ctrl .detail-social {
+    float: none;
+    padding: 10px 0 0;
+  }
+
+  .reviews-detail .left-content.text-page img {
+    width: auto;
+  }
+
+  .reviews-detail .left-content.text-page iframe {
+    height: 220px;
+  }
+
+  /////////////////////////////////// video reviews detail ////////////////////////////
+
+  .reviews-detail-video iframe {
+    height: 220px;
+  }
 
 
 

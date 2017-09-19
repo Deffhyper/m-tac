@@ -6,32 +6,34 @@
 
 
 <div class="container">
-    <div class="news-detail">
-<!--        <div class="news-detail-top">-->
-<!--            <div class="news-detail__data"><span>25</span>июля 2017</div>-->
-<!--            <div class="social-share uk-float-right">-->
-<!--                <p class="social-list-label">Поделиться:</p>-->
-<!--                <ul class="social-list-alt">-->
-<!--                    <li>-->
-<!--                        <a href="#">-->
-<!--                            <i class="iconmoon icon-fb"></i>-->
-<!--                        </a>-->
-<!--                    </li>-->
-<!--                    <li>-->
-<!--                        <a href="#">-->
-<!--                            <i class="iconmoon icon-tw"></i>-->
-<!--                        </a>-->
-<!--                    </li>-->
-<!--                    <li>-->
-<!--                        <a href="#">-->
-<!--                            <i class="iconmoon icon-gp"></i>-->
-<!--                        </a>-->
-<!--                    </li>-->
-<!--                </ul>-->
-<!--            </div>-->
-<!--        </div>-->
-        <div class="text-page">
-            <img src="img/jpeg_files/news-d.jpg" alt="image" align="left">
+    <div class="news-detail text-page">
+        <div class="news-detail__ctrl">
+            <p class="detail-data"><span>25</span>июля 2017</p>
+            <div class="detail-social social-share">
+                <p class="social-list-label">Поделиться:</p>
+                <ul class="social-list-alt">
+                    <li>
+                        <a href="#">
+                            <i class="iconmoon icon-fb"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="iconmoon icon-tw"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="iconmoon icon-gp"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="news-detail__image">
+            <img src="img/jpeg_files/news-d.jpg" alt="image">
+        </div>
             <p>Cold Steel (от англ. холодная сталь) — американская компания, производящая ножи, мечи и прочее клинковое и
                 ударное оружие и инструмент. Президент компании — Линн Томпсон (Lynn Thompson). Штаб-квартира расположена в
                 городе Вентура, Калифорния, США. Производство размещается в разных странах, включая Японию, Тайвань, Китай,
@@ -62,15 +64,16 @@
             <br>
             <br>
 
-
-
             <h3>Видеообзор</h3>
 
             <iframe width="100%" height="660px" src="https://www.youtube.com/embed/ia4q0-8UJBg" frameborder="0"
                     allowfullscreen></iframe>
 
-<!--            <div class="news-detail-bottom"></div>-->
+        <div class="news-detail__back">
+            <a href="#" class="news-detail__back--btn btn btn-black btn-black__arrow-left btn-hover-normal "><span>Назад к списку</span></a>
         </div>
+
+
     </div>
 
 

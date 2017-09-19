@@ -2,7 +2,7 @@
 <body>
 <?php include_once "parts/header.php" ?>
 
-<?php include_once "parts/breadcrumbs-interactive.php"?>
+<?php include_once "parts/breadcrumbs.php"?>
 
 
 <div class="container">

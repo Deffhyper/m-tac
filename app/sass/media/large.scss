@@ -39,6 +39,19 @@
     padding: 10px 6px 7px;
   }
 
+  .text-page iframe {
+    height: 420px;
+  }
+
+  //////////////////////////////////////////// category ////////////////////////////////////
+
+  .category__item--image img {
+    max-width: none;
+  }
+  .category__item--image {
+    margin-bottom: 8px;
+  }
+
   //////////////////////////////////////////// catalog //////////////////////////////////////
 
   .search-label {
@@ -252,6 +265,20 @@
 
   .news-list .news-main-item {
     margin-bottom: 25px;
+  }
+
+  //////////////////////////////////// news detail //////////////////////
+
+  .news-detail__ctrl {
+    float: none;
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  /////////////////////////////////// video reviews detail ////////////////////////////
+
+  .reviews-detail-video iframe {
+    height: 420px;
   }
 
 

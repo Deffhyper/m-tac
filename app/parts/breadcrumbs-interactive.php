@@ -22,7 +22,7 @@
             <div class="breadcrumbs-right">
                 <div class="interactive-block">
                     <div class="interactive-block__image">
-                        <img src="img/jpeg_files/man-3.png" alt="man" width="253" height="779">
+                        <img src="img/jpeg_files/man.png" alt="man" width="253" height="779">
                         <a href="#modal-1" class="image-dot" style="top: 23%; left: 49%"></a>
                         <a href="#modal-2" class="image-dot" style="top: 59%; left: 37%"></a>
                         <a href="#modal-3" class="image-dot" style="top: 93%; left: 38%"></a>
