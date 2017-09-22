@@ -380,7 +380,7 @@
     label {
       color: #6a6a6a;
     }
-    input {
+    input, textarea {
       border-bottom-color: #33312d;
     }
   }
@@ -390,7 +390,7 @@
     top: 0;
     left: 0;
   }
-  input {
+  input, textarea {
     background-color: transparent;
     border-width: 0 0 2px 0;
     -webkit-border-radius: 0;
@@ -403,6 +403,10 @@
       font-size: 15px;
       color: #929292;
     }
+  }
+  textarea {
+    resize: none;
+    padding-top: 10px;
   }
 }
 

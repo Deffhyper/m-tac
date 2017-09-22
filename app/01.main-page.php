@@ -514,22 +514,26 @@
             <section class="description-main white-text right-padding section-padding">
                 <h4 class="title-h3 section-title-h3">О бренде</h4>
                 <div class="description-main__content">
-                    <p>Создание бренда М-Тас - новый шаг в развитии ТМ «Милитарист». Имея десятилетний опыт работы с полевым
-                        и тактическим снаряжением, компания объединила усилия украинских и зарубежных производителей для
-                        создания качественного снаряжения, полевой формы, обуви и аксессуаров. </p>
-                    <br>
-                    <p>Одним из главных приоритетов при создании продукции бренда М-Тас является поиск оптимального
-                        сочетания цены и качества товара.</p>
+                    <div class="description-main__content--item">
+                        <p>Создание бренда М-Тас - новый шаг в развитии ТМ «Милитарист». Имея десятилетний опыт работы с полевым
+                            и тактическим снаряжением, компания объединила усилия украинских и зарубежных производителей для
+                            создания качественного снаряжения, полевой формы, обуви и аксессуаров. </p>
+                        <br>
+                        <p>Одним из главных приоритетов при создании продукции бренда М-Тас является поиск оптимального
+                            сочетания цены и качества товара.</p>
+                    </div>
+                    <a href="#" class="btn btn-normal btn-hover-normal btn-inverse">читать  детальнее</a>
                 </div>
-                <a href="#" class="btn btn-normal btn-hover-normal btn-inverse">читать  детальнее</a>
+
 
             </section>
             <section class="description-main black-text accent-bg section-padding">
                 <h4 class="title-h3 section-title-h3">Найти магазин</h4>
                 <div class="description-main__content">
-                    <p>Найдите ближайший для вас магазин, где вы сможете преобрести товары нашего производства</p>
-                    <svg version="1.1" class="decor-map" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
-                         y="0px" viewBox="0 0 79.4 65.6" xml:space="preserve">
+                    <div class="description-main__content--item">
+                        <p>Найдите ближайший для вас магазин, где вы сможете преобрести товары нашего производства</p>
+                        <svg version="1.1" class="decor-map" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+                             y="0px" viewBox="0 0 79.4 65.6" xml:space="preserve">
                         <g>
                             <path d="M32,37.1c0,2.8-2.3,5-5,5c-2.8,0-5-2.3-5-5c0-2.8,2.3-5,5-5C29.7,32.1,32,34.4,32,37.1L32,37.1z M32,37.1"></path>
                             <path d="M75.9,36.1l3.4-26.9L54.9,0L25.5,14L0,3.2l3.4,28.7L0.1,60.1l27.1,5.1L55,59.9l24.4,5.6L75.9,36.1z M54.8,2.8L76.4,11
@@ -546,8 +550,11 @@
                             </path>
                         </g>
                     </svg>
+                    </div>
+
+                    <a href="#" class="btn btn-normal btn-black btn-hover-black">Найти  магазин</a>
                 </div>
-                <a href="#" class="btn btn-normal btn-black btn-hover-black">Найти  магазин</a>
+
             </section>
             <section class="description-main white-text left-padding section-padding">
                 <h4 class="title-h3 section-title-h3">Рассылка</h4>
@@ -565,12 +572,11 @@
                                 <input type="email" id="f-2" placeholder="Введите ваш электронный адрес">
                             </fieldset>
                             <fieldset>
-                                <input type="submit" class="uk-hidden" value="Подписаться">
+                                <input type="submit" class="btn btn-normal btn-hover-normal btn-inverse" value="Подписаться">
                             </fieldset>
                         </form>
                     </div>
                 </div>
-                <a href="#" role="button" class="btn btn-normal btn-hover-normal btn-inverse">Подписаться</a>
             </section>
         </div>
     </div>

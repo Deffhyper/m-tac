@@ -15,6 +15,12 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-c-picker:before {
+  content: "\e908";
+}
+.icon-email:before {
+  content: "\e909";
+}
 .icon-gp:before {
   content: "\e904";
 }
@@ -39,4 +45,5 @@
 .icon-picker:before {
   content: "\e902";
 }
+
 

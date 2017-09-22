@@ -463,7 +463,65 @@
     height: 220px;
   }
 
+  /////////////////////////////////// dealer //////////////////////////////////
+  .gray-form {
+    padding: 30px 20px;
+  }
 
+  .dealer__right {
+    padding-left: 25px;
+    margin-bottom: 0;
+  }
+
+  ///////////////////////////////////// contacts //////////////////////////////////////////////////
+
+  .contacts__top, .container-contacts {
+    height: auto;
+  }
+
+  .contacts-list {
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: translateY(0);
+    width: 100%;
+    padding: 25px 25px 0;
+  }
+
+  .contacts-map {
+    height: 300px;
+    position: relative;
+  }
+
+  .contacts {
+    margin-top: 0;
+  }
+
+  .contacts-list__item--title {
+    font-size: 16px;
+  }
+
+  .contacts-list__item--tel {
+    font-size: 18px;
+  }
+
+  .contacts-list__item {
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+  }
+
+  .section-title-h3 {
+    margin-bottom: 23px;
+  }
+
+  //////////////////////////////////// sitemap ///////////////////////////
+
+  .sitemap {
+    margin-bottom: 0;
+    &:last-child{
+      margin-bottom: 40px;
+    }
+  }
 
 
 

@@ -650,6 +650,13 @@ $(function () {
     });
 
 
+    ///////////////////////////////////// sitemap ///////////////////////////////////////////////
+
+    $('.sitemap-sublist__item.has-child').on('click', function () {
+        $(this).find('.sitemap-sub-sublist').slideToggle();
+        $(this).toggleClass('open');
+    });
+
 
 
 
