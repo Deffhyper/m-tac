@@ -49,7 +49,8 @@ gulp.task('scripts', function() {
 		//'app/libs/uikit/js/components/accordion.js', // Ui accordion
 		'app/libs/uikit/js/components/grid.js', // Ui grid
 		// 'app/libs/uikit/js/components/lightbox.js', // Ui lightbox
-		'app/libs/uikit/js/components/nestable.js' // Ui nestable
+		'app/libs/uikit/js/components/nestable.js', // Ui nestable
+		'app/libs/scrollbar/jquery.mCustomScrollbar.concat.min.js' // Custom scrollbar
 		//'app/libs/uikit/js/components/parallax.js', // Ui parallax
 		// 'app/libs/uikit/js/components/slider.js', // Ui slider
 		// 'app/libs/uikit/js/components/slideset.js', // Ui slideset
