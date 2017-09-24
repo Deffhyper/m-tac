@@ -762,6 +762,14 @@ $(function () {
     });
 
 
+    ////////////////////////////////// custom select /////////////////////////
+
+    $('.custom-select').selectric();
+
+    $(document).on('click', '.store-location-modals__item--close', function (e) {
+        e.preventDefault();
+        $(this).closest('.store-location-modals__item').fadeOut();
+    })
 
 
 
