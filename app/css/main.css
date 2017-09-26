@@ -490,6 +490,10 @@ img {
   background-color: transparent;
   color: #fff; }
 
+.modal-dialog-video {
+  width: 95%;
+  height: 60vw; }
+
 .uk-modal-dialog.big {
   width: 100%;
   max-width: 1240px;
