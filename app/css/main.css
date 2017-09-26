@@ -438,12 +438,6 @@ img {
   height: 15px;
   background-color: #ffcc00; }
 
-@media (max-width: 766px) {
-  .slick-arrow:after {
-    position: absolute;
-    top: 10px;
-    left: 11px; } }
-
 .uk-modal {
   background-color: rgba(22, 22, 38, 0.9); }
   .uk-modal .uk-close {
