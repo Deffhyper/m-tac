@@ -1659,10 +1659,464 @@ margin-bottom: 40px;
 }
 
 
+.forty-four {
+  height: 640px;
+  background: url("../img/jpeg_files/404.png") no-repeat bottom center / contain ;
+  text-align: center;
+  position: relative;
+
+  &__title {
+    font-family: $font-black;
+    font-size: 24px;
+    max-width: 700px;
+    text-transform: uppercase;
+    margin: 22px auto 17px;
+    line-height: 1.36;
+  }
+  &__subtitle {
+    font-size: 18px;
+  }
+  &__link {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    bottom: 85px;
+    .btn {
+      width: 220px;
+    }
+  }
+}
+
+////////////////////////////////////// lookbook detail /////////////////////////////
+
+.lookbook-detail {
+  background-color: #f4f3f8;
+  margin-top: -50px;
+  padding-top: 30px;
+  padding-bottom: 90px;
+
+
+  &__title {
+    margin-bottom: 25px;
+  }
+
+  &__subtitle {
+    font-size: 18px;
+    margin-top: 20px;
+  }
+}
 
 
 
+.lookbook-detail-content {
+  flex: 0 0 67%;
+  overflow: hidden;
+}
 
+.lookbook-detail-sidebar {
+  flex: 0 0 33%;
+  overflow: hidden;
+}
+
+.lookbook-slider {
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+
+    &-carousel {
+      display: inline-block;
+      width: 725px;
+
+      .slick-current {
+        .lookbook-slider__top-carousel--item {
+          border-width: 2px;
+          border-color: $accent;
+          &:after {
+            content: '';
+            display: block;
+            width: 7px;
+            height: 7px;
+            border-top: 2px solid #ffcc00;
+            border-right: 2px solid #ffcc00;
+            position: absolute;
+            bottom: -5px;
+            left: 50%;
+            margin-left: -5px;
+            background-color: #fff;
+            transform: rotateZ(135deg);
+            z-index: 4;
+          }
+        }
+      }
+      .slick-arrow {
+        position: absolute;
+        top: 26px;
+        &.slick-next {
+          right: -85px;
+        }
+        &.slick-prev {
+          right: -58px;
+        }
+        &:after {
+          border-top: 2px solid #181613;
+          border-right: 2px solid #181613;
+        }
+        &:hover {
+          &:after {
+            border-color: $accent;
+          }
+        }
+
+      }
+      &--item {
+        width: 92px;
+        height: 92px;
+        border: 1px solid #dcdcea;
+        margin: 0 0 4px;
+        position: relative;
+        box-shadow: inset 0 0 0 4px #fff;
+
+        img {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          z-index: -1;
+        }
+      }
+    }
+    &-nav {
+      display: inline-block;
+      width: 92px;
+      height: 92px;
+      border: 1px solid #dcdcea;
+      position: relative;
+    }
+  }
+
+  &-content {
+    border: 1px solid #dcdcea;
+    &__item {
+      height: 835px;
+      position: relative;
+
+      .interactive-block__image {
+        position: relative;
+        height: 100%;
+        img {
+          max-height: 98%;
+        }
+      }
+    }
+  }
+}
+
+.lookbook-scroll {
+  position: relative;
+
+  .icon-scroller {
+    @include sprite($scroller);
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: -6px;
+    margin-top: -10px;
+  }
+
+  &__block {
+    height: 940px;
+    width: 88%;
+    margin-left: auto;
+
+    &--item {
+      &.active {
+        .goods {
+          border-color: $accent;
+        }
+      }
+    }
+    &:after {
+      content: "";
+      display: block;
+      width: 370px;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      box-shadow: 0 0 60px 47px #f4f3f8;
+      z-index: 1;
+    }
+
+    .empty-block {
+      height: 512px;
+      width: 100%;
+    }
+
+    .goods {
+      margin-bottom: 20px;
+    }
+
+    .mCSB_buttonUp,  .mCSB_buttonDown{
+      &:after {
+        content: '';
+        display: block;
+        width: 4px;
+        height: 4px;
+        border-top: 1px solid #fff;
+        border-right: 1px solid #fff;
+        position: absolute;
+        top: 14px;
+      }
+    }
+    .mCSB_buttonUp:after {
+      left: 3px;
+      transform: rotateZ(-45deg);
+    }
+
+    .mCSB_buttonDown:after {
+      left: 3px;
+      transform: rotateZ(135deg);
+    }
+    .mCSB_scrollTools .mCSB_buttonDown,
+    .mCSB_scrollTools .mCSB_buttonUp {
+      background-color: #181613;
+      height: 30px;
+      z-index: 3;
+    }
+    .mCSB_scrollTools {
+      width: 10px;
+    }
+    .mCSB_scrollTools .mCSB_dragger {
+      background-color: $accent;
+    }
+    .mCSB_scrollTools .mCSB_draggerRail {
+      border-radius: 0;
+      background-color: #ebe9f1;
+      width: 100%;
+    }
+  }
+}
+
+///////////////////////////////// store locator /////////////////////////////
+
+.store-location-navigate {
+  margin-bottom: 40px;
+
+  &__form {
+    display: inline-block;
+    vertical-align: bottom;
+    &--select {
+      display: inline-block;
+      vertical-align: bottom;
+      label {
+        font-size: 15px;
+        font-family: $font-bold;
+        display: block;
+        margin-bottom: 5px;
+
+      }
+    }
+    &--submit {
+      display: inline-block;
+      vertical-align: bottom;
+      margin-left: 18px;
+      .btn {
+        padding: 20px 50px 16px;
+      }
+    }
+  }
+
+  &__link {
+    display: inline-block;
+    vertical-align: bottom;
+    margin-left: 16px;
+    .btn {
+      width: 260px;
+    }
+  }
+}
+
+.custom-select-wrapper {
+  height: 53px;
+  border: 1px solid #dcdcea;
+  width: 406px;
+
+  .custom-select {
+    height: 53px;
+    border: 1px solid #dcdcea;
+    width: 406px;
+  }
+
+   .selectric .label {
+    line-height: 53px;
+    height: 49px;
+    font-size: 15px;
+  }
+  .selectric .button {
+    font-size: 0;
+    height: 100%;
+  }
+  .selectric-open {
+    .selectric .button:after {
+      transform: rotate(-135deg);
+    }
+  }
+  .selectric .button:after {
+    content: "";
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    border-bottom: 1px solid #000;
+    border-right: 1px solid #000;
+    border-left: 0;
+    border-top: 0;
+    -webkit-transition: .3s ease;
+    transition: .3s ease;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    pointer-events: none;
+  }
+}
+
+.store-location-position {
+  margin-bottom: 30px;
+  .location-map {
+    height: 545px;
+  }
+}
+
+
+
+.store {
+  padding: 40px 40px 20px;
+  background-color: #f0f0f3;
+  text-align: center;
+  font-size: 15px;
+  margin-bottom: 11px !important;
+
+  .store-location-picker {
+    @include sprite($picker);
+    display: inline-block;
+    position: relative;
+    top: 5px;
+    margin-right: 10px;
+  }
+
+  &__image {
+    position: relative;
+    width: 100%;
+    height: 215px;
+    overflow: hidden;
+    margin-bottom: 10px;
+    a {
+      display: block;
+      height: 100%;
+      img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        height: 100%;
+        max-width: none;
+      }
+    }
+  }
+  &__title {
+    font-family: $font-bold;
+    font-size: 17px;
+    text-transform: uppercase;
+    border-bottom: 1px solid #c5c4c6;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+  }
+
+  &__address {
+    border-bottom: 1px solid #c5c4c6;
+    padding-bottom: 17px;
+    margin-bottom: 16px;
+  }
+
+  &__prop {
+    border-bottom: 1px solid #c5c4c6;
+    padding-bottom: 14px;
+    margin-bottom: 9px;
+    line-height: 2.1;
+
+
+
+    &--link {
+      a {
+        text-decoration: underline;
+        &:hover {
+          text-decoration: none;
+        }
+      }
+
+    }
+    &--tel {
+      font-family: $font-bold;
+      font-size: 18px;
+    }
+  }
+
+  &__location {
+    a {
+      border-bottom: 1px dotted $text-color;
+      &:hover {
+        border-bottom-color: transparent;
+      }
+    }
+  }
+
+}
+
+.stores {
+  margin-bottom: 80px;
+}
+
+.store-location-position {
+  position: relative;
+}
+.store-location-modals__item {
+  width: 400px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  display: none;
+
+  &--close {
+    display: block;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    &.uk-close {
+      &:after, &:before {
+        background-color: $text-color;
+      }
+    }
+  }
+
+  .store {
+    background-color: rgba(255, 204, 0, .902);
+    height: 545px;
+    overflow: hidden;
+  }
+  .store__title,
+  .store__address {
+    border-bottom-color: #b89716;
+  }
+  .store__prop {
+    border-bottom: 0;
+    padding-bottom: 17px;
+    margin-bottom: 0;
+  }
+
+}
 
 
 

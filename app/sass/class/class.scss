@@ -222,6 +222,14 @@
   }
 }
 
+@media ($mobile) {
+  .slick-arrow:after {
+    position: absolute;
+    top: 10px;
+    left: 11px;
+  }
+}
+
 
 /////////////////////////////////////////////////// modals ////////////////////////////////////////
 .uk-modal {

@@ -287,6 +287,48 @@
     height: 660px;
   }
 
+  ////////////////////////////////////////// 404 //////////////////////////////
+
+  .forty-four__title {
+    font-size: 20px;
+    max-width: 600px;
+    margin: 10px auto;
+  }
+
+  .forty-four__subtitle {
+    font-size: 16px;
+  }
+
+  .forty-four {
+    height: 425px;
+  }
+
+  .forty-four__link {
+    bottom: 43px;
+  }
+
+  /////////////////////////////////// lookbook detail ////////////////////
+
+  .lookbook-detail-content {
+    flex: 0 0 63%;
+  }
+  .lookbook-detail-sidebar {
+    flex: 0 0 37%;
+  }
+
+  .lookbook-slider__top-carousel {
+    width: 493px;
+  }
+
+  ////////////////////////////////// store locator ////////////////////////
+
+  .custom-select-wrapper {
+    width: 295px;
+  }
+
+  .store-location-navigate__link .btn {
+    width: 225px;
+  }
 
 
 

@@ -421,6 +421,9 @@ $(function () {
         bindJsOnFilterSidebar(window.innerWidth);
     });
 
+
+
+
     ///////////////////////////////////////////// sidebar subcategory ////////////
 
     $('.sidebar-list__item').find('a').on('click', function () {
@@ -550,6 +553,7 @@ $(function () {
             }
         ]
     });
+    
 
     ////////////////////////////// gallery slider ////////////////////////////////////
 
@@ -656,6 +660,117 @@ $(function () {
         $(this).find('.sitemap-sub-sublist').slideToggle();
         $(this).toggleClass('open');
     });
+    
+    
+    ////////////////////////////////////// lookbook detail /////////////////////////////////
+
+    $('.lookbook-slider-content').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        dots: false,
+        fade: true,
+        infinite: false,
+        asNavFor: '.lookbook-slider__top-carousel'
+    });
+    $('.lookbook-slider__top-carousel').slick({
+        slidesToShow: 7,
+        slidesToScroll: 1,
+        asNavFor: '.lookbook-slider-content',
+        dots: false,
+        arrows: true,
+        infinite: false,
+        focusOnSelect: true,
+        responsive: [
+            {
+                breakpoint: 1280,
+                settings: {
+                    slidesToShow: 5,
+                    slidesToScroll: 1
+                }
+            },
+            {
+                breakpoint: 992,
+                settings: {
+                    slidesToShow: 4,
+                    slidesToScroll: 1
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 1
+                }
+            }
+        ]
+    });
+
+    /////////////////////////////////// lookbook scroll //////////////////////////////////
+
+    function bindJsToCustomScrollbar(windowWidth) {
+
+        var $lbBlock = $(".lookbook-scroll__block"),
+            $slContent= $('.lookbook-slider-content');
+
+
+        if (windowWidth < 768) {
+            $lbBlock.mCustomScrollbar("destroy");
+            $slContent.find('a').unbind('click').on('click', function(event){
+                event.preventDefault();
+
+                $('html, body').animate({
+                    scrollTop: $( $.attr(this, 'href') ).offset().top
+                }, 500);
+            });
+
+            $slContent.find('a').unbind('click').on('click', function (e) {
+                e.preventDefault();
+                var href = $.attr(this, 'href');
+                $('html, body').animate({
+                    scrollTop: $(href).offset().top
+                }, 500);
+                return false;
+            });
+        } else {
+            $lbBlock.mCustomScrollbar("destroy");
+            $lbBlock.mCustomScrollbar({
+                theme:"dark",
+                alwaysShowScrollbar: 2,
+                scrollButtons:{enable:true},
+                advanced:{autoExpandHorizontalScroll:true}
+            });
+
+            ///////////////////////////// scroll to current goods //////////////////////////
+
+            $slContent.find('a').unbind('click').on('click', function (event) {
+                event.preventDefault();
+                var $this = $(this),
+                    href = $this.attr("href"),
+                    $current = $(document.getElementById(href.split(/#(.+)/)[1])),
+                    $paerent = $current.parent('.lookbook-scroll__block--item');
+
+                $lbBlock.mCustomScrollbar("scrollTo", href);
+                $paerent.addClass('active');
+                $paerent.siblings().removeClass('active');
+            });
+        }
+    }
+
+    $(window).ready(bindJsToCustomScrollbar(windowWidth)).resize(function () {
+        bindJsToCustomScrollbar(window.innerWidth);
+    });
+
+
+    ////////////////////////////////// custom select /////////////////////////
+
+    $('.custom-select').selectric();
+
+    $(document).on('click', '.store-location-modals__item--close', function (e) {
+        e.preventDefault();
+        $(this).closest('.store-location-modals__item').fadeOut();
+    })
+
 
 
 
