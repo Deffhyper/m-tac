@@ -1803,10 +1803,18 @@ margin-bottom: 40px;
       position: relative;
 
       .interactive-block__image {
-        position: relative;
-        height: 100%;
+        max-height: 98%;
+        display: inline-block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
         img {
-          max-height: 98%;
+          position: relative;
+          top: 0;
+          left: 0;
+          transform: translate(0,0);
+          max-width: none;
         }
       }
     }

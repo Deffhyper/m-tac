@@ -463,6 +463,11 @@
     a {
       display: block;
       height: 100%;
+      &:hover {
+        .news-main-item__image--play {
+          transform: translate(-50%, -50%) scale(1.2);
+        }
+      }
     }
     img {
       position: absolute;
@@ -478,6 +483,7 @@
       left: 50%;
       transform: translate(-50%, -50%);
       z-index: 2;
+      transition: .3s ease;
     }
   }
 

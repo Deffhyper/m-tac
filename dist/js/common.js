@@ -769,10 +769,26 @@ $(function () {
     $(document).on('click', '.store-location-modals__item--close', function (e) {
         e.preventDefault();
         $(this).closest('.store-location-modals__item').fadeOut();
-    })
+    });
 
 
+//////////////////////////////////// video madals ////////////////////////////
 
+    $('.youtube-modal').magnificPopup({
+        disableOn: 700,
+        type: 'iframe',
+        mainClass: 'mfp-fade',
+        removalDelay: 160,
+        preloader: false,
+        fixedContentPos: false,
+        iframe: {
+            markup: '<div class="mfp-iframe-scaler">' +
+            '<div class="mfp-close"></div>' +
+            '<iframe class="mfp-iframe" frameborder="0" allowfullscreen></iframe>' +
+            '</div>' // HTML markup of popup, `mfp-close` will be replaced by the close button
+        }
+
+    });
 
 
 

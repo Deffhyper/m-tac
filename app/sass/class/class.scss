@@ -244,6 +244,10 @@
   }
 }
 
+.mfp-iframe-scaler {
+  overflow: visible;
+}
+
 .uk-close:hover {
   &:after {
     background-color: $accent;
@@ -334,6 +338,18 @@
     right: -35px;
     top: -60px;
   }
+}
+
+.mfp-close {
+  @extend .uk-close;
+
+}
+
+.mfp-iframe-holder .mfp-close, .mfp-image-holder .mfp-close {
+  color: transparent;
+  width: 44px;
+  right: -45px;
+
 }
 
 @media ($tablet) {

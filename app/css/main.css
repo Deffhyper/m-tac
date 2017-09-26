@@ -446,7 +446,7 @@ img {
 
 .uk-modal {
   background-color: rgba(22, 22, 38, 0.9); }
-  .uk-modal .uk-close {
+  .uk-modal .uk-close, .uk-modal .mfp-close {
     position: absolute;
     top: 30px;
     right: 30px;
@@ -454,13 +454,16 @@ img {
     width: 40px;
     height: 40px; }
 
-.uk-close:hover:after {
+.mfp-iframe-scaler {
+  overflow: visible; }
+
+.uk-close:hover:after, .mfp-close:hover:after {
   background-color: #ffcc00; }
 
-.uk-close:hover:before {
+.uk-close:hover:before, .mfp-close:hover:before {
   background-color: #ffcc00; }
 
-.uk-close:after {
+.uk-close:after, .mfp-close:after {
   display: block;
   content: "";
   font-family: inherit;
@@ -476,7 +479,7 @@ img {
   -webkit-transition: .3s ease;
   transition: .3s ease; }
 
-.uk-close:before {
+.uk-close:before, .mfp-close:before {
   display: block;
   content: "";
   font-family: inherit;
@@ -538,13 +541,18 @@ img {
     right: -35px;
     top: -60px; }
 
+.mfp-iframe-holder .mfp-close, .mfp-image-holder .mfp-close {
+  color: transparent;
+  width: 44px;
+  right: -45px; }
+
 .modal-header {
   text-align: center;
   font-family: "FiraSans-Black", sans-serif;
   font-size: 36px; }
 
 @media (max-width: 991px) {
-  .uk-modal .uk-close {
+  .uk-modal .uk-close, .uk-modal .mfp-close {
     right: 5px; }
   .modal-header {
     font-size: 26px; }
@@ -2268,6 +2276,10 @@ body:after {
   .news-main-item__image a {
     display: block;
     height: 100%; }
+    .news-main-item__image a:hover .news-main-item__image--play {
+      -webkit-transform: translate(-50%, -50%) scale(1.2);
+          -ms-transform: translate(-50%, -50%) scale(1.2);
+              transform: translate(-50%, -50%) scale(1.2); }
   .news-main-item__image img {
     position: absolute;
     top: 0;
@@ -2282,7 +2294,9 @@ body:after {
     -webkit-transform: translate(-50%, -50%);
         -ms-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
-    z-index: 2; }
+    z-index: 2;
+    -webkit-transition: .3s ease;
+    transition: .3s ease; }
 
 .news-main-item__link {
   font-family: "FiraSans-Condensed-SemiBold", sans-serif;
@@ -2600,6 +2614,11 @@ body:after {
     width: 70%; }
   .breadcrumbs__interactive .breadcrumbs-right {
     width: 30%; }
+    .breadcrumbs__interactive .breadcrumbs-right__social {
+      text-align: right; }
+      .breadcrumbs__interactive .breadcrumbs-right__social .social-list-alt > li > a {
+        border-color: #fff;
+        color: #fff; }
   .breadcrumbs__interactive .breadcrumbs-title {
     max-width: 70%; }
   .breadcrumbs__interactive .breadcrumbs-list {
@@ -2673,6 +2692,10 @@ body:after {
       right: 30%; }
     .breadcrumbs__interactive .interactive-block {
       top: 0; } }
+
+@media (max-width: 991px) {
+  .breadcrumbs-right__social .social-list-label {
+    margin-right: 10px; } }
 
 @media (max-width: 766px) {
   .breadcrumbs {
@@ -4145,10 +4168,22 @@ body:after {
     height: 835px;
     position: relative; }
     .lookbook-slider-content__item .interactive-block__image {
-      position: relative;
-      height: 100%; }
+      max-height: 98%;
+      display: inline-block;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+          -ms-transform: translate(-50%, -50%);
+              transform: translate(-50%, -50%); }
       .lookbook-slider-content__item .interactive-block__image img {
-        max-height: 98%; }
+        position: relative;
+        top: 0;
+        left: 0;
+        -webkit-transform: translate(0, 0);
+            -ms-transform: translate(0, 0);
+                transform: translate(0, 0);
+        max-width: none; }
 
 .lookbook-scroll {
   position: relative; }
@@ -4364,7 +4399,7 @@ body:after {
     position: absolute;
     top: 0;
     left: 0; }
-    .store-location-modals__item--close.uk-close:after, .store-location-modals__item--close.uk-close:before {
+    .store-location-modals__item--close.uk-close:after, .store-location-modals__item--close.mfp-close:after, .store-location-modals__item--close.uk-close:before, .store-location-modals__item--close.mfp-close:before {
       background-color: #181613; }
   .store-location-modals__item .store {
     background-color: rgba(255, 204, 0, 0.902);
