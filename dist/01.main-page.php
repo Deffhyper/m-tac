@@ -232,6 +232,27 @@
                     </a>
                 </div>
             </div>
+
+            <div>
+                <div class="inform-list__item inverse">
+                    <a href="#" class="inform-list__item--link">
+                        <img src="img/jpeg_files/i-3.jpg" alt="some description">
+                        <span class="title-light link-decor">Для <br>Разного</span>
+                        <span class="btn btn-normal btn-black">Смотреть линию</span>
+                    </a>
+                </div>
+            </div>
+
+            <div>
+                <div class="inform-list__item inverse">
+                    <a href="#" class="inform-list__item--link">
+                        <img src="img/jpeg_files/i-3.jpg" alt="some description">
+                        <span class="title-light link-decor">Для <br>Разного</span>
+                        <span class="btn btn-normal btn-black">Смотреть линию</span>
+                    </a>
+                </div>
+            </div>
+
         </div>
     </div>
 </div>

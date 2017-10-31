@@ -14,7 +14,59 @@
                     <small>/06</small>
                 </div>
                 <div class="news-main-item__image">
-                    <a href="#">
+                    <a href="#video-modal" class="video-modal-launcher" role="button" data-address="K6GJh8eE5r0">
+                        <span class="news-main-item__image--play">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="63" height="63" viewBox="0 0 63 63">
+                                <circle style="stroke: #fff; fill: transparent;" cx="31.5" cy="31.5" r="27.5"></circle>
+                                <path style="stroke: #fff; fill: transparent;" d="M27.55,18.95V43.7L42.4,31.248Z"></path>
+                            </svg>
+                        </span>
+                        <img src="img/jpeg_files/n-1.jpg" alt="news" width="303" height="180">
+                    </a>
+                </div>
+                <div class="news-main-item__link">
+                    <a href="#">Новые поступления футболок и кепок</a>
+                </div>
+                <div class="news-main-item__text">
+                    <p>При разработке новых образцов специалисты отечественной компании M-Tac внимательно и
+                        подробно анализируют образцы военной...</p>
+                </div>
+                <a href="#" class="news-main-item__detail btn btn-border-bottom">детальнее</a>
+            </div>
+            <div class="news-main-item">
+                <div class="news-main-item__date">
+                    <time datetime="25/06" class="uk-hidden">25/06</time>
+                    <span>25</span>
+                    <small>/06</small>
+                </div>
+                <div class="news-main-item__image">
+                    <a href="#video-modal" class="video-modal-launcher" role="button"  data-address="0rHjibBWkkI">
+                        <span class="news-main-item__image--play">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="63" height="63" viewBox="0 0 63 63">
+                                <circle style="stroke: #fff; fill: transparent;" cx="31.5" cy="31.5" r="27.5"></circle>
+                                <path style="stroke: #fff; fill: transparent;" d="M27.55,18.95V43.7L42.4,31.248Z"></path>
+                            </svg>
+                        </span>
+                        <img src="img/jpeg_files/n-1.jpg" alt="news" width="303" height="180">
+                    </a>
+                </div>
+                <div class="news-main-item__link">
+                    <a href="#">Новые поступления футболок и кепок</a>
+                </div>
+                <div class="news-main-item__text">
+                    <p>При разработке новых образцов специалисты отечественной компании M-Tac внимательно и
+                        подробно анализируют образцы военной...</p>
+                </div>
+                <a href="#" class="news-main-item__detail btn btn-border-bottom">детальнее</a>
+            </div>
+            <div class="news-main-item">
+                <div class="news-main-item__date">
+                    <time datetime="25/06" class="uk-hidden">25/06</time>
+                    <span>25</span>
+                    <small>/06</small>
+                </div>
+                <div class="news-main-item__image">
+                    <a href="#video-modal" class="video-modal-launcher" role="button" data-address="782xDLeQIPI">
                         <span class="news-main-item__image--play">
                             <svg xmlns="http://www.w3.org/2000/svg" width="63" height="63" viewBox="0 0 63 63">
                                 <circle style="stroke: #fff; fill: transparent;" cx="31.5" cy="31.5" r="27.5"></circle>
@@ -144,6 +196,7 @@
                     <small>/06</small>
                 </div>
                 <div class="news-main-item__image">
+
                     <a href="#">
                         <span class="news-main-item__image--play">
                             <svg xmlns="http://www.w3.org/2000/svg" width="63" height="63" viewBox="0 0 63 63">
@@ -163,57 +216,13 @@
                 </div>
                 <a href="#" class="news-main-item__detail btn btn-border-bottom">детальнее</a>
             </div>
-            <div class="news-main-item">
-                <div class="news-main-item__date">
-                    <time datetime="25/06" class="uk-hidden">25/06</time>
-                    <span>25</span>
-                    <small>/06</small>
-                </div>
-                <div class="news-main-item__image">
-                    <a href="#">
-                        <span class="news-main-item__image--play">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="63" height="63" viewBox="0 0 63 63">
-                                <circle style="stroke: #fff; fill: transparent;" cx="31.5" cy="31.5" r="27.5"></circle>
-                                <path style="stroke: #fff; fill: transparent;" d="M27.55,18.95V43.7L42.4,31.248Z"></path>
-                            </svg>
-                        </span>
-                        <img src="img/jpeg_files/n-1.jpg" alt="news" width="303" height="180">
-                    </a>
-                </div>
-                <div class="news-main-item__link">
-                    <a href="#">Новые поступления футболок и кепок</a>
-                </div>
-                <div class="news-main-item__text">
-                    <p>При разработке новых образцов специалисты отечественной компании M-Tac внимательно и
-                        подробно анализируют образцы военной...</p>
-                </div>
-                <a href="#" class="news-main-item__detail btn btn-border-bottom">детальнее</a>
-            </div>
-            <div class="news-main-item">
-                <div class="news-main-item__date">
-                    <time datetime="25/06" class="uk-hidden">25/06</time>
-                    <span>25</span>
-                    <small>/06</small>
-                </div>
-                <div class="news-main-item__image">
-                    <a href="#">
-                        <span class="news-main-item__image--play">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="63" height="63" viewBox="0 0 63 63">
-                                <circle style="stroke: #fff; fill: transparent;" cx="31.5" cy="31.5" r="27.5"></circle>
-                                <path style="stroke: #fff; fill: transparent;" d="M27.55,18.95V43.7L42.4,31.248Z"></path>
-                            </svg>
-                        </span>
-                        <img src="img/jpeg_files/n-1.jpg" alt="news" width="303" height="180">
-                    </a>
-                </div>
-                <div class="news-main-item__link">
-                    <a href="#">Новые поступления футболок и кепок</a>
-                </div>
-                <div class="news-main-item__text">
-                    <p>При разработке новых образцов специалисты отечественной компании M-Tac внимательно и
-                        подробно анализируют образцы военной...</p>
-                </div>
-                <a href="#" class="news-main-item__detail btn btn-border-bottom">детальнее</a>
+        </div>
+
+<!--        /////////video  modal -->
+        <div id="video-modal" class="mfp-hide">
+            <a href="#" role="button" class="mfp-close uk-close"></a>
+            <div class="uk-modal-dialog modal-dialog-video">
+                <iframe id="iframeYoutube" width="100%" height="100%" src="" frameborder="0" allowfullscreen></iframe>
             </div>
         </div>
 

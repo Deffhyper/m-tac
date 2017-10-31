@@ -1,0 +1,97 @@
+.catalog-list.single {
+  .catalog-list__item {
+    width: 24.6%;
+    &:nth-child(3n+3){
+      margin-right: .333%;
+    }
+    &:nth-child(4n+4){
+      margin-right: 0;
+    }
+  }
+}
+
+.goods-stickers {
+  position: absolute;
+  top: 10px;
+  right: 0;
+  z-index: 2;
+
+  &__item {
+    display: flex;
+    justify-content: flex-end;
+    span {
+      display: inline-block;
+      margin-bottom: 7px;
+    }
+  }
+}
+
+@media (max-width: 1279px) {
+
+  .catalog-list.single {
+
+    .catalog-list__item {
+      width: 33%;
+      margin-right: .333%;
+      margin-bottom: 5px;
+
+      &:nth-child(4n+4){
+        margin-right: .333%;
+      }
+
+      &:nth-child(3n+3){
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+
+@media (max-width: 991px) {
+
+  .catalog-list.single {
+
+    .catalog-list__item {
+      width: 49%;
+      margin-right: 2%;
+      margin-bottom: 15px;
+
+      &:nth-child(4n+4){
+        margin-right: 2%;
+      }
+
+      &:nth-child(3n+3){
+        margin-right: 2%;
+      }
+
+      &:nth-child(2n+2){
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+
+@media (max-width: 766px) {
+
+  .catalog-list.single {
+
+    .catalog-list__item {
+      width: 100%;
+      margin-right: 0;
+      margin-bottom: 15px;
+
+      &:nth-child(4n+4){
+        margin-right: 0;
+      }
+
+      &:nth-child(3n+3){
+        margin-right: 0;
+      }
+
+      &:nth-child(2n+2){
+        margin-right: 0;
+      }
+    }
+  }
+}

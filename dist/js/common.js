@@ -774,6 +774,25 @@ $(function () {
 
 
 
+    ////////////////////////////////////// video modals /////////////////////////////////////////////////
+
+    $(".video-modal-launcher").on('click', function(){
+        var videoAddress = $(this).data('address');
+        $("#iframeYoutube").attr("src","https://www.youtube.com/embed/"+videoAddress);
+    });
+
+
+    $('.video-modal-launcher').magnificPopup({
+        type: 'inline',
+        preloader: false,
+        callbacks: {
+            close: function() {
+                $("#iframeYoutube").attr("src","");
+            }
+        }
+    });
+
+
 
 
 
