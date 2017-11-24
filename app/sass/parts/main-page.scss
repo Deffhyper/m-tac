@@ -79,19 +79,23 @@
 
 .interactive-block {
   position: absolute;
-  top: 0;
+  top: 50%;
   right: 0;
-  z-index: 2;
-  height: 779px;
-  width: 253px;
-  &__image {
-    &>img {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-    }
-  }
+  z-index: 3;
+  height: auto;
+  width: auto;
+  display: inline-block;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  //&__image {
+  //    &>img {
+  //      position: absolute;
+  //      top: 50%;
+  //      left: 50%;
+  //      transform: translate(-50%, -50%);
+  //    }
+  //  }
   &__modals {
     position: absolute;
     right: 25%;
@@ -619,13 +623,18 @@
   .interactive-block {
     height: 520px;
     width: 170px;
-    top: 40px;
+    //top: 40px;
   }
 
   .interactive-block__image > img {
     max-width: 100%;
     max-height: 100%;
     width: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
   }
 
   .interactive-block__modals .goods {

@@ -18,7 +18,7 @@
 
   &__item {
     display: flex;
-    justify-content: flex-end;
+
     span {
       display: inline-block;
       margin-bottom: 7px;
@@ -93,5 +93,31 @@
         margin-right: 0;
       }
     }
+  }
+}
+
+
+.bx-ios .goods-price__old:after {
+  top: 9px;
+}
+
+.text-page iframe {
+  margin-bottom: 20px !important;
+}
+
+
+
+@media (max-width: 1279px) {
+
+}
+@media (max-width: 991px) {
+
+}
+@media (max-width: 766px) {
+  .bx-ios input, .bx-ios select {
+    font-size: 16px !important;
+  }
+  .page-header-search__form input {
+    font-size: 16px;
   }
 }

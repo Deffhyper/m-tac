@@ -41,6 +41,11 @@
   }
 
   .interactive-block {
+    position: relative;
+    height: auto;
+    width: 100%;
+    transform: none;
+
     &__image > img {
       position: relative;
       top: 0;
@@ -51,11 +56,9 @@
     }
     &__image{
       text-align: center;
-
+      position: relative;
+      display: inline-block;
     }
-    position: relative;
-    height: auto;
-    width: auto;
   }
 
   .interactive-block__modals {
@@ -120,6 +123,11 @@
   }
 }
 
+.breadcrumbs-right__social .social-list-alt > li > a {
+  border: 2px solid #fff;
+  color: #fff;
+}
+
 @media ($desktop) {
   .breadcrumbs {
     margin-bottom: 35px;
@@ -131,8 +139,9 @@
     margin-bottom: 40px;
 
     .interactive-block__modals {
-      bottom: -35px;
+      //bottom: -35px;
       right: 30%;
+      bottom: 22px;
     }
     .interactive-block {
       top: 0;
