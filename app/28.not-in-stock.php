@@ -224,7 +224,7 @@
             </div>
             <div class="product-ctrl">
                 <div class="product-art">Артикул: 30008001</div>
-                <div class="product-availability inStock">в наличии</div>
+                <div class="product-availability notInStock">нет в наличии</div>
                 <div class="product-short-description" itemprop="description">
                     <p>Комбинированные летние ботинки с высокой берцой Mk.4 от компании M-Tac. Не тяжелые и удобные в
                         носке ботинки. Благодаря "уставному" внешнему виду вполне подойдут как военнослужащим, так и
@@ -234,46 +234,16 @@
                 <div class="product-price" itemprop="offers" itemtype="http://schema.org/Offer">
                     <meta itemprop="priceCurrency" content="UAH">
                     <span class="uk-hidden">
-                        <link itemprop="availability" href="http://schema.org/InStock">В наличии
+                        <link itemprop="availability" href="http://schema.org/InStock">нет в наличии
                     </span>
-                    <span class="product-price__old">
-                        <span>1500</span>
-                        <span>грн</span>
-                    </span>
-                    <span class="product-price__current">
+                    <span class="product-price__current notInStock">
                         <span itemprop="price">945</span>
                         <span>грн</span>
                     </span>
                 </div>
-                <div class="product-color">
-                    <p class="product-label uk-text-uppercase">Цвет:</p>
-                    <ul class="product-color__list">
-                        <li><a href="#" role="button" class="goods-color" style="background-color: #9e7c56"></a></li>
-                        <li><a href="#" role="button" class="goods-color active" style="background-color: #998668"></a>
-                        </li>
-                        <li><a href="#" role="button" class="goods-color" style="background-color: #70675e"></a></li>
-                        <li><a href="#" role="button" class="goods-color" style="background-color: #3b4229"></a></li>
-                        <li><a href="#" role="button" class="goods-color" style="background-color: #2b2a2f"></a></li>
-                    </ul>
-                </div>
-
-                <div class="product-size">
-                    <p class="product-label uk-text-uppercase">Размер:</p>
-                    <ul class="product-size__list">
-                        <li><a href="#" role="button">40</a></li>
-                        <li><a href="#" role="button" class="active">41</a></li>
-                        <li><a href="#" role="button">42</a></li>
-                        <li><a href="#" role="button">43</a></li>
-                        <li><a href="#" role="button">44</a></li>
-                    </ul>
-                    <a href="#product-size-table" role="button" data-uk-modal class="product-size__popup">
-                        <span class="iconmoon icon-resize"></span>
-                        <span class="link">Таблица размеров</span>
-                    </a>
-                </div>
 
                 <div class="product-distribute">
-                    <a href="#" role="button" class="btn btn-accent btn-hover-normal">Где купить?</a>
+                    <a href="#" role="button" class="btn btn-gray btn-hover-normal">Сообщить о наличии</a>
                     <a href="#" class="link">Стать дилером</a>
                 </div>
                 <div class="social-share">
@@ -351,8 +321,8 @@
             </div>
             <section class="product-section">
                 <h3 class="product-property-title uk-text-uppercase">Видеообзор</h3>
-                                <iframe width="100%" height="660px" src="https://www.youtube.com/embed/ia4q0-8UJBg" frameborder="0"
-                                        allowfullscreen></iframe>
+                <iframe width="100%" height="660px" src="https://www.youtube.com/embed/ia4q0-8UJBg" frameborder="0"
+                        allowfullscreen></iframe>
             </section>
             <section class="product-section product-slider-section">
                 <h3 class="product-property-title uk-text-uppercase">Технологии</h3>

@@ -167,6 +167,9 @@ $(function () {
             $('#tablet-menu').find('.modal-menu-link-list').removeClass('open');
             $('#tablet-menu').find('.tablet-menu-block').removeClass('open');
             $('#tablet-menu').find('.level-two').removeClass('open');
+            $('#tablet-menu').find('.level-two').removeClass('close');
+            $('#tablet-menu').find('.level-three').removeClass('open');
+            $('#tablet-menu').find('.level-three').removeClass('close');
             $('#tablet-menu').find('.modal-menu-link-list').removeClass('close');
         }
     });
@@ -176,31 +179,53 @@ $(function () {
         $body.removeClass('main-menu-open');
         $('#tablet-menu').removeClass('active open');
         $('#tablet-menu').find('.modal-menu-link-list').removeClass('open');
+        $('#tablet-menu').find('.modal-menu-link-list').removeClass('close');
         $('.menu-blur').remove();
         $mobTriggerMenu.removeClass('active');
+
+        $('#tablet-menu').find('.level-one').removeClass('open');
+        $('#tablet-menu').find('.level-one').removeClass('close');
+        $('#tablet-menu').find('.level-two').removeClass('open');
+        $('#tablet-menu').find('.level-three').removeClass('open');
+        $('#tablet-menu').find('.level-two').removeClass('close');
     });
 
     $(document).on('click', '#tablet-menu', function (e) {
         var $target = $(e.target);
         if($target.hasClass('modal-menu-title')){
-            $target.next().addClass('open');
+            $target.next('.modal-menu-link-list').addClass('open');
             $('#tablet-menu').removeClass('active');
         }
-        if($target.closest('li').hasClass('level-one')) {
+        if($target.closest('li').hasClass('level-one has-child')) {
+            e.preventDefault();
             $target.closest('.modal-menu-link-list').removeClass('open');
             $target.closest('.modal-menu-link-list').addClass('close');
             $target.next('.level-two').addClass('open');
             $target.closest('li').addClass('close');
         }
 
+        if($target.closest('li').parent().hasClass('level-two') && $target.closest('li').hasClass('has-child')) {
+            e.preventDefault();
+            $target.closest('.level-one').removeClass('open');
+            $target.closest('.level-one').addClass('close');
+            $target.next('.level-three').addClass('open');
+            $target.closest('li').parent('.level-two').removeClass('open').addClass('close');
+        }
+
         if($target.closest('li').hasClass('back-link')) {
 
             if($target.parent().parent().hasClass('level-two')){
-
                 $target.closest('.modal-menu-link-list').removeClass('close');
                 $target.closest('.modal-menu-link-list').addClass('open');
                 $target.closest('.level-two').removeClass('open');
             }
+
+            if($target.parent().parent().hasClass('level-three')){
+                $target.parent().parent('.level-three').removeClass('open');
+                $target.closest('.level-two').removeClass('close');
+                $target.closest('.level-two').addClass('open');
+            }
+
             if($target.parent().parent().hasClass('modal-menu-link-list')){
                 $target.closest('.modal-menu-link-list').removeClass('open');
                 $target.closest('.level-two').removeClass('open');
@@ -289,16 +314,16 @@ $(function () {
     });
 
     /////////////////////////////////////////////// fix bug with uk-data-grid ///////////
-    var informListLastChild = $('.inform-list').find('.uk-flex').children().last().clone();
-
-    function replacerItemInInformList(){
-        if (windowWidth < 992) {
-            $('.inform-list').find('.uk-flex').children().last().remove();
-            informListLastChild.insertAfter($('.inform-list').find('.uk-flex > div:nth-child(2)'));
-        }
-    }
-
-    replacerItemInInformList();
+    // var informListLastChild = $('.inform-list').find('.uk-flex').children().last().clone();
+    //
+    // function replacerItemInInformList(){
+    //     if (windowWidth < 992) {
+    //         $('.inform-list').find('.uk-flex').children().last().remove();
+    //         informListLastChild.insertAfter($('.inform-list').find('.uk-flex > div:nth-child(2)'));
+    //     }
+    // }
+    //
+    // replacerItemInInformList();
 
     ///////////////////////////////////// filter /////////////////////////////////////////////
 

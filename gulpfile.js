@@ -72,6 +72,13 @@ gulp.task('css-libs', ['sass'], function() {
 		.pipe(gulp.dest('app/css')); // Выгружаем в папку app/css
 });
 
+gulp.task('css-main-min', ['sass'], function() {
+	return gulp.src('app/css/main.css') // Выбираем файл для минификации
+		.pipe(cssnano()) // Сжимаем
+		.pipe(rename({suffix: '.min'})) // Добавляем суффикс .min
+		.pipe(gulp.dest('dist/css')); // Выгружаем в папку dist/css
+});
+
 gulp.task('watch', ['browser-sync', 'css-libs', 'scripts', 'sprite'], function() {
 	gulp.watch('app/sass/**/*.+(scss|sass)', ['sass']); // Наблюдение за sass файлами в папке sass
 	gulp.watch('app/*.html', browserSync.reload); // Наблюдение за HTML файлами в корне проекта
@@ -95,10 +102,11 @@ gulp.task('img', function() {
 		.pipe(gulp.dest('dist/img')); // Выгружаем на продакшен
 });
 
-gulp.task('build', ['clean', 'img', 'sass', 'scripts'], function() {
+gulp.task('build', ['clean', 'img', 'sass', 'scripts', 'css-main-min'], function() {
 
 	var buildCss = gulp.src([ // Переносим библиотеки в продакшен
 		'app/css/main.css',
+		'app/css/main.min.css',
 		'app/css/libs.min.css'
 		])
 	.pipe(gulp.dest('dist/css'));

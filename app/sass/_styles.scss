@@ -676,8 +676,8 @@
 .product-sticker {
   position: absolute;
   top: 20px;
-  right: 1px;
-  z-index: 5;
+  left: 1px;
+  z-index: 2;
   &>* {
     display: inline-block;
   }
@@ -868,8 +868,21 @@
 .product-art {
   color: #676664;
   font-size: 16px;
-  padding: 5px 0;
+  padding: 5px 0 0;
+}
+
+.product-availability {
+  font-family: $font-bold;
+  font-size: 16px;
   margin-bottom: 10px;
+}
+
+.notInStock {
+  color: $disabled-color;
+}
+
+.inStock {
+  color: $text-color;
 }
 
 .product-short-description {

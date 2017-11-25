@@ -43,6 +43,11 @@
     color: #fff;
     border: 2px solid #fff;
   }
+  
+  &.btn-gray {
+    background-color: #e6e6eb;
+    color: $text-color;
+  }
 
   &.btn-black {
     border: 2px solid $text-color;
@@ -641,6 +646,9 @@
 }
 .goods-sticker-top {
   @include sprite($st-top);
+}
+.goods-sticker-sale {
+  @include sprite($st-sale);
 }
 
 .goods-art {

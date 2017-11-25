@@ -10,13 +10,11 @@
         <span class="uk-hidden" itemprop="brand">Название бренда</span>
         <div class="product-wrapper-top">
             <div class="product-slider">
-                <span class="product-sticker">
-<!--              //      two way to insert stickers. First - sprite. Second - by image -->
-                    <i class="goods-sticker-news"></i>
-                    <!--                    <i class="goods-sticker-top"></i>-->
-                    <!--                    <img src="img/png_icons/st-new.png" alt="label">-->
-                    <!--                    <img src="img/png_icons/st-top.png" alt="label">-->
-                </span>
+                <ul class="goods-stickers">
+                    <li class="goods-stickers__item"><span class="goods-sticker-top"></span></li>
+                    <li class="goods-stickers__item"><span class="goods-sticker-news"></span></li>
+                    <li class="goods-stickers__item"><span class="goods-sticker-sale"></span></li>
+                </ul>
                 <div class="product-slider__top">
                     <div>
                         <div class="product-slider__top--item">
@@ -226,6 +224,7 @@
             </div>
             <div class="product-ctrl">
                 <div class="product-art">Артикул: 30008001</div>
+                <div class="product-availability inStock">в наличии</div>
                 <div class="product-short-description" itemprop="description">
                     <p>Комбинированные летние ботинки с высокой берцой Mk.4 от компании M-Tac. Не тяжелые и удобные в
                         носке ботинки. Благодаря "уставному" внешнему виду вполне подойдут как военнослужащим, так и
