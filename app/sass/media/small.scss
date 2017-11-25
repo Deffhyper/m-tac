@@ -373,7 +373,7 @@
       margin-right: 2%;
 
       .product-technologies__item--text {
-        height: 100px;
+        height: 105px;
       }
 
       .product-technologies__item--image {
@@ -382,6 +382,7 @@
 
       .product-technologies__item--text > span {
         height: 85px;
+        font-size: 12px;
       }
 
       &:nth-child(4n+4){

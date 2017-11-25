@@ -31,6 +31,7 @@
   background: transparent;
   letter-spacing: 2px;
   border: 0;
+  cursor: pointer;
   text-decoration: none !important;
 
   &.btn-accent {
@@ -290,6 +291,12 @@
   color: #fff;
 }
 
+.modal-dialog-video {
+  width: 95%;
+  height: 60vw;
+
+}
+
 .uk-modal-dialog.big {
   width: 100%;
   max-width:  1240px;
@@ -313,6 +320,7 @@
 .uk-modal-dialog.image-modal {
   width: auto;
   max-width: 90%;
+  text-align: center;
 }
 
 .mfp-content > * {
@@ -514,8 +522,9 @@
     left: 0;
     bottom: 0;
     margin: auto;
-    max-height: 100%;
+    max-height: 95%;
     width: auto;
+    max-width: 95%;
   }
 }
 
@@ -558,6 +567,8 @@
     font-size: 24px;
     margin-right: 10px;
     position: relative;
+    line-height: 1;
+    display: inline-block;
     &:after {
       content: '';
       display: block;
@@ -680,10 +691,22 @@
     }
   }
 }
+
 .goods-size-select {
   @extend .goods-color-select;
   margin-bottom: 15px;
+
 }
+
+.goods-color-select {
+  height: 42px;
+}
+
+.goods-size-select {
+  margin-bottom: 15px;
+  height: 35px;
+}
+
 
 .goods-size {
   color: #676664;

@@ -334,7 +334,7 @@
   padding-top: 5px;
   padding-bottom: 10px;
   border-top: 1px solid #dcdcdc;
-  display: none;
+  //display: none;
 
   &__item {
     font-size: 15px;
@@ -685,6 +685,7 @@
 
 .product-slider {
   position: relative;
+  margin-bottom: 40px;
 
   &__top {
     width: 100%;
@@ -700,6 +701,9 @@
 
       img {
         max-height: 100%;
+        max-width: 100%;
+        width: auto;
+        height: auto;
         position: absolute;
         top: 0;
         left: 0;
@@ -817,6 +821,9 @@
          bottom: 0;
          margin: auto;
          max-height: 100%;
+         max-width: 100%;
+         height: auto;
+         width: auto;
        }
      }
       &:after {
@@ -1117,9 +1124,10 @@
       overflow: hidden;
       transition: .3s ease;
       &>span {
-        height: 65px;
+        height: 80px;
         overflow: hidden;
         display: block;
+        font-size: 16px;
       }
     }
   }
@@ -1244,6 +1252,9 @@
         left: 50%;
         transform: translate(-50%, -50%);
         max-height: 100%;
+
+        height: auto;
+        width: auto;
       }
     }
     &:after{
@@ -1292,6 +1303,8 @@
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
+      max-height: 100%;
+      width: auto;
     }
   }
 }
@@ -1307,6 +1320,7 @@
     width: 24.5%;
     margin-right: .5%;
     margin-bottom: 8px;
+    vertical-align: top;
 
     &:nth-child(4n+4){
       margin-right: 0;
@@ -1784,6 +1798,8 @@ margin-bottom: 40px;
           left: 50%;
           transform: translate(-50%, -50%);
           z-index: -1;
+          max-height: 100%;
+          width: auto;
         }
       }
     }
@@ -1803,18 +1819,22 @@ margin-bottom: 40px;
       position: relative;
 
       .interactive-block__image {
-        max-height: 98%;
+        max-height: 100%;
         display: inline-block;
         position: absolute;
         top: 50%;
         left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
         transform: translate(-50%, -50%);
         img {
           position: relative;
           top: 0;
           left: 0;
-          transform: translate(0,0);
-          max-width: none;
+          -webkit-transform: translate(0, 0);
+          -ms-transform: translate(0, 0);
+          transform: translate(0, 0);
+          max-width: 810px;
         }
       }
     }

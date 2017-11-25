@@ -79,19 +79,23 @@
 
 .interactive-block {
   position: absolute;
-  top: 0;
+  top: 50%;
   right: 0;
-  z-index: 2;
-  height: 779px;
-  width: 253px;
-  &__image {
-    &>img {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-    }
-  }
+  z-index: 3;
+  height: auto;
+  width: auto;
+  display: inline-block;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  //&__image {
+  //    &>img {
+  //      position: absolute;
+  //      top: 50%;
+  //      left: 50%;
+  //      transform: translate(-50%, -50%);
+  //    }
+  //  }
   &__modals {
     position: absolute;
     right: 25%;
@@ -151,9 +155,23 @@
   padding-top: 80px;
   padding-bottom: 80px;
 
+  .uk-flex {
+    &>div:nth-child(3n) {
+      .inform-list__item--link {
+        float: left;
+      }
+    }
+    &>div:nth-child(3n+1) {
+      .inform-list__item--link {
+        float: right;
+      }
+    }
+  }
+
   &__item {
     position: relative;
     z-index: 1;
+
 
     &--link {
       display: block;
@@ -214,7 +232,6 @@
         }
 
       }
-
       .btn {
         width: 220px;
         position: absolute;
@@ -249,30 +266,30 @@
 
     &.item-2 {
       .title-light {
-        bottom: 105px;
+        //bottom: 105px;
       }
     }
 
     &.item-3 {
       margin-top: 50px;
       .title-light {
-        bottom: 92px;
+        //bottom: 92px;
       }
     }
 
     &.item-4 {
       .title-light {
-        bottom: 52px;
+        //bottom: 52px;
       }
     }
     &.item-5 {
       .title-light {
-        bottom: 92px;
+        //bottom: 92px;
       }
     }
     &.item-6 {
       .title-light {
-        bottom: 61px;
+        //bottom: 61px;
       }
     }
     &.item-7 {
@@ -280,18 +297,18 @@
         float: right;
       }
       .title-light {
-        bottom: 153px;
+        //bottom: 153px;
       }
     }
     &.item-8 {
       .title-light {
-        bottom: 192px;
+        //bottom: 192px;
       }
     }
 
     &.item-9 {
       .title-light {
-        bottom: 166px;
+        //bottom: 166px;
       }
     }
 
@@ -309,6 +326,7 @@
       left: 53px;
       z-index: 3;
       transition: .3s ease;
+      bottom: 30%;
     }
 
     .link-decor {
@@ -611,13 +629,18 @@
   .interactive-block {
     height: 520px;
     width: 170px;
-    top: 40px;
+    //top: 40px;
   }
 
   .interactive-block__image > img {
     max-width: 100%;
     max-height: 100%;
     width: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
   }
 
   .interactive-block__modals .goods {

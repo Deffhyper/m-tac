@@ -14,7 +14,7 @@
                     <small>/06</small>
                 </div>
                 <div class="news-main-item__image">
-                    <a href="http://www.youtube.com/watch?v=K6GJh8eE5r0" class="youtube-modal">
+                    <a href="#video-modal" class="video-modal-launcher" role="button" data-address="K6GJh8eE5r0">
                         <span class="news-main-item__image--play">
                             <svg xmlns="http://www.w3.org/2000/svg" width="63" height="63" viewBox="0 0 63 63">
                                 <circle style="stroke: #fff; fill: transparent;" cx="31.5" cy="31.5" r="27.5"></circle>
@@ -40,7 +40,7 @@
                     <small>/06</small>
                 </div>
                 <div class="news-main-item__image">
-                    <a href="http://www.youtube.com/watch?v=782xDLeQIPI" class="youtube-modal">
+                    <a href="#video-modal" class="video-modal-launcher" role="button"  data-address="0rHjibBWkkI">
                         <span class="news-main-item__image--play">
                             <svg xmlns="http://www.w3.org/2000/svg" width="63" height="63" viewBox="0 0 63 63">
                                 <circle style="stroke: #fff; fill: transparent;" cx="31.5" cy="31.5" r="27.5"></circle>
@@ -66,7 +66,7 @@
                     <small>/06</small>
                 </div>
                 <div class="news-main-item__image">
-                    <a href="http://www.youtube.com/watch?v=r9crxcTZ9kk" class="youtube-modal">
+                    <a href="#video-modal" class="video-modal-launcher" role="button" data-address="782xDLeQIPI">
                         <span class="news-main-item__image--play">
                             <svg xmlns="http://www.w3.org/2000/svg" width="63" height="63" viewBox="0 0 63 63">
                                 <circle style="stroke: #fff; fill: transparent;" cx="31.5" cy="31.5" r="27.5"></circle>
@@ -92,7 +92,7 @@
                     <small>/06</small>
                 </div>
                 <div class="news-main-item__image">
-                    <a href="http://www.youtube.com/watch?v=782xDLeQIPI" class="youtube-modal">
+                    <a href="#">
                         <span class="news-main-item__image--play">
                             <svg xmlns="http://www.w3.org/2000/svg" width="63" height="63" viewBox="0 0 63 63">
                                 <circle style="stroke: #fff; fill: transparent;" cx="31.5" cy="31.5" r="27.5"></circle>
@@ -118,7 +118,7 @@
                     <small>/06</small>
                 </div>
                 <div class="news-main-item__image">
-                    <a href="http://www.youtube.com/watch?v=782xDLeQIPI" class="youtube-modal">
+                    <a href="#">
                         <span class="news-main-item__image--play">
                             <svg xmlns="http://www.w3.org/2000/svg" width="63" height="63" viewBox="0 0 63 63">
                                 <circle style="stroke: #fff; fill: transparent;" cx="31.5" cy="31.5" r="27.5"></circle>
@@ -144,7 +144,7 @@
                     <small>/06</small>
                 </div>
                 <div class="news-main-item__image">
-                    <a href="http://www.youtube.com/watch?v=782xDLeQIPI" class="youtube-modal">
+                    <a href="#">
                         <span class="news-main-item__image--play">
                             <svg xmlns="http://www.w3.org/2000/svg" width="63" height="63" viewBox="0 0 63 63">
                                 <circle style="stroke: #fff; fill: transparent;" cx="31.5" cy="31.5" r="27.5"></circle>
@@ -170,7 +170,7 @@
                     <small>/06</small>
                 </div>
                 <div class="news-main-item__image">
-                    <a href="http://www.youtube.com/watch?v=782xDLeQIPI" class="youtube-modal">
+                    <a href="#">
                         <span class="news-main-item__image--play">
                             <svg xmlns="http://www.w3.org/2000/svg" width="63" height="63" viewBox="0 0 63 63">
                                 <circle style="stroke: #fff; fill: transparent;" cx="31.5" cy="31.5" r="27.5"></circle>
@@ -196,7 +196,8 @@
                     <small>/06</small>
                 </div>
                 <div class="news-main-item__image">
-                    <a href="http://www.youtube.com/watch?v=782xDLeQIPI" class="youtube-modal">
+
+                    <a href="#">
                         <span class="news-main-item__image--play">
                             <svg xmlns="http://www.w3.org/2000/svg" width="63" height="63" viewBox="0 0 63 63">
                                 <circle style="stroke: #fff; fill: transparent;" cx="31.5" cy="31.5" r="27.5"></circle>
@@ -214,6 +215,14 @@
                         подробно анализируют образцы военной...</p>
                 </div>
                 <a href="#" class="news-main-item__detail btn btn-border-bottom">детальнее</a>
+            </div>
+        </div>
+
+<!--        /////////video  modal -->
+        <div id="video-modal" class="mfp-hide">
+            <a href="#" role="button" class="mfp-close uk-close"></a>
+            <div class="uk-modal-dialog modal-dialog-video">
+                <iframe id="iframeYoutube" width="100%" height="100%" src="" frameborder="0" allowfullscreen></iframe>
             </div>
         </div>
 
