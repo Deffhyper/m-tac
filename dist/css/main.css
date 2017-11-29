@@ -306,6 +306,9 @@ img {
   .btn.btn-gray {
     background-color: #e6e6eb;
     color: #181613; }
+  .btn.btn-gray-border {
+    border: 2px solid #dedede;
+    color: #dedede; }
   .btn.btn-black {
     border: 2px solid #181613;
     color: #181613; }
@@ -795,6 +798,12 @@ img {
   color: #676664;
   text-align: center;
   padding: 10px 20px 0; }
+
+.goods-availability {
+  padding: 5px 20px 0;
+  font-family: "FiraSans-Bold", sans-serif;
+  font-size: 14px;
+  text-align: center; }
 
 .goods-color {
   height: 18px;

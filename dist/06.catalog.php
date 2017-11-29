@@ -22,7 +22,11 @@
             <div class="catalog-list__item">
                 <div class="goods">
                     <div class="goods-top-block">
-                        <span class="goods-sticker goods-sticker-top"></span>
+                        <ul class="goods-stickers">
+                            <li class="goods-stickers__item"><span class="goods-sticker-top"></span></li>
+                            <li class="goods-stickers__item"><span class="goods-sticker-news"></span></li>
+                            <li class="goods-stickers__item"><span class="goods-sticker-sale"></span></li>
+                        </ul>
                         <div class="goods-image">
                             <a href="#" tabindex="0">
                                 <img src="img/jpeg_files/goods-1.jpg" alt="goods" width="263" height="263">
@@ -34,6 +38,7 @@
                         <div class="goods-art">
                             <span>Артикул: <span>23464326</span></span>
                         </div>
+                        <div class="goods-availability"><span>в наличии</span></div>
                     </div>
                     <div class="goods-bottom-block">
                         <div class="goods-price">
@@ -100,10 +105,11 @@
                         <div class="goods-art">
                             <span>Артикул: <span>3454354356</span></span>
                         </div>
+                        <div class="goods-availability notInStock"><span>нет в наличии</span></div>
                     </div>
                     <div class="goods-bottom-block">
                         <div class="goods-price">
-                            <span class="goods-price__current">
+                            <span class="goods-price__current notInStock">
                                 <span>599</span>
                                 <span>грн</span>
                             </span>
@@ -137,7 +143,7 @@
                             </li>
                         </ul>
                         <div class="goods-read-more">
-                            <a href="#" class="btn btn-normal btn-black btn-hover-normal" tabindex="0">Подробнее</a>
+                            <a href="#" class="btn btn-normal btn-gray-border" tabindex="0">Подробнее</a>
                         </div>
                     </div>
                 </div>
@@ -145,7 +151,6 @@
             <div class="catalog-list__item">
                 <div class="goods">
                     <div class="goods-top-block">
-                        <span class="goods-sticker goods-sticker-news"></span>
                         <div class="goods-image">
                             <a href="#" tabindex="0">
                                 <img src="img/jpeg_files/goods-6.jpg" alt="goods" width="263" height="267">
@@ -157,14 +162,11 @@
                         <div class="goods-art">
                             <span>Артикул: <span>3454354356</span></span>
                         </div>
+                        <div class="goods-availability notInStock"><span>снят с производства</span></div>
                     </div>
                     <div class="goods-bottom-block">
                         <div class="goods-price">
-                            <span class="goods-price__old">
-                                <span>1500</span>
-                                <span>грн</span>
-                            </span>
-                            <span class="goods-price__current">
+                            <span class="goods-price__current notInStock">
                                 <span>945</span>
                                 <span>грн</span>
                             </span>
@@ -198,7 +200,7 @@
                             </li>
                         </ul>
                         <div class="goods-read-more">
-                            <a href="#" class="btn btn-normal btn-black btn-hover-normal" tabindex="0">Подробнее</a>
+                            <a href="#" class="btn btn-normal btn-gray-border" tabindex="0">Подробнее</a>
                         </div>
                     </div>
                 </div>
@@ -206,7 +208,6 @@
             <div class="catalog-list__item">
                 <div class="goods">
                     <div class="goods-top-block">
-                        <span class="goods-sticker goods-sticker-top"></span>
                         <div class="goods-image">
                             <a href="#" tabindex="0">
                                 <img src="img/jpeg_files/goods-1.jpg" alt="goods" width="263" height="263">
@@ -218,6 +219,7 @@
                         <div class="goods-art">
                             <span>Артикул: <span>23464326</span></span>
                         </div>
+                        <div class="goods-availability"><span>в наличии</span></div>
                     </div>
                     <div class="goods-bottom-block">
                         <div class="goods-price">
@@ -284,6 +286,7 @@
                         <div class="goods-art">
                             <span>Артикул: <span>3454354356</span></span>
                         </div>
+                        <div class="goods-availability"><span>в наличии</span></div>
                     </div>
                     <div class="goods-bottom-block">
                         <div class="goods-price">
@@ -329,7 +332,6 @@
             <div class="catalog-list__item">
                 <div class="goods">
                     <div class="goods-top-block">
-                        <span class="goods-sticker goods-sticker-top"></span>
                         <div class="goods-image">
                             <a href="#" tabindex="0">
                                 <img src="img/jpeg_files/goods-1.jpg" alt="goods" width="263" height="263">
@@ -341,6 +343,7 @@
                         <div class="goods-art">
                             <span>Артикул: <span>23464326</span></span>
                         </div>
+                        <div class="goods-availability"><span>в наличии</span></div>
                     </div>
                     <div class="goods-bottom-block">
                         <div class="goods-price">
@@ -407,6 +410,7 @@
                         <div class="goods-art">
                             <span>Артикул: <span>3454354356</span></span>
                         </div>
+                        <div class="goods-availability"><span>в наличии</span></div>
                     </div>
                     <div class="goods-bottom-block">
                         <div class="goods-price">
@@ -452,7 +456,6 @@
             <div class="catalog-list__item">
                 <div class="goods">
                     <div class="goods-top-block">
-                        <span class="goods-sticker goods-sticker-top"></span>
                         <div class="goods-image">
                             <a href="#" tabindex="0">
                                 <img src="img/jpeg_files/goods-1.jpg" alt="goods" width="263" height="263">
@@ -464,6 +467,7 @@
                         <div class="goods-art">
                             <span>Артикул: <span>23464326</span></span>
                         </div>
+                        <div class="goods-availability"><span>в наличии</span></div>
                     </div>
                     <div class="goods-bottom-block">
                         <div class="goods-price">
@@ -530,6 +534,7 @@
                         <div class="goods-art">
                             <span>Артикул: <span>3454354356</span></span>
                         </div>
+                        <div class="goods-availability"><span>в наличии</span></div>
                     </div>
                     <div class="goods-bottom-block">
                         <div class="goods-price">
@@ -575,7 +580,6 @@
             <div class="catalog-list__item">
                 <div class="goods">
                     <div class="goods-top-block">
-                        <span class="goods-sticker goods-sticker-news"></span>
                         <div class="goods-image">
                             <a href="#" tabindex="0">
                                 <img src="img/jpeg_files/goods-6.jpg" alt="goods" width="263" height="267">
@@ -587,6 +591,7 @@
                         <div class="goods-art">
                             <span>Артикул: <span>3454354356</span></span>
                         </div>
+                        <div class="goods-availability"><span>в наличии</span></div>
                     </div>
                     <div class="goods-bottom-block">
                         <div class="goods-price">
@@ -636,7 +641,6 @@
             <div class="catalog-list__item">
                 <div class="goods">
                     <div class="goods-top-block">
-                        <span class="goods-sticker goods-sticker-top"></span>
                         <div class="goods-image">
                             <a href="#" tabindex="0">
                                 <img src="img/jpeg_files/goods-1.jpg" alt="goods" width="263" height="263">
@@ -648,6 +652,7 @@
                         <div class="goods-art">
                             <span>Артикул: <span>23464326</span></span>
                         </div>
+                        <div class="goods-availability"><span>в наличии</span></div>
                     </div>
                     <div class="goods-bottom-block">
                         <div class="goods-price">
@@ -714,6 +719,7 @@
                         <div class="goods-art">
                             <span>Артикул: <span>3454354356</span></span>
                         </div>
+                        <div class="goods-availability"><span>в наличии</span></div>
                     </div>
                     <div class="goods-bottom-block">
                         <div class="goods-price">
