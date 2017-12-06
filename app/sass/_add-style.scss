@@ -26,6 +26,14 @@
   }
 }
 
+.price-range {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  line-height: .5;
+  padding-top: 15px;
+}
+
 @media (max-width: 1279px) {
 
   .catalog-list.single {
@@ -98,7 +106,7 @@
 
 
 .bx-ios .goods-price__old:after {
-  top: 9px;
+  top: 7px;
 }
 
 .text-page iframe {

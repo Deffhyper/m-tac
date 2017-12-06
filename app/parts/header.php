@@ -178,18 +178,8 @@
                         <li><a href="#">Демисезонные</a></li>
                     </ul>
                 </li>
-                <li class="level-one has-child">
+                <li class="level-one">
                     <a href="#">LookBook</a>
-                    <ul class="level-two">
-                        <li class="back-link"><a href="#" role="button">Назад</a></li>
-                        <li><a href="#">LookBook 1</a></li>
-                        <li><a href="#">Кроссовки</a></li>
-                        <li><a href="#">Летние ботинки</a></li>
-                        <li><a href="#">Полуботинки</a></li>
-                        <li><a href="#">Кеды</a></li>
-                        <li><a href="#">Ботинки зимние</a></li>
-                        <li><a href="#">Демисезонные</a></li>
-                    </ul>
                 </li>
                 <li class="level-one has-child">
                     <a href="#">Обувь</a>

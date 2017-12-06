@@ -491,6 +491,7 @@
 
 .goods.goods-small {
   text-align: center;
+  min-width: auto;
 
   .goods-image {
     height: 190px;
@@ -765,7 +766,21 @@
   .goods .btn {
     width: 190px;
   }
+
+  .goods-bottom-block {
+    padding: 10px 10px 25px;
+  }
+
 }
+
+@media ($tablet) {
+
+  .goods.goods-small {
+    min-width: auto;
+  }
+
+}
+
 
 @media ($mobile) {
 
