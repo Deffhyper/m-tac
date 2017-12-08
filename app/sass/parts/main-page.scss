@@ -98,8 +98,10 @@
   //  }
   &__modals {
     position: absolute;
-    right: 25%;
-    bottom: 263px;
+    //right: 25%;
+    left: -9999px;
+    //bottom: 263px;
+    top: 263px;
     width: 305px;
     height: 515px;
     .goods {
@@ -107,15 +109,29 @@
       right: 0;
       top: 0;
       width: 100%;
-      transition: .3s ease;
-      opacity: 0;
-      z-index: -1;
+      display: none;
       &.active {
-        z-index: 2;
-        opacity: 1;
+        display: block;
       }
     }
   }
+}
+
+.goods-interactive {
+  position: absolute;
+  top: -150px;
+  left: -400px;
+  display: none;
+}
+
+.interactive-block .interactive-decor {
+  position: absolute;
+  top: -39px;
+  left: -123px;
+  width: 123px;
+  height: 37px;
+  max-width: none;
+  display: none;
 }
 
 .image-dot {
@@ -142,7 +158,29 @@
     transition: .3s ease;
   }
   &:hover {
-    background-color: #fff;
+    &:after {
+      border-color: #fff;
+      width: 29px;
+      height: 29px;
+    }
+  }
+
+ &.active {
+    .goods-interactive {
+      display: block;
+    }
+
+   &.dot-inverse {
+     .interactive-decor {
+       transform: scaleY(-1);
+       top: 18px;
+     }
+   }
+
+    .interactive-decor {
+      display: block;
+    }
+
     &:after {
       border-color: #fff;
       width: 29px;
@@ -627,21 +665,33 @@
   }
 
   .interactive-block {
-    height: 520px;
-    width: 170px;
-    //top: 40px;
+    height: 90%;
+    //width: auto;
+    //right: 22%;
   }
 
-  .interactive-block__image > img {
-    max-width: 100%;
+  .interactive-block__image {
+    position: relative;
     max-height: 100%;
-    width: auto;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -webkit-transform: translate(-50%, -50%);
   }
+
+
+  .interactive-block__image > img {
+    //max-width: 540px;
+    max-height: 550px;
+    width: auto;
+    //width: auto;
+    //position: absolute;
+    //top: 50%;
+    //left: 50%;
+    //transform: translate(-50%, -50%);
+    //-webkit-transform: translate(-50%, -50%);
+  }
+
+  .goods-interactive {
+    left: -355px;
+  }
+
 
   .interactive-block__modals .goods {
     top: 0;
@@ -856,8 +906,12 @@
   }
 
   .interactive-block {
-    height: 294px;
-    width: 120px;
+    //height: 294px;
+    //width: 120px;
+  }
+
+  .interactive-block__image > img {
+    max-height: 330px;
   }
 
   .image-dot:after {

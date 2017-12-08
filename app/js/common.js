@@ -87,14 +87,70 @@ $(function () {
 
     /////////////////////////////////// interactive modals init ////////////////////////////
 
-    $('.interactive-block').on('click', '.image-dot', function (e) {
-        e.preventDefault();
 
-        if(!$('.interactive-block__modals').hasClass('active')) {
+    $('.interactive-block').on('click', '.image-dot', function () {
+
+        if (document.body.clientWidth > 767) {
+            $(this).toggleClass('active').siblings().removeClass('active');
+
+            var wrapperOffsetTop = $('.interactive-block').offset().top,
+                wrapperHeight = $('.interactive-block').height(),
+                wrapperBottomCoordinate = wrapperOffsetTop + wrapperHeight,
+                $thisModal = $(this).find('.goods-interactive'),
+                modalOffsetTop = $thisModal.offset().top,
+                modalHeight = $thisModal.height(),
+                modalBottomCoordinate = modalOffsetTop + modalHeight,
+                bottomDifference = wrapperBottomCoordinate - modalBottomCoordinate - 5;
+
+            if( modalOffsetTop < wrapperOffsetTop && !$(this).hasClass('flag-true')) {
+                $thisModal.css({
+                    'margin-top': wrapperOffsetTop - modalOffsetTop + 5 + 'px'
+                });
+                $(this).addClass('dot-inverse');
+
+            } else if( modalBottomCoordinate > wrapperBottomCoordinate && !$(this).hasClass('flag-true')) {
+                $thisModal.css({
+                    'margin-top': bottomDifference + 'px'
+                });
+            }
+            $(this).addClass('flag-true');
+
+        } else {
             $('.interactive-block__modals').addClass('active');
+            $(this).find('.goods-interactive').addClass('active');
+            $(this).find('.goods-interactive').clone().appendTo('.interactive-block__modals');
 
         }
-        $('.interactive-block__modals').find($(this).attr('href')).addClass('active').siblings().removeClass('active');
+
+    });
+
+    $(document).on('click', function (e) {
+        var $target = $(e.target);
+        if(!$target.closest('.goods-interactive').length && !$target.hasClass('image-dot')) {
+            $('.image-dot').removeClass('active');
+        }
+    });
+
+    $(window).on('resize', function () {
+        clearInteractiveBlock();
+    });
+
+    function clearInteractiveBlock(){
+        if (document.body.clientWidth > 767) {
+
+            $('.interactive-block').find('.image-dot').each(function () {
+                $(this).removeClass('active flag-true dot-inverse');
+                $(this).find('.goods-interactive').removeAttr('style');
+                $(this).find('.goods-interactive').removeClass('active');
+            });
+        } else {
+            $('.interactive-block__modals').removeClass('active');
+            $('.interactive-block__modals').find('.goods').remove();
+        }
+    }
+
+    $('.top-slider__nav').on('swipe', function(event, slick, direction){
+        clearInteractiveBlock()
     });
 
     ////////////////////////////// close interactive modals ////////////////////////////////
@@ -108,7 +164,7 @@ $(function () {
     $(document).on('click', '.interactive-block__modals.active', function (e) {
 
         $('.interactive-block__modals').removeClass('active');
-        $('.interactive-block__modals').find('.goods.active').removeClass('active');
+        $('.interactive-block__modals').find('.goods').remove();
 
 
     });

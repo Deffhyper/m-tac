@@ -2088,8 +2088,8 @@ body:after {
   transform: translateY(-50%); }
   .interactive-block__modals {
     position: absolute;
-    right: 25%;
-    bottom: 263px;
+    left: -9999px;
+    top: 263px;
     width: 305px;
     height: 515px; }
     .interactive-block__modals .goods {
@@ -2097,13 +2097,24 @@ body:after {
       right: 0;
       top: 0;
       width: 100%;
-      -webkit-transition: .3s ease;
-      transition: .3s ease;
-      opacity: 0;
-      z-index: -1; }
+      display: none; }
       .interactive-block__modals .goods.active {
-        z-index: 2;
-        opacity: 1; }
+        display: block; }
+
+.goods-interactive {
+  position: absolute;
+  top: -150px;
+  left: -400px;
+  display: none; }
+
+.interactive-block .interactive-decor {
+  position: absolute;
+  top: -39px;
+  left: -123px;
+  width: 123px;
+  height: 37px;
+  max-width: none;
+  display: none; }
 
 .image-dot {
   display: block;
@@ -2133,12 +2144,23 @@ body:after {
     border: 2px solid #ffcc00;
     -webkit-transition: .3s ease;
     transition: .3s ease; }
-  .image-dot:hover {
-    background-color: #fff; }
-    .image-dot:hover:after {
-      border-color: #fff;
-      width: 29px;
-      height: 29px; }
+  .image-dot:hover:after {
+    border-color: #fff;
+    width: 29px;
+    height: 29px; }
+  .image-dot.active .goods-interactive {
+    display: block; }
+  .image-dot.active.dot-inverse .interactive-decor {
+    -webkit-transform: scaleY(-1);
+        -ms-transform: scaleY(-1);
+            transform: scaleY(-1);
+    top: 18px; }
+  .image-dot.active .interactive-decor {
+    display: block; }
+  .image-dot.active:after {
+    border-color: #fff;
+    width: 29px;
+    height: 29px; }
 
 .inform-list {
   padding-top: 80px;
@@ -2478,18 +2500,15 @@ body:after {
     right: 20%;
     bottom: 28px; }
   .interactive-block {
-    height: 520px;
-    width: 170px; }
+    height: 90%; }
+  .interactive-block__image {
+    position: relative;
+    max-height: 100%; }
   .interactive-block__image > img {
-    max-width: 100%;
-    max-height: 100%;
-    width: auto;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -ms-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);
-    -webkit-transform: translate(-50%, -50%); }
+    max-height: 550px;
+    width: auto; }
+  .goods-interactive {
+    left: -355px; }
   .interactive-block__modals .goods {
     top: 0;
     width: 240px; }
@@ -2600,9 +2619,8 @@ body:after {
     bottom: 30px; }
   .top-slider__nav .slick-dots {
     bottom: 60px; }
-  .interactive-block {
-    height: 294px;
-    width: 120px; }
+  .interactive-block__image > img {
+    max-height: 330px; }
   .image-dot:after {
     width: 18px;
     height: 18px; }
