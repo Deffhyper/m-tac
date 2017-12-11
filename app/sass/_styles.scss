@@ -931,6 +931,16 @@
   }
 }
 
+.bx-ios {
+  .product-price {
+    &__old {
+      &:after {
+        top: 26px;
+      }
+    }
+  }
+}
+
 .product-label {
   font-family: $font-bold;
   font-size: 16px;
@@ -1203,6 +1213,8 @@
   height: 615px;
   margin: 0 auto;
 
+
+
   &.slick-vertical {
     .slick-slide {
       border: 0;
@@ -1285,6 +1297,13 @@
   .slick-arrow {
     position: absolute;
     &:after {
+      border-color: $text-color;
+    }
+
+    &.slick-disabled:after {
+      border-color: #c7c7d9;
+    }
+    &.slick-disabled.enabled-arrow:after {
       border-color: $text-color;
     }
 

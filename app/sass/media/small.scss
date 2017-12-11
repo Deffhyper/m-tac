@@ -274,6 +274,17 @@
     font-size: 16px;
   }
 
+  .bx-ios {
+    .product-price {
+      &__old {
+        &:after {
+          top: 22px;
+        }
+      }
+    }
+  }
+
+
   .product-label {
     font-size: 15px;
   }

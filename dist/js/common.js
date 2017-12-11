@@ -634,6 +634,20 @@ $(function () {
             }
         ]
     });
+
+    $productSliderBottom.on('beforeChange', function(event, slick, currentSlide, nextSlide){
+        if(nextSlide === productSlidesCount-1) {
+            $(this).find('.slick-next').css({
+                'border-color': '#c7c7d9'
+            });
+        } else {
+            $(this).find('.slick-next').css({
+                'border-color': '#181613'
+            });
+        }
+
+    });
+
     
 
     ////////////////////////////// gallery slider ////////////////////////////////////
@@ -718,6 +732,15 @@ $(function () {
                                 }
                             }
                         ]
+                    });
+
+                    $galleryNavSlider.on('beforeChange', function(event, slick, currentSlide, nextSlide){
+                        if(nextSlide === slidesCount-1) {
+                            $(this).find('.slick-next').removeClass('enabled-arrow');
+                        } else {
+                            $(this).find('.slick-next').addClass('enabled-arrow');
+                        }
+
                     });
 
                     // slide to current slide in modal window

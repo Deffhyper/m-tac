@@ -178,6 +178,13 @@
   background: none;
   border: none;
   transition: .3s ease;
+  cursor: pointer;
+  
+  &.disabled-arrow {
+    border-color: #c7c7d9;
+    pointer-events: none;
+  }
+
   &:hover {
     &:after {
       border-color: $accent;
