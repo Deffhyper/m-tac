@@ -159,28 +159,28 @@ input, textarea {
   padding: 0 10px;
   -webkit-border-radius: 0;
           border-radius: 0; }
-  ::-webkit-input-placeholder {
+  input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
     font-size: 13px;
     color: #777777;
     text-indent: 0;
     -webkit-transition: 0.3s ease;
     transition: 0.3s ease;
     font-family: "FiraSans-Regular", sans-serif; }
-  :-moz-placeholder {
+  input:-moz-placeholder, textarea:-moz-placeholder {
     font-size: 13px;
     color: #777777;
     text-indent: 0;
     -webkit-transition: 0.3s ease;
     transition: 0.3s ease;
     font-family: "FiraSans-Regular", sans-serif; }
-  ::-moz-placeholder {
+  input::-moz-placeholder, textarea::-moz-placeholder {
     font-size: 13px;
     color: #777777;
     text-indent: 0;
     -webkit-transition: 0.3s ease;
     transition: 0.3s ease;
     font-family: "FiraSans-Regular", sans-serif; }
-  :-ms-input-placeholder {
+  input:-ms-input-placeholder, textarea:-ms-input-placeholder {
     font-size: 13px;
     color: #777777;
     text-indent: 0;
@@ -603,16 +603,16 @@ img {
     width: 100%;
     height: 40px;
     padding: 0; }
-    ::-webkit-input-placeholder {
+    .custom-input input::-webkit-input-placeholder, .custom-input textarea::-webkit-input-placeholder {
       font-size: 15px;
       color: #929292; }
-    :-moz-placeholder {
+    .custom-input input:-moz-placeholder, .custom-input textarea:-moz-placeholder {
       font-size: 15px;
       color: #929292; }
-    ::-moz-placeholder {
+    .custom-input input::-moz-placeholder, .custom-input textarea::-moz-placeholder {
       font-size: 15px;
       color: #929292; }
-    :-ms-input-placeholder {
+    .custom-input input:-ms-input-placeholder, .custom-input textarea:-ms-input-placeholder {
       font-size: 15px;
       color: #929292; }
   .custom-input textarea {
@@ -2605,7 +2605,9 @@ body:after {
     margin-top: -11px; } }
 
 @media (max-width: 766px) {
-  .top-slider__nav--item, .top-slider__for--item, .top-slider {
+  .top-slider__nav--item,
+  .top-slider__for--item,
+  .top-slider {
     height: 360px; }
   .top-slider__content--title {
     font-size: 36px;
